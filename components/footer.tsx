@@ -1,3 +1,5 @@
+import { AethosLogo } from "@/components/aethos-logo"
+
 export function Footer() {
   return (
     <footer className="py-12 px-6 border-t border-border">
@@ -6,9 +8,7 @@ export function Footer() {
           {/* Brand */}
           <div className="md:col-span-2">
             <div className="flex items-center gap-2 mb-4">
-              <div className="w-8 h-8 bg-accent rounded flex items-center justify-center">
-                <span className="font-mono text-sm font-bold text-accent-foreground">A</span>
-              </div>
+              <AethosLogo className="w-8 h-8 text-foreground" />
               <span className="font-serif text-xl font-semibold">Aethos AI</span>
             </div>
             <p className="text-sm text-muted-foreground max-w-md">

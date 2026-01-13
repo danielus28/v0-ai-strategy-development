@@ -30,19 +30,26 @@ export function HeroSection() {
         {/* Badge */}
         <div className="inline-flex items-center gap-2 px-4 py-2 bg-primary text-primary-foreground rounded-full font-mono text-sm mb-8">
           <span className="w-2 h-2 bg-accent rounded-full animate-pulse" />
-          Infraestructura de evidencia regional
+          Bien público · Labor social
         </div>
 
         {/* Headline */}
         <h1 className="font-serif text-4xl md:text-5xl lg:text-6xl font-semibold leading-tight text-balance mb-6">
-          Gobernanza con evidencia. <span className="text-accent">Voz regional</span> en estándares de IA.
+          Observatorio de Gobernanza de IA
         </h1>
+        <p className="text-2xl md:text-3xl text-muted-foreground font-light mb-6">
+          <span className="text-accent">Voz regional</span> en estándares de IA.
+        </p>
 
         {/* Subhead */}
-        <p className="text-lg md:text-xl text-muted-foreground max-w-3xl mx-auto leading-relaxed mb-12 text-pretty">
-          Medimos participación normativa, madurez institucional y preparación de ecosistemas para que LATAM sea
-          referencia en gobernabilidad de IA.
+        <p className="text-lg md:text-xl text-muted-foreground max-w-3xl mx-auto leading-relaxed mb-6 text-pretty">
+          Mostramos dónde está América Latina para decidir, entre todos, hacia dónde vamos.
         </p>
+
+        {/* Dato ancla */}
+        <div className="font-mono text-sm text-foreground/70 mb-12">
+          33 países · 6 indicadores · Datos abiertos
+        </div>
 
         {/* CTAs */}
         <div className="flex flex-col sm:flex-row gap-4 justify-center">
@@ -52,7 +59,7 @@ export function HeroSection() {
             onClick={scrollToMap}
           >
             <Map className="w-5 h-5" />
-            Ver mapa regional
+            Explorar el mapa
             <ArrowRight className="w-4 h-4" />
           </Button>
           <Button
@@ -62,7 +69,7 @@ export function HeroSection() {
             onClick={scrollToContact}
           >
             <Users className="w-5 h-5" />
-            Sumarse a la agenda técnica
+            Descargar datos
           </Button>
         </div>
 

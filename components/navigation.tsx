@@ -4,6 +4,7 @@ import { useState, useEffect } from "react"
 import { cn } from "@/lib/utils"
 import { Menu, X } from "lucide-react"
 import { Button } from "@/components/ui/button"
+import { AethosLogo } from "@/components/aethos-logo"
 
 const navLinks = [
   { href: "#participacion-normativa", label: "Participación Normativa" },
@@ -35,9 +36,7 @@ export function Navigation() {
       <nav className="max-w-7xl mx-auto px-6 flex items-center justify-between">
         {/* Logo */}
         <a href="#" className="flex items-center gap-2">
-          <div className="w-8 h-8 bg-accent rounded flex items-center justify-center">
-            <span className="font-mono text-sm font-bold text-accent-foreground">A</span>
-          </div>
+          <AethosLogo className="w-8 h-8 text-foreground" />
           <span className="font-serif text-xl font-semibold">Aethos AI</span>
         </a>
 
