@@ -2,7 +2,7 @@
 
 import type React from "react"
 
-import { useState, useMemo, useRef } from "react"
+import { useState, useMemo, useRef, memo } from "react"
 import { motion, AnimatePresence } from "framer-motion"
 import { cn } from "@/lib/utils"
 import {
@@ -26,6 +26,58 @@ const layers: { id: LayerType; label: string; source: string; year: string }[] =
   { id: "ilia", label: "Gobernanza IA LATAM", source: "CEPAL ILIA", year: "2025" },
   { id: "oecd", label: "Políticas de IA", source: "OECD.AI", year: "2024" },
 ]
+
+const MapDot = memo(function MapDot({
+  row,
+  col,
+  color,
+  country,
+  isHovered,
+  isSelected,
+  onHover,
+  onLeave,
+  onClick,
+  index
+}: {
+  row: number
+  col: number
+  color: string
+  country: string | null
+  isHovered: boolean
+  isSelected: boolean
+  onHover: (country: string) => void
+  onLeave: () => void
+  onClick: (country: string) => void
+  index: number
+}) {
+  return (
+    <motion.div
+      className="absolute rounded-full cursor-pointer"
+      style={{
+        width: DOT_SIZE,
+        height: DOT_SIZE,
+        left: col * DOT_GAP,
+        top: row * DOT_GAP,
+        backgroundColor: color,
+        border: isHovered || isSelected ? '2px solid #0D0D0D' : '1px solid rgba(13, 13, 13, 0.15)',
+        boxShadow: isHovered || isSelected ? '0 0 8px rgba(201, 162, 39, 0.5)' : 'none',
+        zIndex: isHovered || isSelected ? 10 : 1
+      }}
+      initial={{ scale: 0, opacity: 0 }}
+      animate={{
+        scale: isHovered || isSelected ? 1.4 : 1,
+        opacity: 1,
+      }}
+      transition={{
+        duration: 0.3,
+        delay: index * 0.0005,
+      }}
+      onMouseEnter={() => country && onHover(country)}
+      onMouseLeave={onLeave}
+      onClick={() => country && onClick(country)}
+    />
+  )
+})
 
 // Grid dimensions and dot styling
 const DOT_SIZE = 10
@@ -643,38 +695,21 @@ export function LatamMapSection() {
                   height: MAP_HEIGHT,
                 }}
               >
-                {allDots.map(({ row, col, country, color }, idx) => {
-                  const isHovered = hoveredCountry === country
-                  const isSelected = selectedCountry === country
-
-                  return (
-                    <motion.div
-                      key={`${row}-${col}`}
-                      className="absolute rounded-full cursor-pointer"
-                      style={{
-                        width: DOT_SIZE,
-                        height: DOT_SIZE,
-                        left: col * DOT_GAP,
-                        top: row * DOT_GAP,
-                        backgroundColor: color,
-                        border: isHovered || isSelected ? '2px solid #0D0D0D' : '1px solid rgba(13, 13, 13, 0.15)',
-                        boxShadow: isHovered || isSelected ? '0 0 8px rgba(201, 162, 39, 0.5)' : 'none',
-                      }}
-                      initial={{ scale: 0, opacity: 0 }}
-                      animate={{
-                        scale: isHovered || isSelected ? 1.4 : 1,
-                        opacity: 1,
-                      }}
-                      transition={{
-                        duration: 0.3,
-                        delay: idx * 0.002,
-                      }}
-                      onMouseEnter={() => country && setHoveredCountry(country)}
-                      onMouseLeave={() => setHoveredCountry(null)}
-                      onClick={() => country && setSelectedCountry(country)}
-                    />
-                  )
-                })}
+                {allDots.map(({ row, col, country, color }, idx) => (
+                  <MapDot
+                    key={`${row}-${col}`}
+                    row={row}
+                    col={col}
+                    color={color}
+                    country={country}
+                    isHovered={hoveredCountry === country}
+                    isSelected={selectedCountry === country}
+                    onHover={setHoveredCountry}
+                    onLeave={() => setHoveredCountry(null)}
+                    onClick={setSelectedCountry}
+                    index={idx}
+                  />
+                ))}
               </div>
 
               {/* Hover tooltip */}

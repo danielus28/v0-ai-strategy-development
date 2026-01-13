@@ -28,22 +28,47 @@ export function HeroSection() {
 
       <div className="relative z-10 max-w-5xl mx-auto px-6 text-center">
         {/* Headline */}
-        <h1 className="font-serif text-4xl md:text-5xl lg:text-6xl font-semibold leading-tight text-balance mb-8">
-          Observatorio de Gobernanza de IA
-        </h1>
-
-        {/* Subhead */}
-        <p className="text-lg md:text-xl text-muted-foreground max-w-3xl mx-auto leading-relaxed mb-6 text-pretty">
-          Mostramos dónde está América Latina para decidir, entre todos, hacia dónde vamos.
-        </p>
-
-        {/* Dato ancla */}
-        <div className="font-mono text-sm text-foreground/70 mb-12">
-          33 países · 6 indicadores · Datos abiertos
+        <div className="mb-8 min-h-[4rem] flex items-center justify-center">
+          <TypewriterEffect
+            words={[
+              { text: "Observatorio", className: "font-serif text-4xl md:text-5xl lg:text-6xl font-semibold leading-tight" },
+              { text: "de", className: "font-serif text-4xl md:text-5xl lg:text-6xl font-semibold leading-tight" },
+              { text: "Gobernanza", className: "font-serif text-4xl md:text-5xl lg:text-6xl font-semibold leading-tight" },
+              { text: "de", className: "font-serif text-4xl md:text-5xl lg:text-6xl font-semibold leading-tight" },
+              { text: "IA", className: "font-serif text-4xl md:text-5xl lg:text-6xl font-semibold leading-tight text-accent" },
+            ]}
+            className="text-center"
+            cursorClassName="bg-accent"
+          />
         </div>
 
+        {/* Subhead */}
+        <motion.p
+          initial={{ opacity: 0, y: 20 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ delay: 1, duration: 0.5 }}
+          className="text-lg md:text-xl text-muted-foreground max-w-3xl mx-auto leading-relaxed mb-6 text-pretty"
+        >
+          Mostramos dónde está América Latina para decidir, entre todos, hacia dónde vamos.
+        </motion.p>
+
+        {/* Dato ancla */}
+        <motion.div
+          initial={{ opacity: 0 }}
+          animate={{ opacity: 1 }}
+          transition={{ delay: 1.5, duration: 0.5 }}
+          className="font-mono text-sm text-foreground/70 mb-12"
+        >
+          33 países · 6 indicadores · Datos abiertos
+        </motion.div>
+
         {/* CTAs */}
-        <div className="flex flex-col sm:flex-row gap-4 justify-center">
+        <motion.div
+          initial={{ opacity: 0, y: 10 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ delay: 1.8, duration: 0.5 }}
+          className="flex flex-col sm:flex-row gap-4 justify-center"
+        >
           <Button
             size="lg"
             className="bg-accent hover:bg-accent/90 text-accent-foreground font-medium gap-2"
@@ -62,7 +87,7 @@ export function HeroSection() {
             <Users className="w-5 h-5" />
             Descargar datos
           </Button>
-        </div>
+        </motion.div>
 
         {/* Stats preview */}
         <div className="mt-16 grid grid-cols-2 md:grid-cols-4 gap-6 md:gap-8">

@@ -109,9 +109,8 @@ export function MethodologySection() {
                     <td className="p-4 font-mono text-sm">{source.year}</td>
                     <td className="p-4">
                       <span
-                        className={`inline-block px-2 py-0.5 rounded text-xs font-mono ${
-                          source.coverage === "Completa" ? "bg-accent/10 text-accent" : "bg-muted text-muted-foreground"
-                        }`}
+                        className={`inline-block px-2 py-0.5 rounded text-xs font-mono ${source.coverage === "Completa" ? "bg-accent/10 text-accent" : "bg-muted text-muted-foreground"
+                          }`}
                       >
                         {source.coverage}
                       </span>
@@ -132,15 +131,6 @@ export function MethodologySection() {
               </tbody>
             </table>
           </div>
-        </div>
-
-        {/* Disclaimer */}
-        <div className="mt-8 p-4 bg-accent/5 border border-accent/20 rounded-lg">
-          <p className="text-sm text-muted-foreground">
-            <strong className="text-foreground">Nota de transparencia:</strong> El Observatorio publica metodología
-            completa, scripts de transformación y limitaciones conocidas. Esto protege la narrativa de "propaganda" y
-            posiciona al Observatorio como referencia seria para la región.
-          </p>
         </div>
       </div>
     </section>
