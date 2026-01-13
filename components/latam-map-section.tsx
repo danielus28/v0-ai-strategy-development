@@ -28,10 +28,10 @@ const layers: { id: LayerType; label: string; source: string; year: string }[] =
 ]
 
 // Grid dimensions and dot styling
-const DOT_SIZE = 8
-const DOT_GAP = 10
-const MAP_WIDTH = 320
-const MAP_HEIGHT = 520
+const DOT_SIZE = 10
+const DOT_GAP = 12
+const MAP_WIDTH = 400
+const MAP_HEIGHT = 620
 
 // Each country is defined by an array of [row, col] coordinates
 // The coordinates are designed to form the accurate silhouette of Latin America
@@ -657,10 +657,12 @@ export function LatamMapSection() {
                         left: col * DOT_GAP,
                         top: row * DOT_GAP,
                         backgroundColor: color,
+                        border: isHovered || isSelected ? '2px solid #0D0D0D' : '1px solid rgba(13, 13, 13, 0.15)',
+                        boxShadow: isHovered || isSelected ? '0 0 8px rgba(201, 162, 39, 0.5)' : 'none',
                       }}
                       initial={{ scale: 0, opacity: 0 }}
                       animate={{
-                        scale: isHovered || isSelected ? 1.3 : 1,
+                        scale: isHovered || isSelected ? 1.4 : 1,
                         opacity: 1,
                       }}
                       transition={{
