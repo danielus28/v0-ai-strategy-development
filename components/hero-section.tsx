@@ -27,19 +27,10 @@ export function HeroSection() {
       </div>
 
       <div className="relative z-10 max-w-5xl mx-auto px-6 text-center">
-        {/* Badge */}
-        <div className="inline-flex items-center gap-2 px-4 py-2 bg-primary text-primary-foreground rounded-full font-mono text-sm mb-8">
-          <span className="w-2 h-2 bg-accent rounded-full animate-pulse" />
-          Bien público · Labor social
-        </div>
-
         {/* Headline */}
-        <h1 className="font-serif text-4xl md:text-5xl lg:text-6xl font-semibold leading-tight text-balance mb-6">
+        <h1 className="font-serif text-4xl md:text-5xl lg:text-6xl font-semibold leading-tight text-balance mb-8">
           Observatorio de Gobernanza de IA
         </h1>
-        <p className="text-2xl md:text-3xl text-muted-foreground font-light mb-6">
-          <span className="text-accent">Voz regional</span> en estándares de IA.
-        </p>
 
         {/* Subhead */}
         <p className="text-lg md:text-xl text-muted-foreground max-w-3xl mx-auto leading-relaxed mb-6 text-pretty">
