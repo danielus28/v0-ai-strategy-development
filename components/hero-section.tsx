@@ -2,6 +2,8 @@
 
 import { Button } from "@/components/ui/button"
 import { ArrowRight, Map, Users } from "lucide-react"
+import { motion } from "framer-motion"
+import { TypewriterEffect } from "@/components/ui/typewriter-effect"
 
 export function HeroSection() {
   const scrollToMap = () => {
