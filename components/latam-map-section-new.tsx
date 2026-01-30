@@ -67,75 +67,109 @@ export function LatamMapSection() {
     const [selectedCountry, setSelectedCountry] = useState<string | null>(null)
     const [hoveredCountry, setHoveredCountry] = useState<string | null>(null)
     const [mousePos, setMousePos] = useState({ x: 0, y: 0 })
+    const [svgLoaded, setSvgLoaded] = useState(false)
     const mapContainerRef = useRef<HTMLDivElement>(null)
-    const objectRef = useRef<HTMLObjectElement>(null)
+    const svgContainerRef = useRef<HTMLDivElement>(null)
 
     const selectedCountryData = selectedCountry ? getCountryData(selectedCountry) : null
     const activeLayerInfo = layers.find((l) => l.id === activeLayer)
 
-    // Apply colors to SVG when layer changes
+    // Load SVG once
     useEffect(() => {
-        if (!objectRef.current) return
+        const loadSVG = async () => {
+            if (!svgContainerRef.current) return
 
-        const applyColors = () => {
             try {
-                const svgDoc = objectRef.current?.getSVGDocument?.() || objectRef.current?.contentDocument
-                if (!svgDoc) return
+                const response = await fetch('/latam-map.svg')
+                const svgText = await response.text()
+                svgContainerRef.current.innerHTML = svgText
 
-                const circles = svgDoc.querySelectorAll('[data-country]')
+                const svg = svgContainerRef.current.querySelector('svg')
+                if (svg) {
+                    // Make SVG larger
+                    svg.style.width = '100%'
+                    svg.style.height = 'auto'
+                    svg.style.maxWidth = '700px'
+                }
 
-                // Batch DOM updates for performance
-                circles.forEach((circle) => {
-                    const country = circle.getAttribute('data-country')
-                    if (country) {
-                        (circle as SVGCircleElement).style.fill = getColorForLayer(country, activeLayer)
-                    }
-                })
-            } catch (e) {
-                console.error('Error applying colors:', e)
+                setSvgLoaded(true)
+            } catch (error) {
+                console.error('Failed to load SVG:', error)
             }
         }
 
-        // Small delay to ensure SVG is loaded
-        const timer = setTimeout(applyColors, 50)
-        return () => { clearTimeout(timer) }
-    }, [activeLayer])
+        loadSVG()
+    }, [])
 
-    // Setup event listeners on SVG load
-    const handleSVGLoad = () => {
-        try {
-            const svgDoc = objectRef.current?.getSVGDocument?.() || objectRef.current?.contentDocument
-            if (!svgDoc) return
+    // Apply colors when layer changes - OPTIMIZED
+    useEffect(() => {
+        if (!svgLoaded || !svgContainerRef.current) return
 
-            const circles = svgDoc.querySelectorAll('[data-country]')
+        const svg = svgContainerRef.current.querySelector('svg')
+        if (!svg) return
 
+        const circles = svg.querySelectorAll('[data-country]')
+
+        // Single batch update - no reflows
+        requestAnimationFrame(() => {
             circles.forEach((circle) => {
                 const country = circle.getAttribute('data-country')
-                if (!country) return
-
-                // Initial color
-                (circle as SVGCircleElement).style.fill = getColorForLayer(country, activeLayer)
-                    ; (circle as SVGCircleElement).style.transition = 'all 0.2s ease'
-                    ; (circle as SVGCircleElement).style.cursor = 'pointer'
-
-                // Event listeners
-                circle.addEventListener('mouseenter', () => setHoveredCountry(country))
-                circle.addEventListener('mouseleave', () => setHoveredCountry(null))
-                circle.addEventListener('click', () => setSelectedCountry(country))
+                if (country) {
+                    const color = getColorForLayer(country, activeLayer)
+                        ; (circle as SVGCircleElement).style.fill = color
+                        ; (circle as SVGCircleElement).style.transition = 'fill 0.2s ease'
+                }
             })
-        } catch (e) {
-            console.error('Error setting up SVG:', e)
-        }
-    }
+        })
+    }, [activeLayer, svgLoaded])
 
-    // Update visual states for hover/select
+    // Setup event listeners ONCE
     useEffect(() => {
-        try {
-            const svgDoc = objectRef.current?.getSVGDocument?.() || objectRef.current?.contentDocument
-            if (!svgDoc) return
+        if (!svgLoaded || !svgContainerRef.current) return
 
-            const circles = svgDoc.querySelectorAll('[data-country]')
+        const svg = svgContainerRef.current.querySelector('svg')
+        if (!svg) return
 
+        const circles = svg.querySelectorAll('[data-country]')
+
+        const handlers = new Map<Element, { enter: () => void; leave: () => void; click: () => void }>()
+
+        circles.forEach((circle) => {
+            const country = circle.getAttribute('data-country')
+            if (!country) return
+
+            const enterHandler = () => setHoveredCountry(country)
+            const leaveHandler = () => setHoveredCountry(null)
+            const clickHandler = () => setSelectedCountry(country)
+
+            circle.addEventListener('mouseenter', enterHandler)
+            circle.addEventListener('mouseleave', leaveHandler)
+            circle.addEventListener('click', clickHandler)
+                ; (circle as SVGCircleElement).style.cursor = 'pointer'
+
+            handlers.set(circle, { enter: enterHandler, leave: leaveHandler, click: clickHandler })
+        })
+
+        // Cleanup
+        return () => {
+            handlers.forEach((h, circle) => {
+                circle.removeEventListener('mouseenter', h.enter)
+                circle.removeEventListener('mouseleave', h.leave)
+                circle.removeEventListener('click', h.click)
+            })
+        }
+    }, [svgLoaded])
+
+    // Update hover/select visual states - OPTIMIZED
+    useEffect(() => {
+        if (!svgLoaded || !svgContainerRef.current) return
+
+        const svg = svgContainerRef.current.querySelector('svg')
+        if (!svg) return
+
+        const circles = svg.querySelectorAll('[data-country]')
+
+        requestAnimationFrame(() => {
             circles.forEach((circle) => {
                 const country = circle.getAttribute('data-country')
                 const isHovered = country === hoveredCountry
@@ -154,10 +188,8 @@ export function LatamMapSection() {
                     el.setAttribute('r', '1.8')
                 }
             })
-        } catch (e) {
-            // Silent fail
-        }
-    }, [hoveredCountry, selectedCountry])
+        })
+    }, [hoveredCountry, selectedCountry, svgLoaded])
 
     const handleMouseMove = (e: React.MouseEvent) => {
         if (mapContainerRef.current) {
@@ -212,25 +244,17 @@ export function LatamMapSection() {
                             </div>
                         </div>
 
-                        {/* SVG Map - 700px max width for 60% larger size */}
+                        {/* SVG Map - div container for innerHTML */}
                         <div
                             ref={mapContainerRef}
                             className="relative flex justify-center py-8"
                             onMouseMove={handleMouseMove}
                         >
-                            <div className="relative w-full flex justify-center" style={{ maxWidth: '700px' }}>
-                                <object
-                                    ref={objectRef}
-                                    data="/latam-map.svg"
-                                    type="image/svg+xml"
-                                    className="w-full h-auto"
-                                    style={{ pointerEvents: 'auto' }}
-                                    onLoad={handleSVGLoad}
-                                    aria-label="Mapa de América Latina"
-                                >
-                                    <p>Tu navegador no soporta SVG</p>
-                                </object>
-                            </div>
+                            <div
+                                ref={svgContainerRef}
+                                className="relative w-full flex justify-center"
+                                style={{ maxWidth: '700px' }}
+                            />
 
                             {/* Hover tooltip */}
                             <AnimatePresence>
