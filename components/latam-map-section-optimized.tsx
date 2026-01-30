@@ -1,6 +1,6 @@
 "use client"
 
-import { useState, useRef, useEffect } from "react"
+import { useState, useRef } from "react"
 import { motion, AnimatePresence } from "framer-motion"
 import { cn } from "@/lib/utils"
 import { getCountryData, type LayerType } from "@/lib/data"
@@ -68,96 +68,9 @@ export function LatamMapSection() {
     const [hoveredCountry, setHoveredCountry] = useState<string | null>(null)
     const [mousePos, setMousePos] = useState({ x: 0, y: 0 })
     const mapContainerRef = useRef<HTMLDivElement>(null)
-    const objectRef = useRef<HTMLObjectElement>(null)
 
     const selectedCountryData = selectedCountry ? getCountryData(selectedCountry) : null
     const activeLayerInfo = layers.find((l) => l.id === activeLayer)
-
-    // Apply colors to SVG when layer changes
-    useEffect(() => {
-        if (!objectRef.current) return
-
-        const applyColors = () => {
-            try {
-                const svgDoc = objectRef.current?.getSVGDocument?.() || objectRef.current?.contentDocument
-                if (!svgDoc) return
-
-                const circles = svgDoc.querySelectorAll('[data-country]')
-
-                // Batch DOM updates for performance
-                circles.forEach((circle) => {
-                    const country = circle.getAttribute('data-country')
-                    if (country) {
-                        (circle as SVGCircleElement).style.fill = getColorForLayer(country, activeLayer)
-                    }
-                })
-            } catch (e) {
-                console.error('Error applying colors:', e)
-            }
-        }
-
-        // Small delay to ensure SVG is loaded
-        const timer = setTimeout(applyColors, 50)
-        return () => { clearTimeout(timer) }
-    }, [activeLayer])
-
-    // Setup event listeners on SVG load
-    const handleSVGLoad = () => {
-        try {
-            const svgDoc = objectRef.current?.getSVGDocument?.() || objectRef.current?.contentDocument
-            if (!svgDoc) return
-
-            const circles = svgDoc.querySelectorAll('[data-country]')
-
-            circles.forEach((circle) => {
-                const country = circle.getAttribute('data-country')
-                if (!country) return
-
-                // Initial color
-                (circle as SVGCircleElement).style.fill = getColorForLayer(country, activeLayer)
-                    ; (circle as SVGCircleElement).style.transition = 'all 0.2s ease'
-                    ; (circle as SVGCircleElement).style.cursor = 'pointer'
-
-                // Event listeners
-                circle.addEventListener('mouseenter', () => setHoveredCountry(country))
-                circle.addEventListener('mouseleave', () => setHoveredCountry(null))
-                circle.addEventListener('click', () => setSelectedCountry(country))
-            })
-        } catch (e) {
-            console.error('Error setting up SVG:', e)
-        }
-    }
-
-    // Update visual states for hover/select
-    useEffect(() => {
-        try {
-            const svgDoc = objectRef.current?.getSVGDocument?.() || objectRef.current?.contentDocument
-            if (!svgDoc) return
-
-            const circles = svgDoc.querySelectorAll('[data-country]')
-
-            circles.forEach((circle) => {
-                const country = circle.getAttribute('data-country')
-                const isHovered = country === hoveredCountry
-                const isSelected = country === selectedCountry
-                const el = circle as SVGCircleElement
-
-                if (isHovered || isSelected) {
-                    el.style.stroke = '#C9A227'
-                    el.style.strokeWidth = '1.5'
-                    el.style.filter = 'drop-shadow(0 0 3px rgba(201, 162, 39, 0.8))'
-                    el.setAttribute('r', '2.8')
-                } else {
-                    el.style.stroke = 'none'
-                    el.style.strokeWidth = '0'
-                    el.style.filter = 'none'
-                    el.setAttribute('r', '1.8')
-                }
-            })
-        } catch (e) {
-            // Silent fail
-        }
-    }, [hoveredCountry, selectedCountry])
 
     const handleMouseMove = (e: React.MouseEvent) => {
         if (mapContainerRef.current) {
@@ -204,32 +117,82 @@ export function LatamMapSection() {
 
                         {/* Active layer info - Better aligned */}
                         <div className="mb-6 p-3 bg-[#0D0D0D] rounded-lg border border-[#2A2A2A] flex items-center gap-3">
-                            <Info className="w-4 h-4 text-[#C9A227] flex-shrink-0" />
-                            <div className="font-mono text-sm text-[#F8F6F1]/70 flex items-center flex-wrap gap-x-2">
+                            <Info className="w-4 h-4 text-[#C9A227] flex-shrink-0 mt-0.5" />
+                            <div className="font-mono text-sm text-[#F8F6F1]/70">
                                 <span className="font-medium text-[#F8F6F1]">{activeLayerInfo?.label}</span>
-                                <span>·</span>
+                                <span className="mx-2">·</span>
                                 <span>{activeLayerInfo?.source} ({activeLayerInfo?.year})</span>
                             </div>
                         </div>
 
-                        {/* SVG Map - 700px max width for 60% larger size */}
+                        {/* SVG Map - Larger size with event delegation */}
                         <div
                             ref={mapContainerRef}
                             className="relative flex justify-center py-8"
                             onMouseMove={handleMouseMove}
                         >
-                            <div className="relative w-full flex justify-center" style={{ maxWidth: '700px' }}>
-                                <object
-                                    ref={objectRef}
-                                    data="/latam-map.svg"
-                                    type="image/svg+xml"
+                            {/* Embedded SVG with event delegation for performance */}
+                            <div
+                                className="relative w-full flex justify-center"
+                                style={{ maxWidth: '700px' }}
+                            >
+                                <iframe
+                                    src="/latam-map.svg"
                                     className="w-full h-auto"
-                                    style={{ pointerEvents: 'auto' }}
-                                    onLoad={handleSVGLoad}
-                                    aria-label="Mapa de América Latina"
-                                >
-                                    <p>Tu navegador no soporta SVG</p>
-                                </object>
+                                    style={{
+                                        border: 'none',
+                                        aspectRatio: '440/469',
+                                        pointerEvents: 'auto'
+                                    }}
+                                    title="Mapa LATAM"
+                                    onLoad={(e) => {
+                                        const iframe = e.target as HTMLIFrameElement
+                                        const doc = iframe.contentDocument || iframe.contentWindow?.document
+                                        if (!doc) return
+
+                                        // Apply colors to all circles
+                                        const circles = doc.querySelectorAll('[data-country]')
+                                        circles.forEach((circle) => {
+                                            const country = circle.getAttribute('data-country')
+                                            if (country) {
+                                                const color = getColorForLayer(country, activeLayer)
+                                                    ; (circle as SVGCircleElement).style.fill = color
+                                                    ; (circle as SVGCircleElement).style.transition = 'fill 0.15s ease'
+                                                    ; (circle as SVGCircleElement).style.cursor = 'pointer'
+
+                                                // Event delegation
+                                                circle.addEventListener('mouseenter', () => setHoveredCountry(country))
+                                                circle.addEventListener('mouseleave', () => setHoveredCountry(null))
+                                                circle.addEventListener('click', () => setSelectedCountry(country))
+                                            }
+                                        })
+
+                                        // Update styles on hover/select
+                                        const updateStyles = () => {
+                                            circles.forEach((circle) => {
+                                                const country = circle.getAttribute('data-country')
+                                                const isHovered = country === hoveredCountry
+                                                const isSelected = country === selectedCountry
+
+                                                if (isHovered || isSelected) {
+                                                    ; (circle as SVGCircleElement).style.stroke = '#C9A227'
+                                                        ; (circle as SVGCircleElement).style.strokeWidth = '1.5'
+                                                        ; (circle as SVGCircleElement).style.filter = 'drop-shadow(0 0 3px rgba(201, 162, 39, 0.8))'
+                                                        ; (circle as SVGCircleElement).setAttribute('r', '2.5')
+                                                } else {
+                                                    ; (circle as SVGCircleElement).style.stroke = 'none'
+                                                        ; (circle as SVGCircleElement).style.strokeWidth = '0'
+                                                        ; (circle as SVGCircleElement).style.filter = 'none'
+                                                        ; (circle as SVGCircleElement).setAttribute('r', '1.8')
+                                                }
+                                            })
+                                        }
+
+                                        // Watch for changes
+                                        const observer = new MutationObserver(updateStyles)
+                                        observer.observe(doc.body, { attributes: true, subtree: true })
+                                    }}
+                                />
                             </div>
 
                             {/* Hover tooltip */}
@@ -239,10 +202,10 @@ export function LatamMapSection() {
                                         initial={{ opacity: 0, y: 10 }}
                                         animate={{ opacity: 1, y: 0 }}
                                         exit={{ opacity: 0, y: 10 }}
-                                        className="absolute pointer-events-none z-20 px-3 py-2 bg-[#0D0D0D] border border-[#C9A227] rounded-lg shadow-lg"
+                                        className="absolute pointer-events-none z-10 px-3 py-2 bg-[#0D0D0D] border border-[#C9A227] rounded-lg shadow-lg"
                                         style={{
                                             left: Math.min(mousePos.x + 15, (mapContainerRef.current?.clientWidth || 0) - 150),
-                                            top: Math.max(mousePos.y - 40, 10),
+                                            top: mousePos.y - 10,
                                         }}
                                     >
                                         <div className="font-mono text-xs text-[#C9A227]">{hoveredCountry}</div>
@@ -276,7 +239,7 @@ export function LatamMapSection() {
                         </div>
                     </div>
 
-                    {/* Country Drawer */}
+                    {/* Country Drawer - Unchanged */}
                     <div className="bg-[#181818] rounded-lg border border-[#2A2A2A] p-6">
                         <AnimatePresence mode="wait">
                             {selectedCountryData ? (
@@ -303,9 +266,7 @@ export function LatamMapSection() {
 
                                     <div className="space-y-4">
                                         {/* ISO Membership */}
-                                        <div className="
-
-p-4 bg-[#0D0D0D] rounded-lg border border-[#2A2A2A]">
+                                        <div className="p-4 bg-[#0D0D0D] rounded-lg border border-[#2A2A2A]">
                                             <div className="text-xs font-mono text-[#F8F6F1]/50 mb-3 uppercase tracking-wide">
                                                 Membresía ISO
                                             </div>
