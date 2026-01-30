@@ -1,0 +1,7229 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   viewBox="0 0 440.00 468.81"
+   width="440"
+   height="468.81094095668885"
+   version="1.1"
+   id="svg1196"
+   sodipodi:docname="latam-dot-map-ultra-density.svg"
+   inkscape:version="1.4 (e7c3feb1, 2024-10-09)"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:dc="http://purl.org/dc/elements/1.1/">
+  <defs
+     id="defs1196" />
+  <sodipodi:namedview
+     id="namedview1196"
+     pagecolor="#ffffff"
+     bordercolor="#111111"
+     borderopacity="1"
+     inkscape:showpageshadow="0"
+     inkscape:pageopacity="0"
+     inkscape:pagecheckerboard="1"
+     inkscape:deskcolor="#d1d1d1"
+     inkscape:zoom="0.62420382"
+     inkscape:cx="198.65306"
+     inkscape:cy="247.51531"
+     inkscape:window-width="1184"
+     inkscape:window-height="554"
+     inkscape:window-x="0"
+     inkscape:window-y="25"
+     inkscape:window-maximized="0"
+     inkscape:current-layer="svg1196" />
+  <title
+     id="title1">Latin America Dot Map - Ultra Density</title>
+  <style
+     id="style1">.dot { fill: #4A4A4A; }</style>
+  <g
+     id="dots">
+    <circle
+       class="dot"
+       cx="25.92"
+       cy="28.40"
+       r="1.8"
+       id="circle1" />
+    <circle
+       class="dot"
+       cx="25.92"
+       cy="22.48"
+       r="1.8"
+       id="circle2" />
+    <circle
+       class="dot"
+       cx="31.84"
+       cy="34.32"
+       r="1.8"
+       id="circle3" />
+    <circle
+       class="dot"
+       cx="31.84"
+       cy="22.48"
+       r="1.8"
+       id="circle4" />
+    <circle
+       class="dot"
+       cx="37.76"
+       cy="46.17"
+       r="1.8"
+       id="circle5" />
+    <circle
+       class="dot"
+       cx="37.76"
+       cy="40.24"
+       r="1.8"
+       id="circle6" />
+    <circle
+       class="dot"
+       cx="43.69"
+       cy="52.09"
+       r="1.8"
+       id="circle7" />
+    <circle
+       class="dot"
+       cx="43.69"
+       cy="34.32"
+       r="1.8"
+       id="circle8" />
+    <circle
+       class="dot"
+       cx="43.69"
+       cy="28.40"
+       r="1.8"
+       id="circle9" />
+    <circle
+       class="dot"
+       cx="49.61"
+       cy="58.01"
+       r="1.8"
+       id="circle10" />
+    <circle
+       class="dot"
+       cx="49.61"
+       cy="40.24"
+       r="1.8"
+       id="circle11" />
+    <circle
+       class="dot"
+       cx="49.61"
+       cy="34.32"
+       r="1.8"
+       id="circle12" />
+    <circle
+       class="dot"
+       cx="49.61"
+       cy="28.40"
+       r="1.8"
+       id="circle13" />
+    <circle
+       class="dot"
+       cx="55.53"
+       cy="63.93"
+       r="1.8"
+       id="circle14" />
+    <circle
+       class="dot"
+       cx="55.53"
+       cy="46.17"
+       r="1.8"
+       id="circle15" />
+    <circle
+       class="dot"
+       cx="55.53"
+       cy="40.24"
+       r="1.8"
+       id="circle16" />
+    <circle
+       class="dot"
+       cx="55.53"
+       cy="34.32"
+       r="1.8"
+       id="circle17" />
+    <circle
+       class="dot"
+       cx="55.53"
+       cy="28.40"
+       r="1.8"
+       id="circle18" />
+    <circle
+       class="dot"
+       cx="61.45"
+       cy="52.09"
+       r="1.8"
+       id="circle19" />
+    <circle
+       class="dot"
+       cx="61.45"
+       cy="46.17"
+       r="1.8"
+       id="circle20" />
+    <circle
+       class="dot"
+       cx="61.45"
+       cy="40.24"
+       r="1.8"
+       id="circle21" />
+    <circle
+       class="dot"
+       cx="61.45"
+       cy="34.32"
+       r="1.8"
+       id="circle22" />
+    <circle
+       class="dot"
+       cx="61.45"
+       cy="28.40"
+       r="1.8"
+       id="circle23" />
+    <circle
+       class="dot"
+       cx="67.37"
+       cy="58.01"
+       r="1.8"
+       id="circle24" />
+    <circle
+       class="dot"
+       cx="67.37"
+       cy="52.09"
+       r="1.8"
+       id="circle25" />
+    <circle
+       class="dot"
+       cx="67.37"
+       cy="46.17"
+       r="1.8"
+       id="circle26" />
+    <circle
+       class="dot"
+       cx="67.37"
+       cy="40.24"
+       r="1.8"
+       id="circle27" />
+    <circle
+       class="dot"
+       cx="67.37"
+       cy="34.32"
+       r="1.8"
+       id="circle28" />
+    <circle
+       class="dot"
+       cx="67.37"
+       cy="28.40"
+       r="1.8"
+       id="circle29" />
+    <circle
+       class="dot"
+       cx="73.29"
+       cy="63.93"
+       r="1.8"
+       id="circle30" />
+    <circle
+       class="dot"
+       cx="73.29"
+       cy="58.01"
+       r="1.8"
+       id="circle31" />
+    <circle
+       class="dot"
+       cx="73.29"
+       cy="52.09"
+       r="1.8"
+       id="circle32" />
+    <circle
+       class="dot"
+       cx="73.29"
+       cy="46.17"
+       r="1.8"
+       id="circle33" />
+    <circle
+       class="dot"
+       cx="73.29"
+       cy="40.24"
+       r="1.8"
+       id="circle34" />
+    <circle
+       class="dot"
+       cx="73.29"
+       cy="34.32"
+       r="1.8"
+       id="circle35" />
+    <circle
+       class="dot"
+       cx="73.29"
+       cy="28.40"
+       r="1.8"
+       id="circle36" />
+    <circle
+       class="dot"
+       cx="79.21"
+       cy="81.69"
+       r="1.8"
+       id="circle37" />
+    <circle
+       class="dot"
+       cx="79.21"
+       cy="75.77"
+       r="1.8"
+       id="circle38" />
+    <circle
+       class="dot"
+       cx="79.21"
+       cy="69.85"
+       r="1.8"
+       id="circle39" />
+    <circle
+       class="dot"
+       cx="79.21"
+       cy="63.93"
+       r="1.8"
+       id="circle40" />
+    <circle
+       class="dot"
+       cx="79.21"
+       cy="58.01"
+       r="1.8"
+       id="circle41" />
+    <circle
+       class="dot"
+       cx="79.21"
+       cy="52.09"
+       r="1.8"
+       id="circle42" />
+    <circle
+       class="dot"
+       cx="79.21"
+       cy="46.17"
+       r="1.8"
+       id="circle43" />
+    <circle
+       class="dot"
+       cx="79.21"
+       cy="40.24"
+       r="1.8"
+       id="circle44" />
+    <circle
+       class="dot"
+       cx="79.21"
+       cy="34.32"
+       r="1.8"
+       id="circle45" />
+    <circle
+       class="dot"
+       cx="85.13"
+       cy="87.61"
+       r="1.8"
+       id="circle46" />
+    <circle
+       class="dot"
+       cx="85.13"
+       cy="81.69"
+       r="1.8"
+       id="circle47" />
+    <circle
+       class="dot"
+       cx="85.13"
+       cy="75.77"
+       r="1.8"
+       id="circle48" />
+    <circle
+       class="dot"
+       cx="85.13"
+       cy="69.85"
+       r="1.8"
+       id="circle49" />
+    <circle
+       class="dot"
+       cx="85.13"
+       cy="63.93"
+       r="1.8"
+       id="circle50" />
+    <circle
+       class="dot"
+       cx="85.13"
+       cy="58.01"
+       r="1.8"
+       id="circle51" />
+    <circle
+       class="dot"
+       cx="85.13"
+       cy="52.09"
+       r="1.8"
+       id="circle52" />
+    <circle
+       class="dot"
+       cx="85.13"
+       cy="46.17"
+       r="1.8"
+       id="circle53" />
+    <circle
+       class="dot"
+       cx="85.13"
+       cy="40.24"
+       r="1.8"
+       id="circle54" />
+    <circle
+       class="dot"
+       cx="91.06"
+       cy="87.61"
+       r="1.8"
+       id="circle55" />
+    <circle
+       class="dot"
+       cx="91.06"
+       cy="81.69"
+       r="1.8"
+       id="circle56" />
+    <circle
+       class="dot"
+       cx="91.06"
+       cy="75.77"
+       r="1.8"
+       id="circle57" />
+    <circle
+       class="dot"
+       cx="91.06"
+       cy="69.85"
+       r="1.8"
+       id="circle58" />
+    <circle
+       class="dot"
+       cx="91.06"
+       cy="63.93"
+       r="1.8"
+       id="circle59" />
+    <circle
+       class="dot"
+       cx="91.06"
+       cy="58.01"
+       r="1.8"
+       id="circle60" />
+    <circle
+       class="dot"
+       cx="91.06"
+       cy="52.09"
+       r="1.8"
+       id="circle61" />
+    <circle
+       class="dot"
+       cx="91.06"
+       cy="46.17"
+       r="1.8"
+       id="circle62" />
+    <circle
+       class="dot"
+       cx="91.06"
+       cy="40.24"
+       r="1.8"
+       id="circle63" />
+    <circle
+       class="dot"
+       cx="96.98"
+       cy="93.54"
+       r="1.8"
+       id="circle64" />
+    <circle
+       class="dot"
+       cx="96.98"
+       cy="87.61"
+       r="1.8"
+       id="circle65" />
+    <circle
+       class="dot"
+       cx="96.98"
+       cy="81.69"
+       r="1.8"
+       id="circle66" />
+    <circle
+       class="dot"
+       cx="96.98"
+       cy="75.77"
+       r="1.8"
+       id="circle67" />
+    <circle
+       class="dot"
+       cx="96.98"
+       cy="69.85"
+       r="1.8"
+       id="circle68" />
+    <circle
+       class="dot"
+       cx="96.98"
+       cy="63.93"
+       r="1.8"
+       id="circle69" />
+    <circle
+       class="dot"
+       cx="96.98"
+       cy="58.01"
+       r="1.8"
+       id="circle70" />
+    <circle
+       class="dot"
+       cx="96.98"
+       cy="52.09"
+       r="1.8"
+       id="circle71" />
+    <circle
+       class="dot"
+       cx="96.98"
+       cy="46.17"
+       r="1.8"
+       id="circle72" />
+    <circle
+       class="dot"
+       cx="96.98"
+       cy="40.24"
+       r="1.8"
+       id="circle73" />
+    <circle
+       class="dot"
+       cx="102.90"
+       cy="93.54"
+       r="1.8"
+       id="circle74" />
+    <circle
+       class="dot"
+       cx="102.90"
+       cy="87.61"
+       r="1.8"
+       id="circle75" />
+    <circle
+       class="dot"
+       cx="102.90"
+       cy="81.69"
+       r="1.8"
+       id="circle76" />
+    <circle
+       class="dot"
+       cx="102.90"
+       cy="75.77"
+       r="1.8"
+       id="circle77" />
+    <circle
+       class="dot"
+       cx="102.90"
+       cy="69.85"
+       r="1.8"
+       id="circle78" />
+    <circle
+       class="dot"
+       cx="102.90"
+       cy="63.93"
+       r="1.8"
+       id="circle79" />
+    <circle
+       class="dot"
+       cx="102.90"
+       cy="58.01"
+       r="1.8"
+       id="circle80" />
+    <circle
+       class="dot"
+       cx="102.90"
+       cy="52.09"
+       r="1.8"
+       id="circle81" />
+    <circle
+       class="dot"
+       cx="102.90"
+       cy="46.17"
+       r="1.8"
+       id="circle82" />
+    <circle
+       class="dot"
+       cx="108.82"
+       cy="93.54"
+       r="1.8"
+       id="circle83" />
+    <circle
+       class="dot"
+       cx="108.82"
+       cy="87.61"
+       r="1.8"
+       id="circle84" />
+    <circle
+       class="dot"
+       cx="108.82"
+       cy="81.69"
+       r="1.8"
+       id="circle85" />
+    <circle
+       class="dot"
+       cx="108.82"
+       cy="75.77"
+       r="1.8"
+       id="circle86" />
+    <circle
+       class="dot"
+       cx="108.82"
+       cy="69.85"
+       r="1.8"
+       id="circle87" />
+    <circle
+       class="dot"
+       cx="108.82"
+       cy="63.93"
+       r="1.8"
+       id="circle88" />
+    <circle
+       class="dot"
+       cx="108.82"
+       cy="58.01"
+       r="1.8"
+       id="circle89" />
+    <circle
+       class="dot"
+       cx="108.82"
+       cy="52.09"
+       r="1.8"
+       id="circle90" />
+    <circle
+       class="dot"
+       cx="114.74"
+       cy="99.46"
+       r="1.8"
+       id="circle91" />
+    <circle
+       class="dot"
+       cx="114.74"
+       cy="93.54"
+       r="1.8"
+       id="circle92" />
+    <circle
+       class="dot"
+       cx="114.74"
+       cy="87.61"
+       r="1.8"
+       id="circle93" />
+    <circle
+       class="dot"
+       cx="114.74"
+       cy="81.69"
+       r="1.8"
+       id="circle94" />
+    <circle
+       class="dot"
+       cx="114.74"
+       cy="75.77"
+       r="1.8"
+       id="circle95" />
+    <circle
+       class="dot"
+       cx="114.74"
+       cy="58.01"
+       r="1.8"
+       id="circle96" />
+    <circle
+       class="dot"
+       cx="120.66"
+       cy="99.46"
+       r="1.8"
+       id="circle97" />
+    <circle
+       class="dot"
+       cx="120.66"
+       cy="93.54"
+       r="1.8"
+       id="circle98" />
+    <circle
+       class="dot"
+       cx="120.66"
+       cy="87.61"
+       r="1.8"
+       id="circle99" />
+    <circle
+       class="dot"
+       cx="126.58"
+       cy="99.46"
+       r="1.8"
+       id="circle100" />
+    <circle
+       class="dot"
+       cx="126.58"
+       cy="93.54"
+       r="1.8"
+       id="circle101" />
+    <circle
+       class="dot"
+       cx="132.50"
+       cy="99.46"
+       r="1.8"
+       id="circle102" />
+    <circle
+       class="dot"
+       cx="132.50"
+       cy="93.54"
+       r="1.8"
+       id="circle103" />
+    <circle
+       class="dot"
+       cx="138.43"
+       cy="105.38"
+       r="1.8"
+       id="circle104" />
+    <circle
+       class="dot"
+       cx="138.43"
+       cy="99.46"
+       r="1.8"
+       id="circle105" />
+    <circle
+       class="dot"
+       cx="138.43"
+       cy="93.54"
+       r="1.8"
+       id="circle106" />
+    <circle
+       class="dot"
+       cx="144.35"
+       cy="105.38"
+       r="1.8"
+       id="circle107" />
+    <circle
+       class="dot"
+       cx="144.35"
+       cy="99.46"
+       r="1.8"
+       id="circle108" />
+    <circle
+       class="dot"
+       cx="144.35"
+       cy="93.54"
+       r="1.8"
+       id="circle109" />
+    <circle
+       class="dot"
+       cx="144.35"
+       cy="87.61"
+       r="1.8"
+       id="circle110" />
+    <circle
+       class="dot"
+       cx="150.27"
+       cy="111.30"
+       r="1.8"
+       id="circle111" />
+    <circle
+       class="dot"
+       cx="150.27"
+       cy="105.38"
+       r="1.8"
+       id="circle112" />
+    <circle
+       class="dot"
+       cx="150.27"
+       cy="99.46"
+       r="1.8"
+       id="circle113" />
+    <circle
+       class="dot"
+       cx="150.27"
+       cy="93.54"
+       r="1.8"
+       id="circle114" />
+    <circle
+       class="dot"
+       cx="150.27"
+       cy="87.61"
+       r="1.8"
+       id="circle115" />
+    <circle
+       class="dot"
+       cx="150.27"
+       cy="81.69"
+       r="1.8"
+       id="circle116" />
+    <circle
+       class="dot"
+       cx="156.19"
+       cy="111.30"
+       r="1.8"
+       id="circle117" />
+    <circle
+       class="dot"
+       cx="156.19"
+       cy="105.38"
+       r="1.8"
+       id="circle118" />
+    <circle
+       class="dot"
+       cx="156.19"
+       cy="99.46"
+       r="1.8"
+       id="circle119" />
+    <circle
+       class="dot"
+       cx="156.19"
+       cy="93.54"
+       r="1.8"
+       id="circle120" />
+    <circle
+       class="dot"
+       cx="156.19"
+       cy="87.61"
+       r="1.8"
+       id="circle121" />
+    <circle
+       class="dot"
+       cx="156.19"
+       cy="81.69"
+       r="1.8"
+       id="circle122" />
+    <circle
+       class="dot"
+       cx="156.19"
+       cy="75.77"
+       r="1.8"
+       id="circle123" />
+    <circle
+       class="dot"
+       cx="162.11"
+       cy="111.30"
+       r="1.8"
+       id="circle124" />
+    <circle
+       class="dot"
+       cx="162.11"
+       cy="105.38"
+       r="1.8"
+       id="circle125" />
+    <circle
+       class="dot"
+       cx="162.11"
+       cy="87.61"
+       r="1.8"
+       id="circle126" />
+    <circle
+       class="dot"
+       cx="162.11"
+       cy="81.69"
+       r="1.8"
+       id="circle127" />
+    <circle
+       class="dot"
+       cx="162.11"
+       cy="75.77"
+       r="1.8"
+       id="circle128" />
+    <circle
+       class="dot"
+       cx="168.03"
+       cy="117.22"
+       r="1.8"
+       id="circle129" />
+    <circle
+       class="dot"
+       cx="168.03"
+       cy="111.30"
+       r="1.8"
+       id="circle130" />
+    <circle
+       class="dot"
+       cx="168.03"
+       cy="105.38"
+       r="1.8"
+       id="circle131" />
+    <circle
+       class="dot"
+       cx="173.95"
+       cy="129.06"
+       r="1.8"
+       id="circle132" />
+    <circle
+       class="dot"
+       cx="173.95"
+       cy="123.14"
+       r="1.8"
+       id="circle133" />
+    <circle
+       class="dot"
+       cx="173.95"
+       cy="117.22"
+       r="1.8"
+       id="circle134" />
+    <circle
+       class="dot"
+       cx="173.95"
+       cy="111.30"
+       r="1.8"
+       id="circle135" />
+    <circle
+       class="dot"
+       cx="173.95"
+       cy="105.38"
+       r="1.8"
+       id="circle136" />
+    <circle
+       class="dot"
+       cx="179.87"
+       cy="129.06"
+       r="1.8"
+       id="circle137" />
+    <circle
+       class="dot"
+       cx="179.87"
+       cy="123.14"
+       r="1.8"
+       id="circle138" />
+    <circle
+       class="dot"
+       cx="179.87"
+       cy="117.22"
+       r="1.8"
+       id="circle139" />
+    <circle
+       class="dot"
+       cx="179.87"
+       cy="111.30"
+       r="1.8"
+       id="circle140" />
+    <circle
+       class="dot"
+       cx="179.87"
+       cy="105.38"
+       r="1.8"
+       id="circle141" />
+    <circle
+       class="dot"
+       cx="179.87"
+       cy="69.85"
+       r="1.8"
+       id="circle142" />
+    <circle
+       class="dot"
+       cx="185.80"
+       cy="134.98"
+       r="1.8"
+       id="circle143" />
+    <circle
+       class="dot"
+       cx="191.72"
+       cy="69.85"
+       r="1.8"
+       id="circle144" />
+    <circle
+       class="dot"
+       cx="197.64"
+       cy="206.04"
+       r="1.8"
+       id="circle145" />
+    <circle
+       class="dot"
+       cx="197.64"
+       cy="200.12"
+       r="1.8"
+       id="circle146" />
+    <circle
+       class="dot"
+       cx="197.64"
+       cy="188.28"
+       r="1.8"
+       id="circle147" />
+    <circle
+       class="dot"
+       cx="197.64"
+       cy="140.91"
+       r="1.8"
+       id="circle148" />
+    <circle
+       class="dot"
+       cx="197.64"
+       cy="134.98"
+       r="1.8"
+       id="circle149" />
+    <circle
+       class="dot"
+       cx="197.64"
+       cy="69.85"
+       r="1.8"
+       id="circle150" />
+    <circle
+       class="dot"
+       cx="203.56"
+       cy="217.88"
+       r="1.8"
+       id="circle151" />
+    <circle
+       class="dot"
+       cx="203.56"
+       cy="211.96"
+       r="1.8"
+       id="circle152" />
+    <circle
+       class="dot"
+       cx="203.56"
+       cy="206.04"
+       r="1.8"
+       id="circle153" />
+    <circle
+       class="dot"
+       cx="203.56"
+       cy="200.12"
+       r="1.8"
+       id="circle154" />
+    <circle
+       class="dot"
+       cx="203.56"
+       cy="194.20"
+       r="1.8"
+       id="circle155" />
+    <circle
+       class="dot"
+       cx="203.56"
+       cy="188.28"
+       r="1.8"
+       id="circle156" />
+    <circle
+       class="dot"
+       cx="203.56"
+       cy="182.35"
+       r="1.8"
+       id="circle157" />
+    <circle
+       class="dot"
+       cx="203.56"
+       cy="176.43"
+       r="1.8"
+       id="circle158" />
+    <circle
+       class="dot"
+       cx="203.56"
+       cy="134.98"
+       r="1.8"
+       id="circle159" />
+    <circle
+       class="dot"
+       cx="209.48"
+       cy="223.80"
+       r="1.8"
+       id="circle160" />
+    <circle
+       class="dot"
+       cx="209.48"
+       cy="217.88"
+       r="1.8"
+       id="circle161" />
+    <circle
+       class="dot"
+       cx="209.48"
+       cy="211.96"
+       r="1.8"
+       id="circle162" />
+    <circle
+       class="dot"
+       cx="209.48"
+       cy="206.04"
+       r="1.8"
+       id="circle163" />
+    <circle
+       class="dot"
+       cx="209.48"
+       cy="200.12"
+       r="1.8"
+       id="circle164" />
+    <circle
+       class="dot"
+       cx="209.48"
+       cy="194.20"
+       r="1.8"
+       id="circle165" />
+    <circle
+       class="dot"
+       cx="209.48"
+       cy="188.28"
+       r="1.8"
+       id="circle166" />
+    <circle
+       class="dot"
+       cx="209.48"
+       cy="182.35"
+       r="1.8"
+       id="circle167" />
+    <circle
+       class="dot"
+       cx="209.48"
+       cy="176.43"
+       r="1.8"
+       id="circle168" />
+    <circle
+       class="dot"
+       cx="209.48"
+       cy="170.51"
+       r="1.8"
+       id="circle169" />
+    <circle
+       class="dot"
+       cx="209.48"
+       cy="140.91"
+       r="1.8"
+       id="circle170" />
+    <circle
+       class="dot"
+       cx="209.48"
+       cy="134.98"
+       r="1.8"
+       id="circle171" />
+    <circle
+       class="dot"
+       cx="209.48"
+       cy="75.77"
+       r="1.8"
+       id="circle172" />
+    <circle
+       class="dot"
+       cx="209.48"
+       cy="58.01"
+       r="1.8"
+       id="circle173" />
+    <circle
+       class="dot"
+       cx="215.40"
+       cy="235.65"
+       r="1.8"
+       id="circle174" />
+    <circle
+       class="dot"
+       cx="215.40"
+       cy="229.72"
+       r="1.8"
+       id="circle175" />
+    <circle
+       class="dot"
+       cx="215.40"
+       cy="223.80"
+       r="1.8"
+       id="circle176" />
+    <circle
+       class="dot"
+       cx="215.40"
+       cy="217.88"
+       r="1.8"
+       id="circle177" />
+    <circle
+       class="dot"
+       cx="215.40"
+       cy="211.96"
+       r="1.8"
+       id="circle178" />
+    <circle
+       class="dot"
+       cx="215.40"
+       cy="206.04"
+       r="1.8"
+       id="circle179" />
+    <circle
+       class="dot"
+       cx="215.40"
+       cy="200.12"
+       r="1.8"
+       id="circle180" />
+    <circle
+       class="dot"
+       cx="215.40"
+       cy="194.20"
+       r="1.8"
+       id="circle181" />
+    <circle
+       class="dot"
+       cx="215.40"
+       cy="188.28"
+       r="1.8"
+       id="circle182" />
+    <circle
+       class="dot"
+       cx="215.40"
+       cy="182.35"
+       r="1.8"
+       id="circle183" />
+    <circle
+       class="dot"
+       cx="215.40"
+       cy="176.43"
+       r="1.8"
+       id="circle184" />
+    <circle
+       class="dot"
+       cx="215.40"
+       cy="170.51"
+       r="1.8"
+       id="circle185" />
+    <circle
+       class="dot"
+       cx="215.40"
+       cy="164.59"
+       r="1.8"
+       id="circle186" />
+    <circle
+       class="dot"
+       cx="215.40"
+       cy="158.67"
+       r="1.8"
+       id="circle187" />
+    <circle
+       class="dot"
+       cx="215.40"
+       cy="152.75"
+       r="1.8"
+       id="circle188" />
+    <circle
+       class="dot"
+       cx="215.40"
+       cy="146.83"
+       r="1.8"
+       id="circle189" />
+    <circle
+       class="dot"
+       cx="215.40"
+       cy="140.91"
+       r="1.8"
+       id="circle190" />
+    <circle
+       class="dot"
+       cx="215.40"
+       cy="81.69"
+       r="1.8"
+       id="circle191" />
+    <circle
+       class="dot"
+       cx="215.40"
+       cy="75.77"
+       r="1.8"
+       id="circle192" />
+    <circle
+       class="dot"
+       cx="221.32"
+       cy="247.49"
+       r="1.8"
+       id="circle193" />
+    <circle
+       class="dot"
+       cx="221.32"
+       cy="241.57"
+       r="1.8"
+       id="circle194" />
+    <circle
+       class="dot"
+       cx="221.32"
+       cy="235.65"
+       r="1.8"
+       id="circle195" />
+    <circle
+       class="dot"
+       cx="221.32"
+       cy="229.72"
+       r="1.8"
+       id="circle196" />
+    <circle
+       class="dot"
+       cx="221.32"
+       cy="223.80"
+       r="1.8"
+       id="circle197" />
+    <circle
+       class="dot"
+       cx="221.32"
+       cy="217.88"
+       r="1.8"
+       id="circle198" />
+    <circle
+       class="dot"
+       cx="221.32"
+       cy="211.96"
+       r="1.8"
+       id="circle199" />
+    <circle
+       class="dot"
+       cx="221.32"
+       cy="206.04"
+       r="1.8"
+       id="circle200" />
+    <circle
+       class="dot"
+       cx="221.32"
+       cy="200.12"
+       r="1.8"
+       id="circle201" />
+    <circle
+       class="dot"
+       cx="221.32"
+       cy="194.20"
+       r="1.8"
+       id="circle202" />
+    <circle
+       class="dot"
+       cx="221.32"
+       cy="188.28"
+       r="1.8"
+       id="circle203" />
+    <circle
+       class="dot"
+       cx="221.32"
+       cy="182.35"
+       r="1.8"
+       id="circle204" />
+    <circle
+       class="dot"
+       cx="221.32"
+       cy="176.43"
+       r="1.8"
+       id="circle205" />
+    <circle
+       class="dot"
+       cx="221.32"
+       cy="170.51"
+       r="1.8"
+       id="circle206" />
+    <circle
+       class="dot"
+       cx="221.32"
+       cy="164.59"
+       r="1.8"
+       id="circle207" />
+    <circle
+       class="dot"
+       cx="221.32"
+       cy="158.67"
+       r="1.8"
+       id="circle208" />
+    <circle
+       class="dot"
+       cx="221.32"
+       cy="152.75"
+       r="1.8"
+       id="circle209" />
+    <circle
+       class="dot"
+       cx="221.32"
+       cy="146.83"
+       r="1.8"
+       id="circle210" />
+    <circle
+       class="dot"
+       cx="221.32"
+       cy="140.91"
+       r="1.8"
+       id="circle211" />
+    <circle
+       class="dot"
+       cx="221.32"
+       cy="134.98"
+       r="1.8"
+       id="circle212" />
+    <circle
+       class="dot"
+       cx="221.32"
+       cy="81.69"
+       r="1.8"
+       id="circle213" />
+    <circle
+       class="dot"
+       cx="227.24"
+       cy="431.05"
+       r="1.8"
+       id="circle214" />
+    <circle
+       class="dot"
+       cx="227.24"
+       cy="425.13"
+       r="1.8"
+       id="circle215" />
+    <circle
+       class="dot"
+       cx="227.24"
+       cy="419.20"
+       r="1.8"
+       id="circle216" />
+    <circle
+       class="dot"
+       cx="227.24"
+       cy="413.28"
+       r="1.8"
+       id="circle217" />
+    <circle
+       class="dot"
+       cx="227.24"
+       cy="401.44"
+       r="1.8"
+       id="circle218" />
+    <circle
+       class="dot"
+       cx="227.24"
+       cy="395.52"
+       r="1.8"
+       id="circle219" />
+    <circle
+       class="dot"
+       cx="227.24"
+       cy="253.41"
+       r="1.8"
+       id="circle220" />
+    <circle
+       class="dot"
+       cx="227.24"
+       cy="247.49"
+       r="1.8"
+       id="circle221" />
+    <circle
+       class="dot"
+       cx="227.24"
+       cy="241.57"
+       r="1.8"
+       id="circle222" />
+    <circle
+       class="dot"
+       cx="227.24"
+       cy="235.65"
+       r="1.8"
+       id="circle223" />
+    <circle
+       class="dot"
+       cx="227.24"
+       cy="229.72"
+       r="1.8"
+       id="circle224" />
+    <circle
+       class="dot"
+       cx="227.24"
+       cy="223.80"
+       r="1.8"
+       id="circle225" />
+    <circle
+       class="dot"
+       cx="227.24"
+       cy="217.88"
+       r="1.8"
+       id="circle226" />
+    <circle
+       class="dot"
+       cx="227.24"
+       cy="211.96"
+       r="1.8"
+       id="circle227" />
+    <circle
+       class="dot"
+       cx="227.24"
+       cy="206.04"
+       r="1.8"
+       id="circle228" />
+    <circle
+       class="dot"
+       cx="227.24"
+       cy="200.12"
+       r="1.8"
+       id="circle229" />
+    <circle
+       class="dot"
+       cx="227.24"
+       cy="194.20"
+       r="1.8"
+       id="circle230" />
+    <circle
+       class="dot"
+       cx="227.24"
+       cy="188.28"
+       r="1.8"
+       id="circle231" />
+    <circle
+       class="dot"
+       cx="227.24"
+       cy="182.35"
+       r="1.8"
+       id="circle232" />
+    <circle
+       class="dot"
+       cx="227.24"
+       cy="176.43"
+       r="1.8"
+       id="circle233" />
+    <circle
+       class="dot"
+       cx="227.24"
+       cy="170.51"
+       r="1.8"
+       id="circle234" />
+    <circle
+       class="dot"
+       cx="227.24"
+       cy="164.59"
+       r="1.8"
+       id="circle235" />
+    <circle
+       class="dot"
+       cx="227.24"
+       cy="158.67"
+       r="1.8"
+       id="circle236" />
+    <circle
+       class="dot"
+       cx="227.24"
+       cy="152.75"
+       r="1.8"
+       id="circle237" />
+    <circle
+       class="dot"
+       cx="227.24"
+       cy="146.83"
+       r="1.8"
+       id="circle238" />
+    <circle
+       class="dot"
+       cx="227.24"
+       cy="140.91"
+       r="1.8"
+       id="circle239" />
+    <circle
+       class="dot"
+       cx="227.24"
+       cy="134.98"
+       r="1.8"
+       id="circle240" />
+    <circle
+       class="dot"
+       cx="227.24"
+       cy="129.06"
+       r="1.8"
+       id="circle241" />
+    <circle
+       class="dot"
+       cx="233.17"
+       cy="431.05"
+       r="1.8"
+       id="circle242" />
+    <circle
+       class="dot"
+       cx="233.17"
+       cy="425.13"
+       r="1.8"
+       id="circle243" />
+    <circle
+       class="dot"
+       cx="233.17"
+       cy="419.20"
+       r="1.8"
+       id="circle244" />
+    <circle
+       class="dot"
+       cx="233.17"
+       cy="413.28"
+       r="1.8"
+       id="circle245" />
+    <circle
+       class="dot"
+       cx="233.17"
+       cy="407.36"
+       r="1.8"
+       id="circle246" />
+    <circle
+       class="dot"
+       cx="233.17"
+       cy="401.44"
+       r="1.8"
+       id="circle247" />
+    <circle
+       class="dot"
+       cx="233.17"
+       cy="395.52"
+       r="1.8"
+       id="circle248" />
+    <circle
+       class="dot"
+       cx="233.17"
+       cy="377.76"
+       r="1.8"
+       id="circle249" />
+    <circle
+       class="dot"
+       cx="233.17"
+       cy="371.83"
+       r="1.8"
+       id="circle250" />
+    <circle
+       class="dot"
+       cx="233.17"
+       cy="365.91"
+       r="1.8"
+       id="circle251" />
+    <circle
+       class="dot"
+       cx="233.17"
+       cy="359.99"
+       r="1.8"
+       id="circle252" />
+    <circle
+       class="dot"
+       cx="233.17"
+       cy="253.41"
+       r="1.8"
+       id="circle253" />
+    <circle
+       class="dot"
+       cx="233.17"
+       cy="247.49"
+       r="1.8"
+       id="circle254" />
+    <circle
+       class="dot"
+       cx="233.17"
+       cy="241.57"
+       r="1.8"
+       id="circle255" />
+    <circle
+       class="dot"
+       cx="233.17"
+       cy="235.65"
+       r="1.8"
+       id="circle256" />
+    <circle
+       class="dot"
+       cx="233.17"
+       cy="229.72"
+       r="1.8"
+       id="circle257" />
+    <circle
+       class="dot"
+       cx="233.17"
+       cy="223.80"
+       r="1.8"
+       id="circle258" />
+    <circle
+       class="dot"
+       cx="233.17"
+       cy="217.88"
+       r="1.8"
+       id="circle259" />
+    <circle
+       class="dot"
+       cx="233.17"
+       cy="211.96"
+       r="1.8"
+       id="circle260" />
+    <circle
+       class="dot"
+       cx="233.17"
+       cy="206.04"
+       r="1.8"
+       id="circle261" />
+    <circle
+       class="dot"
+       cx="233.17"
+       cy="200.12"
+       r="1.8"
+       id="circle262" />
+    <circle
+       class="dot"
+       cx="233.17"
+       cy="194.20"
+       r="1.8"
+       id="circle263" />
+    <circle
+       class="dot"
+       cx="233.17"
+       cy="188.28"
+       r="1.8"
+       id="circle264" />
+    <circle
+       class="dot"
+       cx="233.17"
+       cy="182.35"
+       r="1.8"
+       id="circle265" />
+    <circle
+       class="dot"
+       cx="233.17"
+       cy="176.43"
+       r="1.8"
+       id="circle266" />
+    <circle
+       class="dot"
+       cx="233.17"
+       cy="170.51"
+       r="1.8"
+       id="circle267" />
+    <circle
+       class="dot"
+       cx="233.17"
+       cy="164.59"
+       r="1.8"
+       id="circle268" />
+    <circle
+       class="dot"
+       cx="233.17"
+       cy="158.67"
+       r="1.8"
+       id="circle269" />
+    <circle
+       class="dot"
+       cx="233.17"
+       cy="152.75"
+       r="1.8"
+       id="circle270" />
+    <circle
+       class="dot"
+       cx="233.17"
+       cy="146.83"
+       r="1.8"
+       id="circle271" />
+    <circle
+       class="dot"
+       cx="233.17"
+       cy="140.91"
+       r="1.8"
+       id="circle272" />
+    <circle
+       class="dot"
+       cx="233.17"
+       cy="134.98"
+       r="1.8"
+       id="circle273" />
+    <circle
+       class="dot"
+       cx="233.17"
+       cy="129.06"
+       r="1.8"
+       id="circle274" />
+    <circle
+       class="dot"
+       cx="239.09"
+       cy="442.89"
+       r="1.8"
+       id="circle275" />
+    <circle
+       class="dot"
+       cx="239.09"
+       cy="436.97"
+       r="1.8"
+       id="circle276" />
+    <circle
+       class="dot"
+       cx="239.09"
+       cy="431.05"
+       r="1.8"
+       id="circle277" />
+    <circle
+       class="dot"
+       cx="239.09"
+       cy="425.13"
+       r="1.8"
+       id="circle278" />
+    <circle
+       class="dot"
+       cx="239.09"
+       cy="419.20"
+       r="1.8"
+       id="circle279" />
+    <circle
+       class="dot"
+       cx="239.09"
+       cy="413.28"
+       r="1.8"
+       id="circle280" />
+    <circle
+       class="dot"
+       cx="239.09"
+       cy="407.36"
+       r="1.8"
+       id="circle281" />
+    <circle
+       class="dot"
+       cx="239.09"
+       cy="401.44"
+       r="1.8"
+       id="circle282" />
+    <circle
+       class="dot"
+       cx="239.09"
+       cy="395.52"
+       r="1.8"
+       id="circle283" />
+    <circle
+       class="dot"
+       cx="239.09"
+       cy="389.60"
+       r="1.8"
+       id="circle284" />
+    <circle
+       class="dot"
+       cx="239.09"
+       cy="383.68"
+       r="1.8"
+       id="circle285" />
+    <circle
+       class="dot"
+       cx="239.09"
+       cy="377.76"
+       r="1.8"
+       id="circle286" />
+    <circle
+       class="dot"
+       cx="239.09"
+       cy="371.83"
+       r="1.8"
+       id="circle287" />
+    <circle
+       class="dot"
+       cx="239.09"
+       cy="365.91"
+       r="1.8"
+       id="circle288" />
+    <circle
+       class="dot"
+       cx="239.09"
+       cy="359.99"
+       r="1.8"
+       id="circle289" />
+    <circle
+       class="dot"
+       cx="239.09"
+       cy="354.07"
+       r="1.8"
+       id="circle290" />
+    <circle
+       class="dot"
+       cx="239.09"
+       cy="348.15"
+       r="1.8"
+       id="circle291" />
+    <circle
+       class="dot"
+       cx="239.09"
+       cy="259.33"
+       r="1.8"
+       id="circle292" />
+    <circle
+       class="dot"
+       cx="239.09"
+       cy="253.41"
+       r="1.8"
+       id="circle293" />
+    <circle
+       class="dot"
+       cx="239.09"
+       cy="247.49"
+       r="1.8"
+       id="circle294" />
+    <circle
+       class="dot"
+       cx="239.09"
+       cy="241.57"
+       r="1.8"
+       id="circle295" />
+    <circle
+       class="dot"
+       cx="239.09"
+       cy="235.65"
+       r="1.8"
+       id="circle296" />
+    <circle
+       class="dot"
+       cx="239.09"
+       cy="229.72"
+       r="1.8"
+       id="circle297" />
+    <circle
+       class="dot"
+       cx="239.09"
+       cy="223.80"
+       r="1.8"
+       id="circle298" />
+    <circle
+       class="dot"
+       cx="239.09"
+       cy="217.88"
+       r="1.8"
+       id="circle299" />
+    <circle
+       class="dot"
+       cx="239.09"
+       cy="211.96"
+       r="1.8"
+       id="circle300" />
+    <circle
+       class="dot"
+       cx="239.09"
+       cy="206.04"
+       r="1.8"
+       id="circle301" />
+    <circle
+       class="dot"
+       cx="239.09"
+       cy="200.12"
+       r="1.8"
+       id="circle302" />
+    <circle
+       class="dot"
+       cx="239.09"
+       cy="194.20"
+       r="1.8"
+       id="circle303" />
+    <circle
+       class="dot"
+       cx="239.09"
+       cy="188.28"
+       r="1.8"
+       id="circle304" />
+    <circle
+       class="dot"
+       cx="239.09"
+       cy="182.35"
+       r="1.8"
+       id="circle305" />
+    <circle
+       class="dot"
+       cx="239.09"
+       cy="176.43"
+       r="1.8"
+       id="circle306" />
+    <circle
+       class="dot"
+       cx="239.09"
+       cy="170.51"
+       r="1.8"
+       id="circle307" />
+    <circle
+       class="dot"
+       cx="239.09"
+       cy="164.59"
+       r="1.8"
+       id="circle308" />
+    <circle
+       class="dot"
+       cx="239.09"
+       cy="158.67"
+       r="1.8"
+       id="circle309" />
+    <circle
+       class="dot"
+       cx="239.09"
+       cy="152.75"
+       r="1.8"
+       id="circle310" />
+    <circle
+       class="dot"
+       cx="239.09"
+       cy="146.83"
+       r="1.8"
+       id="circle311" />
+    <circle
+       class="dot"
+       cx="239.09"
+       cy="140.91"
+       r="1.8"
+       id="circle312" />
+    <circle
+       class="dot"
+       cx="239.09"
+       cy="134.98"
+       r="1.8"
+       id="circle313" />
+    <circle
+       class="dot"
+       cx="239.09"
+       cy="129.06"
+       r="1.8"
+       id="circle314" />
+    <circle
+       class="dot"
+       cx="239.09"
+       cy="123.14"
+       r="1.8"
+       id="circle315" />
+    <circle
+       class="dot"
+       cx="239.09"
+       cy="87.61"
+       r="1.8"
+       id="circle316" />
+    <circle
+       class="dot"
+       cx="245.01"
+       cy="442.89"
+       r="1.8"
+       id="circle317" />
+    <circle
+       class="dot"
+       cx="245.01"
+       cy="431.05"
+       r="1.8"
+       id="circle318" />
+    <circle
+       class="dot"
+       cx="245.01"
+       cy="425.13"
+       r="1.8"
+       id="circle319" />
+    <circle
+       class="dot"
+       cx="245.01"
+       cy="419.20"
+       r="1.8"
+       id="circle320" />
+    <circle
+       class="dot"
+       cx="245.01"
+       cy="413.28"
+       r="1.8"
+       id="circle321" />
+    <circle
+       class="dot"
+       cx="245.01"
+       cy="407.36"
+       r="1.8"
+       id="circle322" />
+    <circle
+       class="dot"
+       cx="245.01"
+       cy="401.44"
+       r="1.8"
+       id="circle323" />
+    <circle
+       class="dot"
+       cx="245.01"
+       cy="395.52"
+       r="1.8"
+       id="circle324" />
+    <circle
+       class="dot"
+       cx="245.01"
+       cy="389.60"
+       r="1.8"
+       id="circle325" />
+    <circle
+       class="dot"
+       cx="245.01"
+       cy="383.68"
+       r="1.8"
+       id="circle326" />
+    <circle
+       class="dot"
+       cx="245.01"
+       cy="377.76"
+       r="1.8"
+       id="circle327" />
+    <circle
+       class="dot"
+       cx="245.01"
+       cy="371.83"
+       r="1.8"
+       id="circle328" />
+    <circle
+       class="dot"
+       cx="245.01"
+       cy="365.91"
+       r="1.8"
+       id="circle329" />
+    <circle
+       class="dot"
+       cx="245.01"
+       cy="359.99"
+       r="1.8"
+       id="circle330" />
+    <circle
+       class="dot"
+       cx="245.01"
+       cy="354.07"
+       r="1.8"
+       id="circle331" />
+    <circle
+       class="dot"
+       cx="245.01"
+       cy="348.15"
+       r="1.8"
+       id="circle332" />
+    <circle
+       class="dot"
+       cx="245.01"
+       cy="342.23"
+       r="1.8"
+       id="circle333" />
+    <circle
+       class="dot"
+       cx="245.01"
+       cy="336.31"
+       r="1.8"
+       id="circle334" />
+    <circle
+       class="dot"
+       cx="245.01"
+       cy="330.39"
+       r="1.8"
+       id="circle335" />
+    <circle
+       class="dot"
+       cx="245.01"
+       cy="324.46"
+       r="1.8"
+       id="circle336" />
+    <circle
+       class="dot"
+       cx="245.01"
+       cy="318.54"
+       r="1.8"
+       id="circle337" />
+    <circle
+       class="dot"
+       cx="245.01"
+       cy="312.62"
+       r="1.8"
+       id="circle338" />
+    <circle
+       class="dot"
+       cx="245.01"
+       cy="306.70"
+       r="1.8"
+       id="circle339" />
+    <circle
+       class="dot"
+       cx="245.01"
+       cy="265.25"
+       r="1.8"
+       id="circle340" />
+    <circle
+       class="dot"
+       cx="245.01"
+       cy="259.33"
+       r="1.8"
+       id="circle341" />
+    <circle
+       class="dot"
+       cx="245.01"
+       cy="253.41"
+       r="1.8"
+       id="circle342" />
+    <circle
+       class="dot"
+       cx="245.01"
+       cy="247.49"
+       r="1.8"
+       id="circle343" />
+    <circle
+       class="dot"
+       cx="245.01"
+       cy="241.57"
+       r="1.8"
+       id="circle344" />
+    <circle
+       class="dot"
+       cx="245.01"
+       cy="235.65"
+       r="1.8"
+       id="circle345" />
+    <circle
+       class="dot"
+       cx="245.01"
+       cy="229.72"
+       r="1.8"
+       id="circle346" />
+    <circle
+       class="dot"
+       cx="245.01"
+       cy="223.80"
+       r="1.8"
+       id="circle347" />
+    <circle
+       class="dot"
+       cx="245.01"
+       cy="217.88"
+       r="1.8"
+       id="circle348" />
+    <circle
+       class="dot"
+       cx="245.01"
+       cy="211.96"
+       r="1.8"
+       id="circle349" />
+    <circle
+       class="dot"
+       cx="245.01"
+       cy="206.04"
+       r="1.8"
+       id="circle350" />
+    <circle
+       class="dot"
+       cx="245.01"
+       cy="200.12"
+       r="1.8"
+       id="circle351" />
+    <circle
+       class="dot"
+       cx="245.01"
+       cy="194.20"
+       r="1.8"
+       id="circle352" />
+    <circle
+       class="dot"
+       cx="245.01"
+       cy="188.28"
+       r="1.8"
+       id="circle353" />
+    <circle
+       class="dot"
+       cx="245.01"
+       cy="182.35"
+       r="1.8"
+       id="circle354" />
+    <circle
+       class="dot"
+       cx="245.01"
+       cy="176.43"
+       r="1.8"
+       id="circle355" />
+    <circle
+       class="dot"
+       cx="245.01"
+       cy="170.51"
+       r="1.8"
+       id="circle356" />
+    <circle
+       class="dot"
+       cx="245.01"
+       cy="164.59"
+       r="1.8"
+       id="circle357" />
+    <circle
+       class="dot"
+       cx="245.01"
+       cy="158.67"
+       r="1.8"
+       id="circle358" />
+    <circle
+       class="dot"
+       cx="245.01"
+       cy="152.75"
+       r="1.8"
+       id="circle359" />
+    <circle
+       class="dot"
+       cx="245.01"
+       cy="146.83"
+       r="1.8"
+       id="circle360" />
+    <circle
+       class="dot"
+       cx="245.01"
+       cy="140.91"
+       r="1.8"
+       id="circle361" />
+    <circle
+       class="dot"
+       cx="245.01"
+       cy="134.98"
+       r="1.8"
+       id="circle362" />
+    <circle
+       class="dot"
+       cx="245.01"
+       cy="129.06"
+       r="1.8"
+       id="circle363" />
+    <circle
+       class="dot"
+       cx="245.01"
+       cy="87.61"
+       r="1.8"
+       id="circle364" />
+    <circle
+       class="dot"
+       cx="250.93"
+       cy="442.89"
+       r="1.8"
+       id="circle365" />
+    <circle
+       class="dot"
+       cx="250.93"
+       cy="436.97"
+       r="1.8"
+       id="circle366" />
+    <circle
+       class="dot"
+       cx="250.93"
+       cy="431.05"
+       r="1.8"
+       id="circle367" />
+    <circle
+       class="dot"
+       cx="250.93"
+       cy="425.13"
+       r="1.8"
+       id="circle368" />
+    <circle
+       class="dot"
+       cx="250.93"
+       cy="419.20"
+       r="1.8"
+       id="circle369" />
+    <circle
+       class="dot"
+       cx="250.93"
+       cy="413.28"
+       r="1.8"
+       id="circle370" />
+    <circle
+       class="dot"
+       cx="250.93"
+       cy="407.36"
+       r="1.8"
+       id="circle371" />
+    <circle
+       class="dot"
+       cx="250.93"
+       cy="401.44"
+       r="1.8"
+       id="circle372" />
+    <circle
+       class="dot"
+       cx="250.93"
+       cy="395.52"
+       r="1.8"
+       id="circle373" />
+    <circle
+       class="dot"
+       cx="250.93"
+       cy="389.60"
+       r="1.8"
+       id="circle374" />
+    <circle
+       class="dot"
+       cx="250.93"
+       cy="383.68"
+       r="1.8"
+       id="circle375" />
+    <circle
+       class="dot"
+       cx="250.93"
+       cy="377.76"
+       r="1.8"
+       id="circle376" />
+    <circle
+       class="dot"
+       cx="250.93"
+       cy="371.83"
+       r="1.8"
+       id="circle377" />
+    <circle
+       class="dot"
+       cx="250.93"
+       cy="365.91"
+       r="1.8"
+       id="circle378" />
+    <circle
+       class="dot"
+       cx="250.93"
+       cy="359.99"
+       r="1.8"
+       id="circle379" />
+    <circle
+       class="dot"
+       cx="250.93"
+       cy="354.07"
+       r="1.8"
+       id="circle380" />
+    <circle
+       class="dot"
+       cx="250.93"
+       cy="348.15"
+       r="1.8"
+       id="circle381" />
+    <circle
+       class="dot"
+       cx="250.93"
+       cy="342.23"
+       r="1.8"
+       id="circle382" />
+    <circle
+       class="dot"
+       cx="250.93"
+       cy="336.31"
+       r="1.8"
+       id="circle383" />
+    <circle
+       class="dot"
+       cx="250.93"
+       cy="330.39"
+       r="1.8"
+       id="circle384" />
+    <circle
+       class="dot"
+       cx="250.93"
+       cy="324.46"
+       r="1.8"
+       id="circle385" />
+    <circle
+       class="dot"
+       cx="250.93"
+       cy="318.54"
+       r="1.8"
+       id="circle386" />
+    <circle
+       class="dot"
+       cx="250.93"
+       cy="312.62"
+       r="1.8"
+       id="circle387" />
+    <circle
+       class="dot"
+       cx="250.93"
+       cy="306.70"
+       r="1.8"
+       id="circle388" />
+    <circle
+       class="dot"
+       cx="250.93"
+       cy="300.78"
+       r="1.8"
+       id="circle389" />
+    <circle
+       class="dot"
+       cx="250.93"
+       cy="294.86"
+       r="1.8"
+       id="circle390" />
+    <circle
+       class="dot"
+       cx="250.93"
+       cy="288.94"
+       r="1.8"
+       id="circle391" />
+    <circle
+       class="dot"
+       cx="250.93"
+       cy="283.02"
+       r="1.8"
+       id="circle392" />
+    <circle
+       class="dot"
+       cx="250.93"
+       cy="277.09"
+       r="1.8"
+       id="circle393" />
+    <circle
+       class="dot"
+       cx="250.93"
+       cy="271.17"
+       r="1.8"
+       id="circle394" />
+    <circle
+       class="dot"
+       cx="250.93"
+       cy="265.25"
+       r="1.8"
+       id="circle395" />
+    <circle
+       class="dot"
+       cx="250.93"
+       cy="259.33"
+       r="1.8"
+       id="circle396" />
+    <circle
+       class="dot"
+       cx="250.93"
+       cy="253.41"
+       r="1.8"
+       id="circle397" />
+    <circle
+       class="dot"
+       cx="250.93"
+       cy="247.49"
+       r="1.8"
+       id="circle398" />
+    <circle
+       class="dot"
+       cx="250.93"
+       cy="241.57"
+       r="1.8"
+       id="circle399" />
+    <circle
+       class="dot"
+       cx="250.93"
+       cy="235.65"
+       r="1.8"
+       id="circle400" />
+    <circle
+       class="dot"
+       cx="250.93"
+       cy="229.72"
+       r="1.8"
+       id="circle401" />
+    <circle
+       class="dot"
+       cx="250.93"
+       cy="223.80"
+       r="1.8"
+       id="circle402" />
+    <circle
+       class="dot"
+       cx="250.93"
+       cy="217.88"
+       r="1.8"
+       id="circle403" />
+    <circle
+       class="dot"
+       cx="250.93"
+       cy="211.96"
+       r="1.8"
+       id="circle404" />
+    <circle
+       class="dot"
+       cx="250.93"
+       cy="206.04"
+       r="1.8"
+       id="circle405" />
+    <circle
+       class="dot"
+       cx="250.93"
+       cy="200.12"
+       r="1.8"
+       id="circle406" />
+    <circle
+       class="dot"
+       cx="250.93"
+       cy="194.20"
+       r="1.8"
+       id="circle407" />
+    <circle
+       class="dot"
+       cx="250.93"
+       cy="188.28"
+       r="1.8"
+       id="circle408" />
+    <circle
+       class="dot"
+       cx="250.93"
+       cy="182.35"
+       r="1.8"
+       id="circle409" />
+    <circle
+       class="dot"
+       cx="250.93"
+       cy="176.43"
+       r="1.8"
+       id="circle410" />
+    <circle
+       class="dot"
+       cx="250.93"
+       cy="170.51"
+       r="1.8"
+       id="circle411" />
+    <circle
+       class="dot"
+       cx="250.93"
+       cy="164.59"
+       r="1.8"
+       id="circle412" />
+    <circle
+       class="dot"
+       cx="250.93"
+       cy="158.67"
+       r="1.8"
+       id="circle413" />
+    <circle
+       class="dot"
+       cx="250.93"
+       cy="152.75"
+       r="1.8"
+       id="circle414" />
+    <circle
+       class="dot"
+       cx="250.93"
+       cy="146.83"
+       r="1.8"
+       id="circle415" />
+    <circle
+       class="dot"
+       cx="250.93"
+       cy="140.91"
+       r="1.8"
+       id="circle416" />
+    <circle
+       class="dot"
+       cx="250.93"
+       cy="134.98"
+       r="1.8"
+       id="circle417" />
+    <circle
+       class="dot"
+       cx="250.93"
+       cy="129.06"
+       r="1.8"
+       id="circle418" />
+    <circle
+       class="dot"
+       cx="250.93"
+       cy="87.61"
+       r="1.8"
+       id="circle419" />
+    <circle
+       class="dot"
+       cx="256.85"
+       cy="442.89"
+       r="1.8"
+       id="circle420" />
+    <circle
+       class="dot"
+       cx="256.85"
+       cy="436.97"
+       r="1.8"
+       id="circle421" />
+    <circle
+       class="dot"
+       cx="256.85"
+       cy="419.20"
+       r="1.8"
+       id="circle422" />
+    <circle
+       class="dot"
+       cx="256.85"
+       cy="413.28"
+       r="1.8"
+       id="circle423" />
+    <circle
+       class="dot"
+       cx="256.85"
+       cy="407.36"
+       r="1.8"
+       id="circle424" />
+    <circle
+       class="dot"
+       cx="256.85"
+       cy="401.44"
+       r="1.8"
+       id="circle425" />
+    <circle
+       class="dot"
+       cx="256.85"
+       cy="395.52"
+       r="1.8"
+       id="circle426" />
+    <circle
+       class="dot"
+       cx="256.85"
+       cy="389.60"
+       r="1.8"
+       id="circle427" />
+    <circle
+       class="dot"
+       cx="256.85"
+       cy="383.68"
+       r="1.8"
+       id="circle428" />
+    <circle
+       class="dot"
+       cx="256.85"
+       cy="377.76"
+       r="1.8"
+       id="circle429" />
+    <circle
+       class="dot"
+       cx="256.85"
+       cy="371.83"
+       r="1.8"
+       id="circle430" />
+    <circle
+       class="dot"
+       cx="256.85"
+       cy="365.91"
+       r="1.8"
+       id="circle431" />
+    <circle
+       class="dot"
+       cx="256.85"
+       cy="359.99"
+       r="1.8"
+       id="circle432" />
+    <circle
+       class="dot"
+       cx="256.85"
+       cy="354.07"
+       r="1.8"
+       id="circle433" />
+    <circle
+       class="dot"
+       cx="256.85"
+       cy="348.15"
+       r="1.8"
+       id="circle434" />
+    <circle
+       class="dot"
+       cx="256.85"
+       cy="342.23"
+       r="1.8"
+       id="circle435" />
+    <circle
+       class="dot"
+       cx="256.85"
+       cy="336.31"
+       r="1.8"
+       id="circle436" />
+    <circle
+       class="dot"
+       cx="256.85"
+       cy="330.39"
+       r="1.8"
+       id="circle437" />
+    <circle
+       class="dot"
+       cx="256.85"
+       cy="324.46"
+       r="1.8"
+       id="circle438" />
+    <circle
+       class="dot"
+       cx="256.85"
+       cy="318.54"
+       r="1.8"
+       id="circle439" />
+    <circle
+       class="dot"
+       cx="256.85"
+       cy="312.62"
+       r="1.8"
+       id="circle440" />
+    <circle
+       class="dot"
+       cx="256.85"
+       cy="306.70"
+       r="1.8"
+       id="circle441" />
+    <circle
+       class="dot"
+       cx="256.85"
+       cy="300.78"
+       r="1.8"
+       id="circle442" />
+    <circle
+       class="dot"
+       cx="256.85"
+       cy="294.86"
+       r="1.8"
+       id="circle443" />
+    <circle
+       class="dot"
+       cx="256.85"
+       cy="288.94"
+       r="1.8"
+       id="circle444" />
+    <circle
+       class="dot"
+       cx="256.85"
+       cy="283.02"
+       r="1.8"
+       id="circle445" />
+    <circle
+       class="dot"
+       cx="256.85"
+       cy="277.09"
+       r="1.8"
+       id="circle446" />
+    <circle
+       class="dot"
+       cx="256.85"
+       cy="271.17"
+       r="1.8"
+       id="circle447" />
+    <circle
+       class="dot"
+       cx="256.85"
+       cy="265.25"
+       r="1.8"
+       id="circle448" />
+    <circle
+       class="dot"
+       cx="256.85"
+       cy="259.33"
+       r="1.8"
+       id="circle449" />
+    <circle
+       class="dot"
+       cx="256.85"
+       cy="253.41"
+       r="1.8"
+       id="circle450" />
+    <circle
+       class="dot"
+       cx="256.85"
+       cy="247.49"
+       r="1.8"
+       id="circle451" />
+    <circle
+       class="dot"
+       cx="256.85"
+       cy="241.57"
+       r="1.8"
+       id="circle452" />
+    <circle
+       class="dot"
+       cx="256.85"
+       cy="235.65"
+       r="1.8"
+       id="circle453" />
+    <circle
+       class="dot"
+       cx="256.85"
+       cy="229.72"
+       r="1.8"
+       id="circle454" />
+    <circle
+       class="dot"
+       cx="256.85"
+       cy="223.80"
+       r="1.8"
+       id="circle455" />
+    <circle
+       class="dot"
+       cx="256.85"
+       cy="217.88"
+       r="1.8"
+       id="circle456" />
+    <circle
+       class="dot"
+       cx="256.85"
+       cy="211.96"
+       r="1.8"
+       id="circle457" />
+    <circle
+       class="dot"
+       cx="256.85"
+       cy="206.04"
+       r="1.8"
+       id="circle458" />
+    <circle
+       class="dot"
+       cx="256.85"
+       cy="200.12"
+       r="1.8"
+       id="circle459" />
+    <circle
+       class="dot"
+       cx="256.85"
+       cy="194.20"
+       r="1.8"
+       id="circle460" />
+    <circle
+       class="dot"
+       cx="256.85"
+       cy="188.28"
+       r="1.8"
+       id="circle461" />
+    <circle
+       class="dot"
+       cx="256.85"
+       cy="182.35"
+       r="1.8"
+       id="circle462" />
+    <circle
+       class="dot"
+       cx="256.85"
+       cy="176.43"
+       r="1.8"
+       id="circle463" />
+    <circle
+       class="dot"
+       cx="256.85"
+       cy="170.51"
+       r="1.8"
+       id="circle464" />
+    <circle
+       class="dot"
+       cx="256.85"
+       cy="164.59"
+       r="1.8"
+       id="circle465" />
+    <circle
+       class="dot"
+       cx="256.85"
+       cy="158.67"
+       r="1.8"
+       id="circle466" />
+    <circle
+       class="dot"
+       cx="256.85"
+       cy="152.75"
+       r="1.8"
+       id="circle467" />
+    <circle
+       class="dot"
+       cx="256.85"
+       cy="146.83"
+       r="1.8"
+       id="circle468" />
+    <circle
+       class="dot"
+       cx="256.85"
+       cy="140.91"
+       r="1.8"
+       id="circle469" />
+    <circle
+       class="dot"
+       cx="256.85"
+       cy="134.98"
+       r="1.8"
+       id="circle470" />
+    <circle
+       class="dot"
+       cx="256.85"
+       cy="129.06"
+       r="1.8"
+       id="circle471" />
+    <circle
+       class="dot"
+       cx="262.77"
+       cy="442.89"
+       r="1.8"
+       id="circle472" />
+    <circle
+       class="dot"
+       cx="262.77"
+       cy="413.28"
+       r="1.8"
+       id="circle473" />
+    <circle
+       class="dot"
+       cx="262.77"
+       cy="407.36"
+       r="1.8"
+       id="circle474" />
+    <circle
+       class="dot"
+       cx="262.77"
+       cy="395.52"
+       r="1.8"
+       id="circle475" />
+    <circle
+       class="dot"
+       cx="262.77"
+       cy="389.60"
+       r="1.8"
+       id="circle476" />
+    <circle
+       class="dot"
+       cx="262.77"
+       cy="383.68"
+       r="1.8"
+       id="circle477" />
+    <circle
+       class="dot"
+       cx="262.77"
+       cy="377.76"
+       r="1.8"
+       id="circle478" />
+    <circle
+       class="dot"
+       cx="262.77"
+       cy="371.83"
+       r="1.8"
+       id="circle479" />
+    <circle
+       class="dot"
+       cx="262.77"
+       cy="365.91"
+       r="1.8"
+       id="circle480" />
+    <circle
+       class="dot"
+       cx="262.77"
+       cy="359.99"
+       r="1.8"
+       id="circle481" />
+    <circle
+       class="dot"
+       cx="262.77"
+       cy="354.07"
+       r="1.8"
+       id="circle482" />
+    <circle
+       class="dot"
+       cx="262.77"
+       cy="348.15"
+       r="1.8"
+       id="circle483" />
+    <circle
+       class="dot"
+       cx="262.77"
+       cy="342.23"
+       r="1.8"
+       id="circle484" />
+    <circle
+       class="dot"
+       cx="262.77"
+       cy="336.31"
+       r="1.8"
+       id="circle485" />
+    <circle
+       class="dot"
+       cx="262.77"
+       cy="330.39"
+       r="1.8"
+       id="circle486" />
+    <circle
+       class="dot"
+       cx="262.77"
+       cy="324.46"
+       r="1.8"
+       id="circle487" />
+    <circle
+       class="dot"
+       cx="262.77"
+       cy="318.54"
+       r="1.8"
+       id="circle488" />
+    <circle
+       class="dot"
+       cx="262.77"
+       cy="312.62"
+       r="1.8"
+       id="circle489" />
+    <circle
+       class="dot"
+       cx="262.77"
+       cy="306.70"
+       r="1.8"
+       id="circle490" />
+    <circle
+       class="dot"
+       cx="262.77"
+       cy="300.78"
+       r="1.8"
+       id="circle491" />
+    <circle
+       class="dot"
+       cx="262.77"
+       cy="294.86"
+       r="1.8"
+       id="circle492" />
+    <circle
+       class="dot"
+       cx="262.77"
+       cy="288.94"
+       r="1.8"
+       id="circle493" />
+    <circle
+       class="dot"
+       cx="262.77"
+       cy="283.02"
+       r="1.8"
+       id="circle494" />
+    <circle
+       class="dot"
+       cx="262.77"
+       cy="277.09"
+       r="1.8"
+       id="circle495" />
+    <circle
+       class="dot"
+       cx="262.77"
+       cy="271.17"
+       r="1.8"
+       id="circle496" />
+    <circle
+       class="dot"
+       cx="262.77"
+       cy="265.25"
+       r="1.8"
+       id="circle497" />
+    <circle
+       class="dot"
+       cx="262.77"
+       cy="259.33"
+       r="1.8"
+       id="circle498" />
+    <circle
+       class="dot"
+       cx="262.77"
+       cy="253.41"
+       r="1.8"
+       id="circle499" />
+    <circle
+       class="dot"
+       cx="262.77"
+       cy="247.49"
+       r="1.8"
+       id="circle500" />
+    <circle
+       class="dot"
+       cx="262.77"
+       cy="241.57"
+       r="1.8"
+       id="circle501" />
+    <circle
+       class="dot"
+       cx="262.77"
+       cy="235.65"
+       r="1.8"
+       id="circle502" />
+    <circle
+       class="dot"
+       cx="262.77"
+       cy="229.72"
+       r="1.8"
+       id="circle503" />
+    <circle
+       class="dot"
+       cx="262.77"
+       cy="223.80"
+       r="1.8"
+       id="circle504" />
+    <circle
+       class="dot"
+       cx="262.77"
+       cy="217.88"
+       r="1.8"
+       id="circle505" />
+    <circle
+       class="dot"
+       cx="262.77"
+       cy="211.96"
+       r="1.8"
+       id="circle506" />
+    <circle
+       class="dot"
+       cx="262.77"
+       cy="206.04"
+       r="1.8"
+       id="circle507" />
+    <circle
+       class="dot"
+       cx="262.77"
+       cy="200.12"
+       r="1.8"
+       id="circle508" />
+    <circle
+       class="dot"
+       cx="262.77"
+       cy="194.20"
+       r="1.8"
+       id="circle509" />
+    <circle
+       class="dot"
+       cx="262.77"
+       cy="188.28"
+       r="1.8"
+       id="circle510" />
+    <circle
+       class="dot"
+       cx="262.77"
+       cy="182.35"
+       r="1.8"
+       id="circle511" />
+    <circle
+       class="dot"
+       cx="262.77"
+       cy="176.43"
+       r="1.8"
+       id="circle512" />
+    <circle
+       class="dot"
+       cx="262.77"
+       cy="170.51"
+       r="1.8"
+       id="circle513" />
+    <circle
+       class="dot"
+       cx="262.77"
+       cy="164.59"
+       r="1.8"
+       id="circle514" />
+    <circle
+       class="dot"
+       cx="262.77"
+       cy="158.67"
+       r="1.8"
+       id="circle515" />
+    <circle
+       class="dot"
+       cx="262.77"
+       cy="152.75"
+       r="1.8"
+       id="circle516" />
+    <circle
+       class="dot"
+       cx="262.77"
+       cy="146.83"
+       r="1.8"
+       id="circle517" />
+    <circle
+       class="dot"
+       cx="262.77"
+       cy="140.91"
+       r="1.8"
+       id="circle518" />
+    <circle
+       class="dot"
+       cx="262.77"
+       cy="134.98"
+       r="1.8"
+       id="circle519" />
+    <circle
+       class="dot"
+       cx="262.77"
+       cy="129.06"
+       r="1.8"
+       id="circle520" />
+    <circle
+       class="dot"
+       cx="268.69"
+       cy="395.52"
+       r="1.8"
+       id="circle521" />
+    <circle
+       class="dot"
+       cx="268.69"
+       cy="389.60"
+       r="1.8"
+       id="circle522" />
+    <circle
+       class="dot"
+       cx="268.69"
+       cy="383.68"
+       r="1.8"
+       id="circle523" />
+    <circle
+       class="dot"
+       cx="268.69"
+       cy="377.76"
+       r="1.8"
+       id="circle524" />
+    <circle
+       class="dot"
+       cx="268.69"
+       cy="371.83"
+       r="1.8"
+       id="circle525" />
+    <circle
+       class="dot"
+       cx="268.69"
+       cy="365.91"
+       r="1.8"
+       id="circle526" />
+    <circle
+       class="dot"
+       cx="268.69"
+       cy="359.99"
+       r="1.8"
+       id="circle527" />
+    <circle
+       class="dot"
+       cx="268.69"
+       cy="354.07"
+       r="1.8"
+       id="circle528" />
+    <circle
+       class="dot"
+       cx="268.69"
+       cy="348.15"
+       r="1.8"
+       id="circle529" />
+    <circle
+       class="dot"
+       cx="268.69"
+       cy="342.23"
+       r="1.8"
+       id="circle530" />
+    <circle
+       class="dot"
+       cx="268.69"
+       cy="336.31"
+       r="1.8"
+       id="circle531" />
+    <circle
+       class="dot"
+       cx="268.69"
+       cy="330.39"
+       r="1.8"
+       id="circle532" />
+    <circle
+       class="dot"
+       cx="268.69"
+       cy="324.46"
+       r="1.8"
+       id="circle533" />
+    <circle
+       class="dot"
+       cx="268.69"
+       cy="318.54"
+       r="1.8"
+       id="circle534" />
+    <circle
+       class="dot"
+       cx="268.69"
+       cy="312.62"
+       r="1.8"
+       id="circle535" />
+    <circle
+       class="dot"
+       cx="268.69"
+       cy="306.70"
+       r="1.8"
+       id="circle536" />
+    <circle
+       class="dot"
+       cx="268.69"
+       cy="300.78"
+       r="1.8"
+       id="circle537" />
+    <circle
+       class="dot"
+       cx="268.69"
+       cy="294.86"
+       r="1.8"
+       id="circle538" />
+    <circle
+       class="dot"
+       cx="268.69"
+       cy="288.94"
+       r="1.8"
+       id="circle539" />
+    <circle
+       class="dot"
+       cx="268.69"
+       cy="283.02"
+       r="1.8"
+       id="circle540" />
+    <circle
+       class="dot"
+       cx="268.69"
+       cy="277.09"
+       r="1.8"
+       id="circle541" />
+    <circle
+       class="dot"
+       cx="268.69"
+       cy="271.17"
+       r="1.8"
+       id="circle542" />
+    <circle
+       class="dot"
+       cx="268.69"
+       cy="265.25"
+       r="1.8"
+       id="circle543" />
+    <circle
+       class="dot"
+       cx="268.69"
+       cy="259.33"
+       r="1.8"
+       id="circle544" />
+    <circle
+       class="dot"
+       cx="268.69"
+       cy="253.41"
+       r="1.8"
+       id="circle545" />
+    <circle
+       class="dot"
+       cx="268.69"
+       cy="247.49"
+       r="1.8"
+       id="circle546" />
+    <circle
+       class="dot"
+       cx="268.69"
+       cy="241.57"
+       r="1.8"
+       id="circle547" />
+    <circle
+       class="dot"
+       cx="268.69"
+       cy="235.65"
+       r="1.8"
+       id="circle548" />
+    <circle
+       class="dot"
+       cx="268.69"
+       cy="229.72"
+       r="1.8"
+       id="circle549" />
+    <circle
+       class="dot"
+       cx="268.69"
+       cy="223.80"
+       r="1.8"
+       id="circle550" />
+    <circle
+       class="dot"
+       cx="268.69"
+       cy="217.88"
+       r="1.8"
+       id="circle551" />
+    <circle
+       class="dot"
+       cx="268.69"
+       cy="211.96"
+       r="1.8"
+       id="circle552" />
+    <circle
+       class="dot"
+       cx="268.69"
+       cy="206.04"
+       r="1.8"
+       id="circle553" />
+    <circle
+       class="dot"
+       cx="268.69"
+       cy="200.12"
+       r="1.8"
+       id="circle554" />
+    <circle
+       class="dot"
+       cx="268.69"
+       cy="194.20"
+       r="1.8"
+       id="circle555" />
+    <circle
+       class="dot"
+       cx="268.69"
+       cy="188.28"
+       r="1.8"
+       id="circle556" />
+    <circle
+       class="dot"
+       cx="268.69"
+       cy="182.35"
+       r="1.8"
+       id="circle557" />
+    <circle
+       class="dot"
+       cx="268.69"
+       cy="176.43"
+       r="1.8"
+       id="circle558" />
+    <circle
+       class="dot"
+       cx="268.69"
+       cy="170.51"
+       r="1.8"
+       id="circle559" />
+    <circle
+       class="dot"
+       cx="268.69"
+       cy="164.59"
+       r="1.8"
+       id="circle560" />
+    <circle
+       class="dot"
+       cx="268.69"
+       cy="158.67"
+       r="1.8"
+       id="circle561" />
+    <circle
+       class="dot"
+       cx="268.69"
+       cy="152.75"
+       r="1.8"
+       id="circle562" />
+    <circle
+       class="dot"
+       cx="268.69"
+       cy="146.83"
+       r="1.8"
+       id="circle563" />
+    <circle
+       class="dot"
+       cx="268.69"
+       cy="140.91"
+       r="1.8"
+       id="circle564" />
+    <circle
+       class="dot"
+       cx="268.69"
+       cy="134.98"
+       r="1.8"
+       id="circle565" />
+    <circle
+       class="dot"
+       cx="268.69"
+       cy="129.06"
+       r="1.8"
+       id="circle566" />
+    <circle
+       class="dot"
+       cx="274.61"
+       cy="383.68"
+       r="1.8"
+       id="circle567" />
+    <circle
+       class="dot"
+       cx="274.61"
+       cy="371.83"
+       r="1.8"
+       id="circle568" />
+    <circle
+       class="dot"
+       cx="274.61"
+       cy="365.91"
+       r="1.8"
+       id="circle569" />
+    <circle
+       class="dot"
+       cx="274.61"
+       cy="359.99"
+       r="1.8"
+       id="circle570" />
+    <circle
+       class="dot"
+       cx="274.61"
+       cy="354.07"
+       r="1.8"
+       id="circle571" />
+    <circle
+       class="dot"
+       cx="274.61"
+       cy="348.15"
+       r="1.8"
+       id="circle572" />
+    <circle
+       class="dot"
+       cx="274.61"
+       cy="342.23"
+       r="1.8"
+       id="circle573" />
+    <circle
+       class="dot"
+       cx="274.61"
+       cy="336.31"
+       r="1.8"
+       id="circle574" />
+    <circle
+       class="dot"
+       cx="274.61"
+       cy="330.39"
+       r="1.8"
+       id="circle575" />
+    <circle
+       class="dot"
+       cx="274.61"
+       cy="324.46"
+       r="1.8"
+       id="circle576" />
+    <circle
+       class="dot"
+       cx="274.61"
+       cy="318.54"
+       r="1.8"
+       id="circle577" />
+    <circle
+       class="dot"
+       cx="274.61"
+       cy="312.62"
+       r="1.8"
+       id="circle578" />
+    <circle
+       class="dot"
+       cx="274.61"
+       cy="306.70"
+       r="1.8"
+       id="circle579" />
+    <circle
+       class="dot"
+       cx="274.61"
+       cy="300.78"
+       r="1.8"
+       id="circle580" />
+    <circle
+       class="dot"
+       cx="274.61"
+       cy="294.86"
+       r="1.8"
+       id="circle581" />
+    <circle
+       class="dot"
+       cx="274.61"
+       cy="288.94"
+       r="1.8"
+       id="circle582" />
+    <circle
+       class="dot"
+       cx="274.61"
+       cy="283.02"
+       r="1.8"
+       id="circle583" />
+    <circle
+       class="dot"
+       cx="274.61"
+       cy="277.09"
+       r="1.8"
+       id="circle584" />
+    <circle
+       class="dot"
+       cx="274.61"
+       cy="271.17"
+       r="1.8"
+       id="circle585" />
+    <circle
+       class="dot"
+       cx="274.61"
+       cy="265.25"
+       r="1.8"
+       id="circle586" />
+    <circle
+       class="dot"
+       cx="274.61"
+       cy="259.33"
+       r="1.8"
+       id="circle587" />
+    <circle
+       class="dot"
+       cx="274.61"
+       cy="253.41"
+       r="1.8"
+       id="circle588" />
+    <circle
+       class="dot"
+       cx="274.61"
+       cy="247.49"
+       r="1.8"
+       id="circle589" />
+    <circle
+       class="dot"
+       cx="274.61"
+       cy="241.57"
+       r="1.8"
+       id="circle590" />
+    <circle
+       class="dot"
+       cx="274.61"
+       cy="235.65"
+       r="1.8"
+       id="circle591" />
+    <circle
+       class="dot"
+       cx="274.61"
+       cy="229.72"
+       r="1.8"
+       id="circle592" />
+    <circle
+       class="dot"
+       cx="274.61"
+       cy="223.80"
+       r="1.8"
+       id="circle593" />
+    <circle
+       class="dot"
+       cx="274.61"
+       cy="217.88"
+       r="1.8"
+       id="circle594" />
+    <circle
+       class="dot"
+       cx="274.61"
+       cy="211.96"
+       r="1.8"
+       id="circle595" />
+    <circle
+       class="dot"
+       cx="274.61"
+       cy="206.04"
+       r="1.8"
+       id="circle596" />
+    <circle
+       class="dot"
+       cx="274.61"
+       cy="200.12"
+       r="1.8"
+       id="circle597" />
+    <circle
+       class="dot"
+       cx="274.61"
+       cy="194.20"
+       r="1.8"
+       id="circle598" />
+    <circle
+       class="dot"
+       cx="274.61"
+       cy="188.28"
+       r="1.8"
+       id="circle599" />
+    <circle
+       class="dot"
+       cx="274.61"
+       cy="182.35"
+       r="1.8"
+       id="circle600" />
+    <circle
+       class="dot"
+       cx="274.61"
+       cy="176.43"
+       r="1.8"
+       id="circle601" />
+    <circle
+       class="dot"
+       cx="274.61"
+       cy="170.51"
+       r="1.8"
+       id="circle602" />
+    <circle
+       class="dot"
+       cx="274.61"
+       cy="164.59"
+       r="1.8"
+       id="circle603" />
+    <circle
+       class="dot"
+       cx="274.61"
+       cy="158.67"
+       r="1.8"
+       id="circle604" />
+    <circle
+       class="dot"
+       cx="274.61"
+       cy="152.75"
+       r="1.8"
+       id="circle605" />
+    <circle
+       class="dot"
+       cx="274.61"
+       cy="146.83"
+       r="1.8"
+       id="circle606" />
+    <circle
+       class="dot"
+       cx="274.61"
+       cy="140.91"
+       r="1.8"
+       id="circle607" />
+    <circle
+       class="dot"
+       cx="274.61"
+       cy="134.98"
+       r="1.8"
+       id="circle608" />
+    <circle
+       class="dot"
+       cx="280.54"
+       cy="377.76"
+       r="1.8"
+       id="circle609" />
+    <circle
+       class="dot"
+       cx="280.54"
+       cy="371.83"
+       r="1.8"
+       id="circle610" />
+    <circle
+       class="dot"
+       cx="280.54"
+       cy="365.91"
+       r="1.8"
+       id="circle611" />
+    <circle
+       class="dot"
+       cx="280.54"
+       cy="359.99"
+       r="1.8"
+       id="circle612" />
+    <circle
+       class="dot"
+       cx="280.54"
+       cy="354.07"
+       r="1.8"
+       id="circle613" />
+    <circle
+       class="dot"
+       cx="280.54"
+       cy="348.15"
+       r="1.8"
+       id="circle614" />
+    <circle
+       class="dot"
+       cx="280.54"
+       cy="342.23"
+       r="1.8"
+       id="circle615" />
+    <circle
+       class="dot"
+       cx="280.54"
+       cy="336.31"
+       r="1.8"
+       id="circle616" />
+    <circle
+       class="dot"
+       cx="280.54"
+       cy="330.39"
+       r="1.8"
+       id="circle617" />
+    <circle
+       class="dot"
+       cx="280.54"
+       cy="324.46"
+       r="1.8"
+       id="circle618" />
+    <circle
+       class="dot"
+       cx="280.54"
+       cy="318.54"
+       r="1.8"
+       id="circle619" />
+    <circle
+       class="dot"
+       cx="280.54"
+       cy="312.62"
+       r="1.8"
+       id="circle620" />
+    <circle
+       class="dot"
+       cx="280.54"
+       cy="306.70"
+       r="1.8"
+       id="circle621" />
+    <circle
+       class="dot"
+       cx="280.54"
+       cy="300.78"
+       r="1.8"
+       id="circle622" />
+    <circle
+       class="dot"
+       cx="280.54"
+       cy="294.86"
+       r="1.8"
+       id="circle623" />
+    <circle
+       class="dot"
+       cx="280.54"
+       cy="288.94"
+       r="1.8"
+       id="circle624" />
+    <circle
+       class="dot"
+       cx="280.54"
+       cy="283.02"
+       r="1.8"
+       id="circle625" />
+    <circle
+       class="dot"
+       cx="280.54"
+       cy="277.09"
+       r="1.8"
+       id="circle626" />
+    <circle
+       class="dot"
+       cx="280.54"
+       cy="271.17"
+       r="1.8"
+       id="circle627" />
+    <circle
+       class="dot"
+       cx="280.54"
+       cy="265.25"
+       r="1.8"
+       id="circle628" />
+    <circle
+       class="dot"
+       cx="280.54"
+       cy="259.33"
+       r="1.8"
+       id="circle629" />
+    <circle
+       class="dot"
+       cx="280.54"
+       cy="253.41"
+       r="1.8"
+       id="circle630" />
+    <circle
+       class="dot"
+       cx="280.54"
+       cy="247.49"
+       r="1.8"
+       id="circle631" />
+    <circle
+       class="dot"
+       cx="280.54"
+       cy="241.57"
+       r="1.8"
+       id="circle632" />
+    <circle
+       class="dot"
+       cx="280.54"
+       cy="235.65"
+       r="1.8"
+       id="circle633" />
+    <circle
+       class="dot"
+       cx="280.54"
+       cy="229.72"
+       r="1.8"
+       id="circle634" />
+    <circle
+       class="dot"
+       cx="280.54"
+       cy="223.80"
+       r="1.8"
+       id="circle635" />
+    <circle
+       class="dot"
+       cx="280.54"
+       cy="217.88"
+       r="1.8"
+       id="circle636" />
+    <circle
+       class="dot"
+       cx="280.54"
+       cy="211.96"
+       r="1.8"
+       id="circle637" />
+    <circle
+       class="dot"
+       cx="280.54"
+       cy="206.04"
+       r="1.8"
+       id="circle638" />
+    <circle
+       class="dot"
+       cx="280.54"
+       cy="200.12"
+       r="1.8"
+       id="circle639" />
+    <circle
+       class="dot"
+       cx="280.54"
+       cy="194.20"
+       r="1.8"
+       id="circle640" />
+    <circle
+       class="dot"
+       cx="280.54"
+       cy="188.28"
+       r="1.8"
+       id="circle641" />
+    <circle
+       class="dot"
+       cx="280.54"
+       cy="182.35"
+       r="1.8"
+       id="circle642" />
+    <circle
+       class="dot"
+       cx="280.54"
+       cy="176.43"
+       r="1.8"
+       id="circle643" />
+    <circle
+       class="dot"
+       cx="280.54"
+       cy="170.51"
+       r="1.8"
+       id="circle644" />
+    <circle
+       class="dot"
+       cx="280.54"
+       cy="164.59"
+       r="1.8"
+       id="circle645" />
+    <circle
+       class="dot"
+       cx="280.54"
+       cy="158.67"
+       r="1.8"
+       id="circle646" />
+    <circle
+       class="dot"
+       cx="280.54"
+       cy="152.75"
+       r="1.8"
+       id="circle647" />
+    <circle
+       class="dot"
+       cx="280.54"
+       cy="146.83"
+       r="1.8"
+       id="circle648" />
+    <circle
+       class="dot"
+       cx="280.54"
+       cy="140.91"
+       r="1.8"
+       id="circle649" />
+    <circle
+       class="dot"
+       cx="280.54"
+       cy="134.98"
+       r="1.8"
+       id="circle650" />
+    <circle
+       class="dot"
+       cx="280.54"
+       cy="129.06"
+       r="1.8"
+       id="circle651" />
+    <circle
+       class="dot"
+       cx="286.46"
+       cy="371.83"
+       r="1.8"
+       id="circle652" />
+    <circle
+       class="dot"
+       cx="286.46"
+       cy="365.91"
+       r="1.8"
+       id="circle653" />
+    <circle
+       class="dot"
+       cx="286.46"
+       cy="359.99"
+       r="1.8"
+       id="circle654" />
+    <circle
+       class="dot"
+       cx="286.46"
+       cy="354.07"
+       r="1.8"
+       id="circle655" />
+    <circle
+       class="dot"
+       cx="286.46"
+       cy="348.15"
+       r="1.8"
+       id="circle656" />
+    <circle
+       class="dot"
+       cx="286.46"
+       cy="342.23"
+       r="1.8"
+       id="circle657" />
+    <circle
+       class="dot"
+       cx="286.46"
+       cy="336.31"
+       r="1.8"
+       id="circle658" />
+    <circle
+       class="dot"
+       cx="286.46"
+       cy="330.39"
+       r="1.8"
+       id="circle659" />
+    <circle
+       class="dot"
+       cx="286.46"
+       cy="324.46"
+       r="1.8"
+       id="circle660" />
+    <circle
+       class="dot"
+       cx="286.46"
+       cy="318.54"
+       r="1.8"
+       id="circle661" />
+    <circle
+       class="dot"
+       cx="286.46"
+       cy="312.62"
+       r="1.8"
+       id="circle662" />
+    <circle
+       class="dot"
+       cx="286.46"
+       cy="306.70"
+       r="1.8"
+       id="circle663" />
+    <circle
+       class="dot"
+       cx="286.46"
+       cy="300.78"
+       r="1.8"
+       id="circle664" />
+    <circle
+       class="dot"
+       cx="286.46"
+       cy="294.86"
+       r="1.8"
+       id="circle665" />
+    <circle
+       class="dot"
+       cx="286.46"
+       cy="288.94"
+       r="1.8"
+       id="circle666" />
+    <circle
+       class="dot"
+       cx="286.46"
+       cy="283.02"
+       r="1.8"
+       id="circle667" />
+    <circle
+       class="dot"
+       cx="286.46"
+       cy="277.09"
+       r="1.8"
+       id="circle668" />
+    <circle
+       class="dot"
+       cx="286.46"
+       cy="271.17"
+       r="1.8"
+       id="circle669" />
+    <circle
+       class="dot"
+       cx="286.46"
+       cy="265.25"
+       r="1.8"
+       id="circle670" />
+    <circle
+       class="dot"
+       cx="286.46"
+       cy="259.33"
+       r="1.8"
+       id="circle671" />
+    <circle
+       class="dot"
+       cx="286.46"
+       cy="253.41"
+       r="1.8"
+       id="circle672" />
+    <circle
+       class="dot"
+       cx="286.46"
+       cy="247.49"
+       r="1.8"
+       id="circle673" />
+    <circle
+       class="dot"
+       cx="286.46"
+       cy="241.57"
+       r="1.8"
+       id="circle674" />
+    <circle
+       class="dot"
+       cx="286.46"
+       cy="235.65"
+       r="1.8"
+       id="circle675" />
+    <circle
+       class="dot"
+       cx="286.46"
+       cy="229.72"
+       r="1.8"
+       id="circle676" />
+    <circle
+       class="dot"
+       cx="286.46"
+       cy="223.80"
+       r="1.8"
+       id="circle677" />
+    <circle
+       class="dot"
+       cx="286.46"
+       cy="217.88"
+       r="1.8"
+       id="circle678" />
+    <circle
+       class="dot"
+       cx="286.46"
+       cy="211.96"
+       r="1.8"
+       id="circle679" />
+    <circle
+       class="dot"
+       cx="286.46"
+       cy="206.04"
+       r="1.8"
+       id="circle680" />
+    <circle
+       class="dot"
+       cx="286.46"
+       cy="200.12"
+       r="1.8"
+       id="circle681" />
+    <circle
+       class="dot"
+       cx="286.46"
+       cy="194.20"
+       r="1.8"
+       id="circle682" />
+    <circle
+       class="dot"
+       cx="286.46"
+       cy="188.28"
+       r="1.8"
+       id="circle683" />
+    <circle
+       class="dot"
+       cx="286.46"
+       cy="182.35"
+       r="1.8"
+       id="circle684" />
+    <circle
+       class="dot"
+       cx="286.46"
+       cy="176.43"
+       r="1.8"
+       id="circle685" />
+    <circle
+       class="dot"
+       cx="286.46"
+       cy="170.51"
+       r="1.8"
+       id="circle686" />
+    <circle
+       class="dot"
+       cx="286.46"
+       cy="164.59"
+       r="1.8"
+       id="circle687" />
+    <circle
+       class="dot"
+       cx="286.46"
+       cy="158.67"
+       r="1.8"
+       id="circle688" />
+    <circle
+       class="dot"
+       cx="286.46"
+       cy="152.75"
+       r="1.8"
+       id="circle689" />
+    <circle
+       class="dot"
+       cx="286.46"
+       cy="146.83"
+       r="1.8"
+       id="circle690" />
+    <circle
+       class="dot"
+       cx="286.46"
+       cy="140.91"
+       r="1.8"
+       id="circle691" />
+    <circle
+       class="dot"
+       cx="286.46"
+       cy="134.98"
+       r="1.8"
+       id="circle692" />
+    <circle
+       class="dot"
+       cx="292.38"
+       cy="365.91"
+       r="1.8"
+       id="circle693" />
+    <circle
+       class="dot"
+       cx="292.38"
+       cy="359.99"
+       r="1.8"
+       id="circle694" />
+    <circle
+       class="dot"
+       cx="292.38"
+       cy="354.07"
+       r="1.8"
+       id="circle695" />
+    <circle
+       class="dot"
+       cx="292.38"
+       cy="348.15"
+       r="1.8"
+       id="circle696" />
+    <circle
+       class="dot"
+       cx="292.38"
+       cy="342.23"
+       r="1.8"
+       id="circle697" />
+    <circle
+       class="dot"
+       cx="292.38"
+       cy="336.31"
+       r="1.8"
+       id="circle698" />
+    <circle
+       class="dot"
+       cx="292.38"
+       cy="330.39"
+       r="1.8"
+       id="circle699" />
+    <circle
+       class="dot"
+       cx="292.38"
+       cy="324.46"
+       r="1.8"
+       id="circle700" />
+    <circle
+       class="dot"
+       cx="292.38"
+       cy="318.54"
+       r="1.8"
+       id="circle701" />
+    <circle
+       class="dot"
+       cx="292.38"
+       cy="312.62"
+       r="1.8"
+       id="circle702" />
+    <circle
+       class="dot"
+       cx="292.38"
+       cy="306.70"
+       r="1.8"
+       id="circle703" />
+    <circle
+       class="dot"
+       cx="292.38"
+       cy="300.78"
+       r="1.8"
+       id="circle704" />
+    <circle
+       class="dot"
+       cx="292.38"
+       cy="294.86"
+       r="1.8"
+       id="circle705" />
+    <circle
+       class="dot"
+       cx="292.38"
+       cy="288.94"
+       r="1.8"
+       id="circle706" />
+    <circle
+       class="dot"
+       cx="292.38"
+       cy="283.02"
+       r="1.8"
+       id="circle707" />
+    <circle
+       class="dot"
+       cx="292.38"
+       cy="277.09"
+       r="1.8"
+       id="circle708" />
+    <circle
+       class="dot"
+       cx="292.38"
+       cy="271.17"
+       r="1.8"
+       id="circle709" />
+    <circle
+       class="dot"
+       cx="292.38"
+       cy="265.25"
+       r="1.8"
+       id="circle710" />
+    <circle
+       class="dot"
+       cx="292.38"
+       cy="259.33"
+       r="1.8"
+       id="circle711" />
+    <circle
+       class="dot"
+       cx="292.38"
+       cy="253.41"
+       r="1.8"
+       id="circle712" />
+    <circle
+       class="dot"
+       cx="292.38"
+       cy="247.49"
+       r="1.8"
+       id="circle713" />
+    <circle
+       class="dot"
+       cx="292.38"
+       cy="241.57"
+       r="1.8"
+       id="circle714" />
+    <circle
+       class="dot"
+       cx="292.38"
+       cy="235.65"
+       r="1.8"
+       id="circle715" />
+    <circle
+       class="dot"
+       cx="292.38"
+       cy="229.72"
+       r="1.8"
+       id="circle716" />
+    <circle
+       class="dot"
+       cx="292.38"
+       cy="223.80"
+       r="1.8"
+       id="circle717" />
+    <circle
+       class="dot"
+       cx="292.38"
+       cy="217.88"
+       r="1.8"
+       id="circle718" />
+    <circle
+       class="dot"
+       cx="292.38"
+       cy="211.96"
+       r="1.8"
+       id="circle719" />
+    <circle
+       class="dot"
+       cx="292.38"
+       cy="206.04"
+       r="1.8"
+       id="circle720" />
+    <circle
+       class="dot"
+       cx="292.38"
+       cy="200.12"
+       r="1.8"
+       id="circle721" />
+    <circle
+       class="dot"
+       cx="292.38"
+       cy="194.20"
+       r="1.8"
+       id="circle722" />
+    <circle
+       class="dot"
+       cx="292.38"
+       cy="188.28"
+       r="1.8"
+       id="circle723" />
+    <circle
+       class="dot"
+       cx="292.38"
+       cy="182.35"
+       r="1.8"
+       id="circle724" />
+    <circle
+       class="dot"
+       cx="292.38"
+       cy="176.43"
+       r="1.8"
+       id="circle725" />
+    <circle
+       class="dot"
+       cx="292.38"
+       cy="170.51"
+       r="1.8"
+       id="circle726" />
+    <circle
+       class="dot"
+       cx="292.38"
+       cy="164.59"
+       r="1.8"
+       id="circle727" />
+    <circle
+       class="dot"
+       cx="292.38"
+       cy="158.67"
+       r="1.8"
+       id="circle728" />
+    <circle
+       class="dot"
+       cx="292.38"
+       cy="152.75"
+       r="1.8"
+       id="circle729" />
+    <circle
+       class="dot"
+       cx="292.38"
+       cy="146.83"
+       r="1.8"
+       id="circle730" />
+    <circle
+       class="dot"
+       cx="292.38"
+       cy="140.91"
+       r="1.8"
+       id="circle731" />
+    <circle
+       class="dot"
+       cx="292.38"
+       cy="134.98"
+       r="1.8"
+       id="circle732" />
+    <circle
+       class="dot"
+       cx="292.38"
+       cy="129.06"
+       r="1.8"
+       id="circle733" />
+    <circle
+       class="dot"
+       cx="298.30"
+       cy="365.91"
+       r="1.8"
+       id="circle734" />
+    <circle
+       class="dot"
+       cx="298.30"
+       cy="359.99"
+       r="1.8"
+       id="circle735" />
+    <circle
+       class="dot"
+       cx="298.30"
+       cy="354.07"
+       r="1.8"
+       id="circle736" />
+    <circle
+       class="dot"
+       cx="298.30"
+       cy="348.15"
+       r="1.8"
+       id="circle737" />
+    <circle
+       class="dot"
+       cx="298.30"
+       cy="342.23"
+       r="1.8"
+       id="circle738" />
+    <circle
+       class="dot"
+       cx="298.30"
+       cy="336.31"
+       r="1.8"
+       id="circle739" />
+    <circle
+       class="dot"
+       cx="298.30"
+       cy="330.39"
+       r="1.8"
+       id="circle740" />
+    <circle
+       class="dot"
+       cx="298.30"
+       cy="324.46"
+       r="1.8"
+       id="circle741" />
+    <circle
+       class="dot"
+       cx="298.30"
+       cy="318.54"
+       r="1.8"
+       id="circle742" />
+    <circle
+       class="dot"
+       cx="298.30"
+       cy="312.62"
+       r="1.8"
+       id="circle743" />
+    <circle
+       class="dot"
+       cx="298.30"
+       cy="306.70"
+       r="1.8"
+       id="circle744" />
+    <circle
+       class="dot"
+       cx="298.30"
+       cy="300.78"
+       r="1.8"
+       id="circle745" />
+    <circle
+       class="dot"
+       cx="298.30"
+       cy="294.86"
+       r="1.8"
+       id="circle746" />
+    <circle
+       class="dot"
+       cx="298.30"
+       cy="288.94"
+       r="1.8"
+       id="circle747" />
+    <circle
+       class="dot"
+       cx="298.30"
+       cy="283.02"
+       r="1.8"
+       id="circle748" />
+    <circle
+       class="dot"
+       cx="298.30"
+       cy="277.09"
+       r="1.8"
+       id="circle749" />
+    <circle
+       class="dot"
+       cx="298.30"
+       cy="271.17"
+       r="1.8"
+       id="circle750" />
+    <circle
+       class="dot"
+       cx="298.30"
+       cy="265.25"
+       r="1.8"
+       id="circle751" />
+    <circle
+       class="dot"
+       cx="298.30"
+       cy="259.33"
+       r="1.8"
+       id="circle752" />
+    <circle
+       class="dot"
+       cx="298.30"
+       cy="253.41"
+       r="1.8"
+       id="circle753" />
+    <circle
+       class="dot"
+       cx="298.30"
+       cy="247.49"
+       r="1.8"
+       id="circle754" />
+    <circle
+       class="dot"
+       cx="298.30"
+       cy="241.57"
+       r="1.8"
+       id="circle755" />
+    <circle
+       class="dot"
+       cx="298.30"
+       cy="235.65"
+       r="1.8"
+       id="circle756" />
+    <circle
+       class="dot"
+       cx="298.30"
+       cy="229.72"
+       r="1.8"
+       id="circle757" />
+    <circle
+       class="dot"
+       cx="298.30"
+       cy="223.80"
+       r="1.8"
+       id="circle758" />
+    <circle
+       class="dot"
+       cx="298.30"
+       cy="217.88"
+       r="1.8"
+       id="circle759" />
+    <circle
+       class="dot"
+       cx="298.30"
+       cy="211.96"
+       r="1.8"
+       id="circle760" />
+    <circle
+       class="dot"
+       cx="298.30"
+       cy="206.04"
+       r="1.8"
+       id="circle761" />
+    <circle
+       class="dot"
+       cx="298.30"
+       cy="200.12"
+       r="1.8"
+       id="circle762" />
+    <circle
+       class="dot"
+       cx="298.30"
+       cy="194.20"
+       r="1.8"
+       id="circle763" />
+    <circle
+       class="dot"
+       cx="298.30"
+       cy="188.28"
+       r="1.8"
+       id="circle764" />
+    <circle
+       class="dot"
+       cx="298.30"
+       cy="182.35"
+       r="1.8"
+       id="circle765" />
+    <circle
+       class="dot"
+       cx="298.30"
+       cy="176.43"
+       r="1.8"
+       id="circle766" />
+    <circle
+       class="dot"
+       cx="298.30"
+       cy="170.51"
+       r="1.8"
+       id="circle767" />
+    <circle
+       class="dot"
+       cx="298.30"
+       cy="164.59"
+       r="1.8"
+       id="circle768" />
+    <circle
+       class="dot"
+       cx="298.30"
+       cy="158.67"
+       r="1.8"
+       id="circle769" />
+    <circle
+       class="dot"
+       cx="298.30"
+       cy="152.75"
+       r="1.8"
+       id="circle770" />
+    <circle
+       class="dot"
+       cx="298.30"
+       cy="146.83"
+       r="1.8"
+       id="circle771" />
+    <circle
+       class="dot"
+       cx="298.30"
+       cy="140.91"
+       r="1.8"
+       id="circle772" />
+    <circle
+       class="dot"
+       cx="304.22"
+       cy="359.99"
+       r="1.8"
+       id="circle773" />
+    <circle
+       class="dot"
+       cx="304.22"
+       cy="354.07"
+       r="1.8"
+       id="circle774" />
+    <circle
+       class="dot"
+       cx="304.22"
+       cy="348.15"
+       r="1.8"
+       id="circle775" />
+    <circle
+       class="dot"
+       cx="304.22"
+       cy="342.23"
+       r="1.8"
+       id="circle776" />
+    <circle
+       class="dot"
+       cx="304.22"
+       cy="336.31"
+       r="1.8"
+       id="circle777" />
+    <circle
+       class="dot"
+       cx="304.22"
+       cy="330.39"
+       r="1.8"
+       id="circle778" />
+    <circle
+       class="dot"
+       cx="304.22"
+       cy="324.46"
+       r="1.8"
+       id="circle779" />
+    <circle
+       class="dot"
+       cx="304.22"
+       cy="318.54"
+       r="1.8"
+       id="circle780" />
+    <circle
+       class="dot"
+       cx="304.22"
+       cy="312.62"
+       r="1.8"
+       id="circle781" />
+    <circle
+       class="dot"
+       cx="304.22"
+       cy="306.70"
+       r="1.8"
+       id="circle782" />
+    <circle
+       class="dot"
+       cx="304.22"
+       cy="300.78"
+       r="1.8"
+       id="circle783" />
+    <circle
+       class="dot"
+       cx="304.22"
+       cy="294.86"
+       r="1.8"
+       id="circle784" />
+    <circle
+       class="dot"
+       cx="304.22"
+       cy="288.94"
+       r="1.8"
+       id="circle785" />
+    <circle
+       class="dot"
+       cx="304.22"
+       cy="283.02"
+       r="1.8"
+       id="circle786" />
+    <circle
+       class="dot"
+       cx="304.22"
+       cy="277.09"
+       r="1.8"
+       id="circle787" />
+    <circle
+       class="dot"
+       cx="304.22"
+       cy="271.17"
+       r="1.8"
+       id="circle788" />
+    <circle
+       class="dot"
+       cx="304.22"
+       cy="265.25"
+       r="1.8"
+       id="circle789" />
+    <circle
+       class="dot"
+       cx="304.22"
+       cy="259.33"
+       r="1.8"
+       id="circle790" />
+    <circle
+       class="dot"
+       cx="304.22"
+       cy="253.41"
+       r="1.8"
+       id="circle791" />
+    <circle
+       class="dot"
+       cx="304.22"
+       cy="247.49"
+       r="1.8"
+       id="circle792" />
+    <circle
+       class="dot"
+       cx="304.22"
+       cy="241.57"
+       r="1.8"
+       id="circle793" />
+    <circle
+       class="dot"
+       cx="304.22"
+       cy="235.65"
+       r="1.8"
+       id="circle794" />
+    <circle
+       class="dot"
+       cx="304.22"
+       cy="229.72"
+       r="1.8"
+       id="circle795" />
+    <circle
+       class="dot"
+       cx="304.22"
+       cy="223.80"
+       r="1.8"
+       id="circle796" />
+    <circle
+       class="dot"
+       cx="304.22"
+       cy="217.88"
+       r="1.8"
+       id="circle797" />
+    <circle
+       class="dot"
+       cx="304.22"
+       cy="211.96"
+       r="1.8"
+       id="circle798" />
+    <circle
+       class="dot"
+       cx="304.22"
+       cy="206.04"
+       r="1.8"
+       id="circle799" />
+    <circle
+       class="dot"
+       cx="304.22"
+       cy="200.12"
+       r="1.8"
+       id="circle800" />
+    <circle
+       class="dot"
+       cx="304.22"
+       cy="194.20"
+       r="1.8"
+       id="circle801" />
+    <circle
+       class="dot"
+       cx="304.22"
+       cy="188.28"
+       r="1.8"
+       id="circle802" />
+    <circle
+       class="dot"
+       cx="304.22"
+       cy="182.35"
+       r="1.8"
+       id="circle803" />
+    <circle
+       class="dot"
+       cx="304.22"
+       cy="176.43"
+       r="1.8"
+       id="circle804" />
+    <circle
+       class="dot"
+       cx="304.22"
+       cy="170.51"
+       r="1.8"
+       id="circle805" />
+    <circle
+       class="dot"
+       cx="304.22"
+       cy="164.59"
+       r="1.8"
+       id="circle806" />
+    <circle
+       class="dot"
+       cx="304.22"
+       cy="158.67"
+       r="1.8"
+       id="circle807" />
+    <circle
+       class="dot"
+       cx="304.22"
+       cy="152.75"
+       r="1.8"
+       id="circle808" />
+    <circle
+       class="dot"
+       cx="304.22"
+       cy="146.83"
+       r="1.8"
+       id="circle809" />
+    <circle
+       class="dot"
+       cx="310.14"
+       cy="359.99"
+       r="1.8"
+       id="circle810" />
+    <circle
+       class="dot"
+       cx="310.14"
+       cy="354.07"
+       r="1.8"
+       id="circle811" />
+    <circle
+       class="dot"
+       cx="310.14"
+       cy="342.23"
+       r="1.8"
+       id="circle812" />
+    <circle
+       class="dot"
+       cx="310.14"
+       cy="336.31"
+       r="1.8"
+       id="circle813" />
+    <circle
+       class="dot"
+       cx="310.14"
+       cy="330.39"
+       r="1.8"
+       id="circle814" />
+    <circle
+       class="dot"
+       cx="310.14"
+       cy="324.46"
+       r="1.8"
+       id="circle815" />
+    <circle
+       class="dot"
+       cx="310.14"
+       cy="318.54"
+       r="1.8"
+       id="circle816" />
+    <circle
+       class="dot"
+       cx="310.14"
+       cy="312.62"
+       r="1.8"
+       id="circle817" />
+    <circle
+       class="dot"
+       cx="310.14"
+       cy="306.70"
+       r="1.8"
+       id="circle818" />
+    <circle
+       class="dot"
+       cx="310.14"
+       cy="300.78"
+       r="1.8"
+       id="circle819" />
+    <circle
+       class="dot"
+       cx="310.14"
+       cy="294.86"
+       r="1.8"
+       id="circle820" />
+    <circle
+       class="dot"
+       cx="310.14"
+       cy="288.94"
+       r="1.8"
+       id="circle821" />
+    <circle
+       class="dot"
+       cx="310.14"
+       cy="283.02"
+       r="1.8"
+       id="circle822" />
+    <circle
+       class="dot"
+       cx="310.14"
+       cy="277.09"
+       r="1.8"
+       id="circle823" />
+    <circle
+       class="dot"
+       cx="310.14"
+       cy="271.17"
+       r="1.8"
+       id="circle824" />
+    <circle
+       class="dot"
+       cx="310.14"
+       cy="265.25"
+       r="1.8"
+       id="circle825" />
+    <circle
+       class="dot"
+       cx="310.14"
+       cy="259.33"
+       r="1.8"
+       id="circle826" />
+    <circle
+       class="dot"
+       cx="310.14"
+       cy="253.41"
+       r="1.8"
+       id="circle827" />
+    <circle
+       class="dot"
+       cx="310.14"
+       cy="247.49"
+       r="1.8"
+       id="circle828" />
+    <circle
+       class="dot"
+       cx="310.14"
+       cy="241.57"
+       r="1.8"
+       id="circle829" />
+    <circle
+       class="dot"
+       cx="310.14"
+       cy="235.65"
+       r="1.8"
+       id="circle830" />
+    <circle
+       class="dot"
+       cx="310.14"
+       cy="229.72"
+       r="1.8"
+       id="circle831" />
+    <circle
+       class="dot"
+       cx="310.14"
+       cy="223.80"
+       r="1.8"
+       id="circle832" />
+    <circle
+       class="dot"
+       cx="310.14"
+       cy="217.88"
+       r="1.8"
+       id="circle833" />
+    <circle
+       class="dot"
+       cx="310.14"
+       cy="211.96"
+       r="1.8"
+       id="circle834" />
+    <circle
+       class="dot"
+       cx="310.14"
+       cy="206.04"
+       r="1.8"
+       id="circle835" />
+    <circle
+       class="dot"
+       cx="310.14"
+       cy="200.12"
+       r="1.8"
+       id="circle836" />
+    <circle
+       class="dot"
+       cx="310.14"
+       cy="194.20"
+       r="1.8"
+       id="circle837" />
+    <circle
+       class="dot"
+       cx="310.14"
+       cy="188.28"
+       r="1.8"
+       id="circle838" />
+    <circle
+       class="dot"
+       cx="310.14"
+       cy="182.35"
+       r="1.8"
+       id="circle839" />
+    <circle
+       class="dot"
+       cx="310.14"
+       cy="176.43"
+       r="1.8"
+       id="circle840" />
+    <circle
+       class="dot"
+       cx="310.14"
+       cy="170.51"
+       r="1.8"
+       id="circle841" />
+    <circle
+       class="dot"
+       cx="310.14"
+       cy="164.59"
+       r="1.8"
+       id="circle842" />
+    <circle
+       class="dot"
+       cx="310.14"
+       cy="158.67"
+       r="1.8"
+       id="circle843" />
+    <circle
+       class="dot"
+       cx="310.14"
+       cy="152.75"
+       r="1.8"
+       id="circle844" />
+    <circle
+       class="dot"
+       cx="316.06"
+       cy="342.23"
+       r="1.8"
+       id="circle845" />
+    <circle
+       class="dot"
+       cx="316.06"
+       cy="336.31"
+       r="1.8"
+       id="circle846" />
+    <circle
+       class="dot"
+       cx="316.06"
+       cy="330.39"
+       r="1.8"
+       id="circle847" />
+    <circle
+       class="dot"
+       cx="316.06"
+       cy="324.46"
+       r="1.8"
+       id="circle848" />
+    <circle
+       class="dot"
+       cx="316.06"
+       cy="318.54"
+       r="1.8"
+       id="circle849" />
+    <circle
+       class="dot"
+       cx="316.06"
+       cy="312.62"
+       r="1.8"
+       id="circle850" />
+    <circle
+       class="dot"
+       cx="316.06"
+       cy="306.70"
+       r="1.8"
+       id="circle851" />
+    <circle
+       class="dot"
+       cx="316.06"
+       cy="300.78"
+       r="1.8"
+       id="circle852" />
+    <circle
+       class="dot"
+       cx="316.06"
+       cy="294.86"
+       r="1.8"
+       id="circle853" />
+    <circle
+       class="dot"
+       cx="316.06"
+       cy="288.94"
+       r="1.8"
+       id="circle854" />
+    <circle
+       class="dot"
+       cx="316.06"
+       cy="283.02"
+       r="1.8"
+       id="circle855" />
+    <circle
+       class="dot"
+       cx="316.06"
+       cy="277.09"
+       r="1.8"
+       id="circle856" />
+    <circle
+       class="dot"
+       cx="316.06"
+       cy="271.17"
+       r="1.8"
+       id="circle857" />
+    <circle
+       class="dot"
+       cx="316.06"
+       cy="265.25"
+       r="1.8"
+       id="circle858" />
+    <circle
+       class="dot"
+       cx="316.06"
+       cy="259.33"
+       r="1.8"
+       id="circle859" />
+    <circle
+       class="dot"
+       cx="316.06"
+       cy="253.41"
+       r="1.8"
+       id="circle860" />
+    <circle
+       class="dot"
+       cx="316.06"
+       cy="247.49"
+       r="1.8"
+       id="circle861" />
+    <circle
+       class="dot"
+       cx="316.06"
+       cy="241.57"
+       r="1.8"
+       id="circle862" />
+    <circle
+       class="dot"
+       cx="316.06"
+       cy="235.65"
+       r="1.8"
+       id="circle863" />
+    <circle
+       class="dot"
+       cx="316.06"
+       cy="229.72"
+       r="1.8"
+       id="circle864" />
+    <circle
+       class="dot"
+       cx="316.06"
+       cy="223.80"
+       r="1.8"
+       id="circle865" />
+    <circle
+       class="dot"
+       cx="316.06"
+       cy="217.88"
+       r="1.8"
+       id="circle866" />
+    <circle
+       class="dot"
+       cx="316.06"
+       cy="211.96"
+       r="1.8"
+       id="circle867" />
+    <circle
+       class="dot"
+       cx="316.06"
+       cy="206.04"
+       r="1.8"
+       id="circle868" />
+    <circle
+       class="dot"
+       cx="316.06"
+       cy="200.12"
+       r="1.8"
+       id="circle869" />
+    <circle
+       class="dot"
+       cx="316.06"
+       cy="194.20"
+       r="1.8"
+       id="circle870" />
+    <circle
+       class="dot"
+       cx="316.06"
+       cy="188.28"
+       r="1.8"
+       id="circle871" />
+    <circle
+       class="dot"
+       cx="316.06"
+       cy="182.35"
+       r="1.8"
+       id="circle872" />
+    <circle
+       class="dot"
+       cx="316.06"
+       cy="176.43"
+       r="1.8"
+       id="circle873" />
+    <circle
+       class="dot"
+       cx="316.06"
+       cy="170.51"
+       r="1.8"
+       id="circle874" />
+    <circle
+       class="dot"
+       cx="316.06"
+       cy="164.59"
+       r="1.8"
+       id="circle875" />
+    <circle
+       class="dot"
+       cx="316.06"
+       cy="158.67"
+       r="1.8"
+       id="circle876" />
+    <circle
+       class="dot"
+       cx="316.06"
+       cy="152.75"
+       r="1.8"
+       id="circle877" />
+    <circle
+       class="dot"
+       cx="321.98"
+       cy="348.15"
+       r="1.8"
+       id="circle878" />
+    <circle
+       class="dot"
+       cx="321.98"
+       cy="342.23"
+       r="1.8"
+       id="circle879" />
+    <circle
+       class="dot"
+       cx="321.98"
+       cy="336.31"
+       r="1.8"
+       id="circle880" />
+    <circle
+       class="dot"
+       cx="321.98"
+       cy="330.39"
+       r="1.8"
+       id="circle881" />
+    <circle
+       class="dot"
+       cx="321.98"
+       cy="324.46"
+       r="1.8"
+       id="circle882" />
+    <circle
+       class="dot"
+       cx="321.98"
+       cy="318.54"
+       r="1.8"
+       id="circle883" />
+    <circle
+       class="dot"
+       cx="321.98"
+       cy="312.62"
+       r="1.8"
+       id="circle884" />
+    <circle
+       class="dot"
+       cx="321.98"
+       cy="306.70"
+       r="1.8"
+       id="circle885" />
+    <circle
+       class="dot"
+       cx="321.98"
+       cy="300.78"
+       r="1.8"
+       id="circle886" />
+    <circle
+       class="dot"
+       cx="321.98"
+       cy="294.86"
+       r="1.8"
+       id="circle887" />
+    <circle
+       class="dot"
+       cx="321.98"
+       cy="288.94"
+       r="1.8"
+       id="circle888" />
+    <circle
+       class="dot"
+       cx="321.98"
+       cy="283.02"
+       r="1.8"
+       id="circle889" />
+    <circle
+       class="dot"
+       cx="321.98"
+       cy="277.09"
+       r="1.8"
+       id="circle890" />
+    <circle
+       class="dot"
+       cx="321.98"
+       cy="271.17"
+       r="1.8"
+       id="circle891" />
+    <circle
+       class="dot"
+       cx="321.98"
+       cy="265.25"
+       r="1.8"
+       id="circle892" />
+    <circle
+       class="dot"
+       cx="321.98"
+       cy="259.33"
+       r="1.8"
+       id="circle893" />
+    <circle
+       class="dot"
+       cx="321.98"
+       cy="253.41"
+       r="1.8"
+       id="circle894" />
+    <circle
+       class="dot"
+       cx="321.98"
+       cy="247.49"
+       r="1.8"
+       id="circle895" />
+    <circle
+       class="dot"
+       cx="321.98"
+       cy="241.57"
+       r="1.8"
+       id="circle896" />
+    <circle
+       class="dot"
+       cx="321.98"
+       cy="235.65"
+       r="1.8"
+       id="circle897" />
+    <circle
+       class="dot"
+       cx="321.98"
+       cy="229.72"
+       r="1.8"
+       id="circle898" />
+    <circle
+       class="dot"
+       cx="321.98"
+       cy="223.80"
+       r="1.8"
+       id="circle899" />
+    <circle
+       class="dot"
+       cx="321.98"
+       cy="217.88"
+       r="1.8"
+       id="circle900" />
+    <circle
+       class="dot"
+       cx="321.98"
+       cy="211.96"
+       r="1.8"
+       id="circle901" />
+    <circle
+       class="dot"
+       cx="321.98"
+       cy="206.04"
+       r="1.8"
+       id="circle902" />
+    <circle
+       class="dot"
+       cx="321.98"
+       cy="200.12"
+       r="1.8"
+       id="circle903" />
+    <circle
+       class="dot"
+       cx="321.98"
+       cy="194.20"
+       r="1.8"
+       id="circle904" />
+    <circle
+       class="dot"
+       cx="321.98"
+       cy="188.28"
+       r="1.8"
+       id="circle905" />
+    <circle
+       class="dot"
+       cx="321.98"
+       cy="182.35"
+       r="1.8"
+       id="circle906" />
+    <circle
+       class="dot"
+       cx="321.98"
+       cy="176.43"
+       r="1.8"
+       id="circle907" />
+    <circle
+       class="dot"
+       cx="321.98"
+       cy="170.51"
+       r="1.8"
+       id="circle908" />
+    <circle
+       class="dot"
+       cx="321.98"
+       cy="164.59"
+       r="1.8"
+       id="circle909" />
+    <circle
+       class="dot"
+       cx="321.98"
+       cy="158.67"
+       r="1.8"
+       id="circle910" />
+    <circle
+       class="dot"
+       cx="321.98"
+       cy="152.75"
+       r="1.8"
+       id="circle911" />
+    <circle
+       class="dot"
+       cx="327.91"
+       cy="342.23"
+       r="1.8"
+       id="circle912" />
+    <circle
+       class="dot"
+       cx="327.91"
+       cy="336.31"
+       r="1.8"
+       id="circle913" />
+    <circle
+       class="dot"
+       cx="327.91"
+       cy="330.39"
+       r="1.8"
+       id="circle914" />
+    <circle
+       class="dot"
+       cx="327.91"
+       cy="324.46"
+       r="1.8"
+       id="circle915" />
+    <circle
+       class="dot"
+       cx="327.91"
+       cy="318.54"
+       r="1.8"
+       id="circle916" />
+    <circle
+       class="dot"
+       cx="327.91"
+       cy="312.62"
+       r="1.8"
+       id="circle917" />
+    <circle
+       class="dot"
+       cx="327.91"
+       cy="306.70"
+       r="1.8"
+       id="circle918" />
+    <circle
+       class="dot"
+       cx="327.91"
+       cy="300.78"
+       r="1.8"
+       id="circle919" />
+    <circle
+       class="dot"
+       cx="327.91"
+       cy="294.86"
+       r="1.8"
+       id="circle920" />
+    <circle
+       class="dot"
+       cx="327.91"
+       cy="288.94"
+       r="1.8"
+       id="circle921" />
+    <circle
+       class="dot"
+       cx="327.91"
+       cy="283.02"
+       r="1.8"
+       id="circle922" />
+    <circle
+       class="dot"
+       cx="327.91"
+       cy="277.09"
+       r="1.8"
+       id="circle923" />
+    <circle
+       class="dot"
+       cx="327.91"
+       cy="271.17"
+       r="1.8"
+       id="circle924" />
+    <circle
+       class="dot"
+       cx="327.91"
+       cy="265.25"
+       r="1.8"
+       id="circle925" />
+    <circle
+       class="dot"
+       cx="327.91"
+       cy="259.33"
+       r="1.8"
+       id="circle926" />
+    <circle
+       class="dot"
+       cx="327.91"
+       cy="253.41"
+       r="1.8"
+       id="circle927" />
+    <circle
+       class="dot"
+       cx="327.91"
+       cy="247.49"
+       r="1.8"
+       id="circle928" />
+    <circle
+       class="dot"
+       cx="327.91"
+       cy="241.57"
+       r="1.8"
+       id="circle929" />
+    <circle
+       class="dot"
+       cx="327.91"
+       cy="235.65"
+       r="1.8"
+       id="circle930" />
+    <circle
+       class="dot"
+       cx="327.91"
+       cy="229.72"
+       r="1.8"
+       id="circle931" />
+    <circle
+       class="dot"
+       cx="327.91"
+       cy="223.80"
+       r="1.8"
+       id="circle932" />
+    <circle
+       class="dot"
+       cx="327.91"
+       cy="217.88"
+       r="1.8"
+       id="circle933" />
+    <circle
+       class="dot"
+       cx="327.91"
+       cy="211.96"
+       r="1.8"
+       id="circle934" />
+    <circle
+       class="dot"
+       cx="327.91"
+       cy="206.04"
+       r="1.8"
+       id="circle935" />
+    <circle
+       class="dot"
+       cx="327.91"
+       cy="200.12"
+       r="1.8"
+       id="circle936" />
+    <circle
+       class="dot"
+       cx="327.91"
+       cy="194.20"
+       r="1.8"
+       id="circle937" />
+    <circle
+       class="dot"
+       cx="327.91"
+       cy="188.28"
+       r="1.8"
+       id="circle938" />
+    <circle
+       class="dot"
+       cx="327.91"
+       cy="182.35"
+       r="1.8"
+       id="circle939" />
+    <circle
+       class="dot"
+       cx="327.91"
+       cy="176.43"
+       r="1.8"
+       id="circle940" />
+    <circle
+       class="dot"
+       cx="327.91"
+       cy="170.51"
+       r="1.8"
+       id="circle941" />
+    <circle
+       class="dot"
+       cx="333.83"
+       cy="336.31"
+       r="1.8"
+       id="circle942" />
+    <circle
+       class="dot"
+       cx="333.83"
+       cy="330.39"
+       r="1.8"
+       id="circle943" />
+    <circle
+       class="dot"
+       cx="333.83"
+       cy="324.46"
+       r="1.8"
+       id="circle944" />
+    <circle
+       class="dot"
+       cx="333.83"
+       cy="318.54"
+       r="1.8"
+       id="circle945" />
+    <circle
+       class="dot"
+       cx="333.83"
+       cy="312.62"
+       r="1.8"
+       id="circle946" />
+    <circle
+       class="dot"
+       cx="333.83"
+       cy="306.70"
+       r="1.8"
+       id="circle947" />
+    <circle
+       class="dot"
+       cx="333.83"
+       cy="300.78"
+       r="1.8"
+       id="circle948" />
+    <circle
+       class="dot"
+       cx="333.83"
+       cy="294.86"
+       r="1.8"
+       id="circle949" />
+    <circle
+       class="dot"
+       cx="333.83"
+       cy="288.94"
+       r="1.8"
+       id="circle950" />
+    <circle
+       class="dot"
+       cx="333.83"
+       cy="283.02"
+       r="1.8"
+       id="circle951" />
+    <circle
+       class="dot"
+       cx="333.83"
+       cy="277.09"
+       r="1.8"
+       id="circle952" />
+    <circle
+       class="dot"
+       cx="333.83"
+       cy="271.17"
+       r="1.8"
+       id="circle953" />
+    <circle
+       class="dot"
+       cx="333.83"
+       cy="265.25"
+       r="1.8"
+       id="circle954" />
+    <circle
+       class="dot"
+       cx="333.83"
+       cy="259.33"
+       r="1.8"
+       id="circle955" />
+    <circle
+       class="dot"
+       cx="333.83"
+       cy="253.41"
+       r="1.8"
+       id="circle956" />
+    <circle
+       class="dot"
+       cx="333.83"
+       cy="247.49"
+       r="1.8"
+       id="circle957" />
+    <circle
+       class="dot"
+       cx="333.83"
+       cy="241.57"
+       r="1.8"
+       id="circle958" />
+    <circle
+       class="dot"
+       cx="333.83"
+       cy="235.65"
+       r="1.8"
+       id="circle959" />
+    <circle
+       class="dot"
+       cx="333.83"
+       cy="229.72"
+       r="1.8"
+       id="circle960" />
+    <circle
+       class="dot"
+       cx="333.83"
+       cy="223.80"
+       r="1.8"
+       id="circle961" />
+    <circle
+       class="dot"
+       cx="333.83"
+       cy="217.88"
+       r="1.8"
+       id="circle962" />
+    <circle
+       class="dot"
+       cx="333.83"
+       cy="211.96"
+       r="1.8"
+       id="circle963" />
+    <circle
+       class="dot"
+       cx="333.83"
+       cy="206.04"
+       r="1.8"
+       id="circle964" />
+    <circle
+       class="dot"
+       cx="333.83"
+       cy="200.12"
+       r="1.8"
+       id="circle965" />
+    <circle
+       class="dot"
+       cx="333.83"
+       cy="194.20"
+       r="1.8"
+       id="circle966" />
+    <circle
+       class="dot"
+       cx="333.83"
+       cy="188.28"
+       r="1.8"
+       id="circle967" />
+    <circle
+       class="dot"
+       cx="333.83"
+       cy="182.35"
+       r="1.8"
+       id="circle968" />
+    <circle
+       class="dot"
+       cx="333.83"
+       cy="176.43"
+       r="1.8"
+       id="circle969" />
+    <circle
+       class="dot"
+       cx="333.83"
+       cy="170.51"
+       r="1.8"
+       id="circle970" />
+    <circle
+       class="dot"
+       cx="339.75"
+       cy="330.39"
+       r="1.8"
+       id="circle971" />
+    <circle
+       class="dot"
+       cx="339.75"
+       cy="324.46"
+       r="1.8"
+       id="circle972" />
+    <circle
+       class="dot"
+       cx="339.75"
+       cy="318.54"
+       r="1.8"
+       id="circle973" />
+    <circle
+       class="dot"
+       cx="339.75"
+       cy="312.62"
+       r="1.8"
+       id="circle974" />
+    <circle
+       class="dot"
+       cx="339.75"
+       cy="306.70"
+       r="1.8"
+       id="circle975" />
+    <circle
+       class="dot"
+       cx="339.75"
+       cy="300.78"
+       r="1.8"
+       id="circle976" />
+    <circle
+       class="dot"
+       cx="339.75"
+       cy="294.86"
+       r="1.8"
+       id="circle977" />
+    <circle
+       class="dot"
+       cx="339.75"
+       cy="288.94"
+       r="1.8"
+       id="circle978" />
+    <circle
+       class="dot"
+       cx="339.75"
+       cy="283.02"
+       r="1.8"
+       id="circle979" />
+    <circle
+       class="dot"
+       cx="339.75"
+       cy="277.09"
+       r="1.8"
+       id="circle980" />
+    <circle
+       class="dot"
+       cx="339.75"
+       cy="271.17"
+       r="1.8"
+       id="circle981" />
+    <circle
+       class="dot"
+       cx="339.75"
+       cy="265.25"
+       r="1.8"
+       id="circle982" />
+    <circle
+       class="dot"
+       cx="339.75"
+       cy="259.33"
+       r="1.8"
+       id="circle983" />
+    <circle
+       class="dot"
+       cx="339.75"
+       cy="253.41"
+       r="1.8"
+       id="circle984" />
+    <circle
+       class="dot"
+       cx="339.75"
+       cy="247.49"
+       r="1.8"
+       id="circle985" />
+    <circle
+       class="dot"
+       cx="339.75"
+       cy="241.57"
+       r="1.8"
+       id="circle986" />
+    <circle
+       class="dot"
+       cx="339.75"
+       cy="235.65"
+       r="1.8"
+       id="circle987" />
+    <circle
+       class="dot"
+       cx="339.75"
+       cy="229.72"
+       r="1.8"
+       id="circle988" />
+    <circle
+       class="dot"
+       cx="339.75"
+       cy="223.80"
+       r="1.8"
+       id="circle989" />
+    <circle
+       class="dot"
+       cx="339.75"
+       cy="217.88"
+       r="1.8"
+       id="circle990" />
+    <circle
+       class="dot"
+       cx="339.75"
+       cy="211.96"
+       r="1.8"
+       id="circle991" />
+    <circle
+       class="dot"
+       cx="339.75"
+       cy="206.04"
+       r="1.8"
+       id="circle992" />
+    <circle
+       class="dot"
+       cx="339.75"
+       cy="200.12"
+       r="1.8"
+       id="circle993" />
+    <circle
+       class="dot"
+       cx="339.75"
+       cy="194.20"
+       r="1.8"
+       id="circle994" />
+    <circle
+       class="dot"
+       cx="339.75"
+       cy="188.28"
+       r="1.8"
+       id="circle995" />
+    <circle
+       class="dot"
+       cx="339.75"
+       cy="182.35"
+       r="1.8"
+       id="circle996" />
+    <circle
+       class="dot"
+       cx="339.75"
+       cy="176.43"
+       r="1.8"
+       id="circle997" />
+    <circle
+       class="dot"
+       cx="339.75"
+       cy="170.51"
+       r="1.8"
+       id="circle998" />
+    <circle
+       class="dot"
+       cx="339.75"
+       cy="164.59"
+       r="1.8"
+       id="circle999" />
+    <circle
+       class="dot"
+       cx="345.67"
+       cy="318.54"
+       r="1.8"
+       id="circle1000" />
+    <circle
+       class="dot"
+       cx="345.67"
+       cy="312.62"
+       r="1.8"
+       id="circle1001" />
+    <circle
+       class="dot"
+       cx="345.67"
+       cy="306.70"
+       r="1.8"
+       id="circle1002" />
+    <circle
+       class="dot"
+       cx="345.67"
+       cy="300.78"
+       r="1.8"
+       id="circle1003" />
+    <circle
+       class="dot"
+       cx="345.67"
+       cy="294.86"
+       r="1.8"
+       id="circle1004" />
+    <circle
+       class="dot"
+       cx="345.67"
+       cy="288.94"
+       r="1.8"
+       id="circle1005" />
+    <circle
+       class="dot"
+       cx="345.67"
+       cy="283.02"
+       r="1.8"
+       id="circle1006" />
+    <circle
+       class="dot"
+       cx="345.67"
+       cy="277.09"
+       r="1.8"
+       id="circle1007" />
+    <circle
+       class="dot"
+       cx="345.67"
+       cy="271.17"
+       r="1.8"
+       id="circle1008" />
+    <circle
+       class="dot"
+       cx="345.67"
+       cy="265.25"
+       r="1.8"
+       id="circle1009" />
+    <circle
+       class="dot"
+       cx="345.67"
+       cy="259.33"
+       r="1.8"
+       id="circle1010" />
+    <circle
+       class="dot"
+       cx="345.67"
+       cy="253.41"
+       r="1.8"
+       id="circle1011" />
+    <circle
+       class="dot"
+       cx="345.67"
+       cy="247.49"
+       r="1.8"
+       id="circle1012" />
+    <circle
+       class="dot"
+       cx="345.67"
+       cy="241.57"
+       r="1.8"
+       id="circle1013" />
+    <circle
+       class="dot"
+       cx="345.67"
+       cy="235.65"
+       r="1.8"
+       id="circle1014" />
+    <circle
+       class="dot"
+       cx="345.67"
+       cy="229.72"
+       r="1.8"
+       id="circle1015" />
+    <circle
+       class="dot"
+       cx="345.67"
+       cy="223.80"
+       r="1.8"
+       id="circle1016" />
+    <circle
+       class="dot"
+       cx="345.67"
+       cy="217.88"
+       r="1.8"
+       id="circle1017" />
+    <circle
+       class="dot"
+       cx="345.67"
+       cy="211.96"
+       r="1.8"
+       id="circle1018" />
+    <circle
+       class="dot"
+       cx="345.67"
+       cy="206.04"
+       r="1.8"
+       id="circle1019" />
+    <circle
+       class="dot"
+       cx="345.67"
+       cy="200.12"
+       r="1.8"
+       id="circle1020" />
+    <circle
+       class="dot"
+       cx="345.67"
+       cy="194.20"
+       r="1.8"
+       id="circle1021" />
+    <circle
+       class="dot"
+       cx="345.67"
+       cy="188.28"
+       r="1.8"
+       id="circle1022" />
+    <circle
+       class="dot"
+       cx="345.67"
+       cy="182.35"
+       r="1.8"
+       id="circle1023" />
+    <circle
+       class="dot"
+       cx="345.67"
+       cy="170.51"
+       r="1.8"
+       id="circle1024" />
+    <circle
+       class="dot"
+       cx="351.59"
+       cy="312.62"
+       r="1.8"
+       id="circle1025" />
+    <circle
+       class="dot"
+       cx="351.59"
+       cy="306.70"
+       r="1.8"
+       id="circle1026" />
+    <circle
+       class="dot"
+       cx="351.59"
+       cy="300.78"
+       r="1.8"
+       id="circle1027" />
+    <circle
+       class="dot"
+       cx="351.59"
+       cy="294.86"
+       r="1.8"
+       id="circle1028" />
+    <circle
+       class="dot"
+       cx="351.59"
+       cy="288.94"
+       r="1.8"
+       id="circle1029" />
+    <circle
+       class="dot"
+       cx="351.59"
+       cy="283.02"
+       r="1.8"
+       id="circle1030" />
+    <circle
+       class="dot"
+       cx="351.59"
+       cy="277.09"
+       r="1.8"
+       id="circle1031" />
+    <circle
+       class="dot"
+       cx="351.59"
+       cy="271.17"
+       r="1.8"
+       id="circle1032" />
+    <circle
+       class="dot"
+       cx="351.59"
+       cy="265.25"
+       r="1.8"
+       id="circle1033" />
+    <circle
+       class="dot"
+       cx="351.59"
+       cy="259.33"
+       r="1.8"
+       id="circle1034" />
+    <circle
+       class="dot"
+       cx="351.59"
+       cy="253.41"
+       r="1.8"
+       id="circle1035" />
+    <circle
+       class="dot"
+       cx="351.59"
+       cy="247.49"
+       r="1.8"
+       id="circle1036" />
+    <circle
+       class="dot"
+       cx="351.59"
+       cy="241.57"
+       r="1.8"
+       id="circle1037" />
+    <circle
+       class="dot"
+       cx="351.59"
+       cy="235.65"
+       r="1.8"
+       id="circle1038" />
+    <circle
+       class="dot"
+       cx="351.59"
+       cy="229.72"
+       r="1.8"
+       id="circle1039" />
+    <circle
+       class="dot"
+       cx="351.59"
+       cy="223.80"
+       r="1.8"
+       id="circle1040" />
+    <circle
+       class="dot"
+       cx="351.59"
+       cy="217.88"
+       r="1.8"
+       id="circle1041" />
+    <circle
+       class="dot"
+       cx="351.59"
+       cy="211.96"
+       r="1.8"
+       id="circle1042" />
+    <circle
+       class="dot"
+       cx="351.59"
+       cy="206.04"
+       r="1.8"
+       id="circle1043" />
+    <circle
+       class="dot"
+       cx="351.59"
+       cy="200.12"
+       r="1.8"
+       id="circle1044" />
+    <circle
+       class="dot"
+       cx="351.59"
+       cy="194.20"
+       r="1.8"
+       id="circle1045" />
+    <circle
+       class="dot"
+       cx="351.59"
+       cy="188.28"
+       r="1.8"
+       id="circle1046" />
+    <circle
+       class="dot"
+       cx="351.59"
+       cy="182.35"
+       r="1.8"
+       id="circle1047" />
+    <circle
+       class="dot"
+       cx="357.51"
+       cy="294.86"
+       r="1.8"
+       id="circle1048" />
+    <circle
+       class="dot"
+       cx="357.51"
+       cy="288.94"
+       r="1.8"
+       id="circle1049" />
+    <circle
+       class="dot"
+       cx="357.51"
+       cy="283.02"
+       r="1.8"
+       id="circle1050" />
+    <circle
+       class="dot"
+       cx="357.51"
+       cy="277.09"
+       r="1.8"
+       id="circle1051" />
+    <circle
+       class="dot"
+       cx="357.51"
+       cy="271.17"
+       r="1.8"
+       id="circle1052" />
+    <circle
+       class="dot"
+       cx="357.51"
+       cy="265.25"
+       r="1.8"
+       id="circle1053" />
+    <circle
+       class="dot"
+       cx="357.51"
+       cy="259.33"
+       r="1.8"
+       id="circle1054" />
+    <circle
+       class="dot"
+       cx="357.51"
+       cy="253.41"
+       r="1.8"
+       id="circle1055" />
+    <circle
+       class="dot"
+       cx="357.51"
+       cy="247.49"
+       r="1.8"
+       id="circle1056" />
+    <circle
+       class="dot"
+       cx="357.51"
+       cy="241.57"
+       r="1.8"
+       id="circle1057" />
+    <circle
+       class="dot"
+       cx="357.51"
+       cy="235.65"
+       r="1.8"
+       id="circle1058" />
+    <circle
+       class="dot"
+       cx="357.51"
+       cy="229.72"
+       r="1.8"
+       id="circle1059" />
+    <circle
+       class="dot"
+       cx="357.51"
+       cy="223.80"
+       r="1.8"
+       id="circle1060" />
+    <circle
+       class="dot"
+       cx="357.51"
+       cy="217.88"
+       r="1.8"
+       id="circle1061" />
+    <circle
+       class="dot"
+       cx="357.51"
+       cy="211.96"
+       r="1.8"
+       id="circle1062" />
+    <circle
+       class="dot"
+       cx="357.51"
+       cy="206.04"
+       r="1.8"
+       id="circle1063" />
+    <circle
+       class="dot"
+       cx="357.51"
+       cy="200.12"
+       r="1.8"
+       id="circle1064" />
+    <circle
+       class="dot"
+       cx="357.51"
+       cy="194.20"
+       r="1.8"
+       id="circle1065" />
+    <circle
+       class="dot"
+       cx="357.51"
+       cy="188.28"
+       r="1.8"
+       id="circle1066" />
+    <circle
+       class="dot"
+       cx="357.51"
+       cy="182.35"
+       r="1.8"
+       id="circle1067" />
+    <circle
+       class="dot"
+       cx="363.43"
+       cy="294.86"
+       r="1.8"
+       id="circle1068" />
+    <circle
+       class="dot"
+       cx="363.43"
+       cy="288.94"
+       r="1.8"
+       id="circle1069" />
+    <circle
+       class="dot"
+       cx="363.43"
+       cy="283.02"
+       r="1.8"
+       id="circle1070" />
+    <circle
+       class="dot"
+       cx="363.43"
+       cy="277.09"
+       r="1.8"
+       id="circle1071" />
+    <circle
+       class="dot"
+       cx="363.43"
+       cy="271.17"
+       r="1.8"
+       id="circle1072" />
+    <circle
+       class="dot"
+       cx="363.43"
+       cy="265.25"
+       r="1.8"
+       id="circle1073" />
+    <circle
+       class="dot"
+       cx="363.43"
+       cy="259.33"
+       r="1.8"
+       id="circle1074" />
+    <circle
+       class="dot"
+       cx="363.43"
+       cy="253.41"
+       r="1.8"
+       id="circle1075" />
+    <circle
+       class="dot"
+       cx="363.43"
+       cy="247.49"
+       r="1.8"
+       id="circle1076" />
+    <circle
+       class="dot"
+       cx="363.43"
+       cy="241.57"
+       r="1.8"
+       id="circle1077" />
+    <circle
+       class="dot"
+       cx="363.43"
+       cy="235.65"
+       r="1.8"
+       id="circle1078" />
+    <circle
+       class="dot"
+       cx="363.43"
+       cy="229.72"
+       r="1.8"
+       id="circle1079" />
+    <circle
+       class="dot"
+       cx="363.43"
+       cy="223.80"
+       r="1.8"
+       id="circle1080" />
+    <circle
+       class="dot"
+       cx="363.43"
+       cy="217.88"
+       r="1.8"
+       id="circle1081" />
+    <circle
+       class="dot"
+       cx="363.43"
+       cy="211.96"
+       r="1.8"
+       id="circle1082" />
+    <circle
+       class="dot"
+       cx="363.43"
+       cy="206.04"
+       r="1.8"
+       id="circle1083" />
+    <circle
+       class="dot"
+       cx="363.43"
+       cy="200.12"
+       r="1.8"
+       id="circle1084" />
+    <circle
+       class="dot"
+       cx="363.43"
+       cy="194.20"
+       r="1.8"
+       id="circle1085" />
+    <circle
+       class="dot"
+       cx="363.43"
+       cy="188.28"
+       r="1.8"
+       id="circle1086" />
+    <circle
+       class="dot"
+       cx="369.35"
+       cy="288.94"
+       r="1.8"
+       id="circle1087" />
+    <circle
+       class="dot"
+       cx="369.35"
+       cy="283.02"
+       r="1.8"
+       id="circle1088" />
+    <circle
+       class="dot"
+       cx="369.35"
+       cy="277.09"
+       r="1.8"
+       id="circle1089" />
+    <circle
+       class="dot"
+       cx="369.35"
+       cy="271.17"
+       r="1.8"
+       id="circle1090" />
+    <circle
+       class="dot"
+       cx="369.35"
+       cy="265.25"
+       r="1.8"
+       id="circle1091" />
+    <circle
+       class="dot"
+       cx="369.35"
+       cy="259.33"
+       r="1.8"
+       id="circle1092" />
+    <circle
+       class="dot"
+       cx="369.35"
+       cy="253.41"
+       r="1.8"
+       id="circle1093" />
+    <circle
+       class="dot"
+       cx="369.35"
+       cy="247.49"
+       r="1.8"
+       id="circle1094" />
+    <circle
+       class="dot"
+       cx="369.35"
+       cy="241.57"
+       r="1.8"
+       id="circle1095" />
+    <circle
+       class="dot"
+       cx="369.35"
+       cy="235.65"
+       r="1.8"
+       id="circle1096" />
+    <circle
+       class="dot"
+       cx="369.35"
+       cy="229.72"
+       r="1.8"
+       id="circle1097" />
+    <circle
+       class="dot"
+       cx="369.35"
+       cy="223.80"
+       r="1.8"
+       id="circle1098" />
+    <circle
+       class="dot"
+       cx="369.35"
+       cy="217.88"
+       r="1.8"
+       id="circle1099" />
+    <circle
+       class="dot"
+       cx="369.35"
+       cy="211.96"
+       r="1.8"
+       id="circle1100" />
+    <circle
+       class="dot"
+       cx="369.35"
+       cy="206.04"
+       r="1.8"
+       id="circle1101" />
+    <circle
+       class="dot"
+       cx="369.35"
+       cy="200.12"
+       r="1.8"
+       id="circle1102" />
+    <circle
+       class="dot"
+       cx="369.35"
+       cy="194.20"
+       r="1.8"
+       id="circle1103" />
+    <circle
+       class="dot"
+       cx="369.35"
+       cy="188.28"
+       r="1.8"
+       id="circle1104" />
+    <circle
+       class="dot"
+       cx="375.28"
+       cy="288.94"
+       r="1.8"
+       id="circle1105" />
+    <circle
+       class="dot"
+       cx="375.28"
+       cy="283.02"
+       r="1.8"
+       id="circle1106" />
+    <circle
+       class="dot"
+       cx="375.28"
+       cy="277.09"
+       r="1.8"
+       id="circle1107" />
+    <circle
+       class="dot"
+       cx="375.28"
+       cy="271.17"
+       r="1.8"
+       id="circle1108" />
+    <circle
+       class="dot"
+       cx="375.28"
+       cy="265.25"
+       r="1.8"
+       id="circle1109" />
+    <circle
+       class="dot"
+       cx="375.28"
+       cy="259.33"
+       r="1.8"
+       id="circle1110" />
+    <circle
+       class="dot"
+       cx="375.28"
+       cy="253.41"
+       r="1.8"
+       id="circle1111" />
+    <circle
+       class="dot"
+       cx="375.28"
+       cy="247.49"
+       r="1.8"
+       id="circle1112" />
+    <circle
+       class="dot"
+       cx="375.28"
+       cy="241.57"
+       r="1.8"
+       id="circle1113" />
+    <circle
+       class="dot"
+       cx="375.28"
+       cy="235.65"
+       r="1.8"
+       id="circle1114" />
+    <circle
+       class="dot"
+       cx="375.28"
+       cy="229.72"
+       r="1.8"
+       id="circle1115" />
+    <circle
+       class="dot"
+       cx="375.28"
+       cy="223.80"
+       r="1.8"
+       id="circle1116" />
+    <circle
+       class="dot"
+       cx="375.28"
+       cy="217.88"
+       r="1.8"
+       id="circle1117" />
+    <circle
+       class="dot"
+       cx="375.28"
+       cy="211.96"
+       r="1.8"
+       id="circle1118" />
+    <circle
+       class="dot"
+       cx="375.28"
+       cy="206.04"
+       r="1.8"
+       id="circle1119" />
+    <circle
+       class="dot"
+       cx="375.28"
+       cy="200.12"
+       r="1.8"
+       id="circle1120" />
+    <circle
+       class="dot"
+       cx="375.28"
+       cy="194.20"
+       r="1.8"
+       id="circle1121" />
+    <circle
+       class="dot"
+       cx="381.20"
+       cy="288.94"
+       r="1.8"
+       id="circle1122" />
+    <circle
+       class="dot"
+       cx="381.20"
+       cy="283.02"
+       r="1.8"
+       id="circle1123" />
+    <circle
+       class="dot"
+       cx="381.20"
+       cy="277.09"
+       r="1.8"
+       id="circle1124" />
+    <circle
+       class="dot"
+       cx="381.20"
+       cy="271.17"
+       r="1.8"
+       id="circle1125" />
+    <circle
+       class="dot"
+       cx="381.20"
+       cy="265.25"
+       r="1.8"
+       id="circle1126" />
+    <circle
+       class="dot"
+       cx="381.20"
+       cy="259.33"
+       r="1.8"
+       id="circle1127" />
+    <circle
+       class="dot"
+       cx="381.20"
+       cy="253.41"
+       r="1.8"
+       id="circle1128" />
+    <circle
+       class="dot"
+       cx="381.20"
+       cy="247.49"
+       r="1.8"
+       id="circle1129" />
+    <circle
+       class="dot"
+       cx="381.20"
+       cy="241.57"
+       r="1.8"
+       id="circle1130" />
+    <circle
+       class="dot"
+       cx="381.20"
+       cy="235.65"
+       r="1.8"
+       id="circle1131" />
+    <circle
+       class="dot"
+       cx="381.20"
+       cy="229.72"
+       r="1.8"
+       id="circle1132" />
+    <circle
+       class="dot"
+       cx="381.20"
+       cy="223.80"
+       r="1.8"
+       id="circle1133" />
+    <circle
+       class="dot"
+       cx="381.20"
+       cy="217.88"
+       r="1.8"
+       id="circle1134" />
+    <circle
+       class="dot"
+       cx="381.20"
+       cy="211.96"
+       r="1.8"
+       id="circle1135" />
+    <circle
+       class="dot"
+       cx="381.20"
+       cy="206.04"
+       r="1.8"
+       id="circle1136" />
+    <circle
+       class="dot"
+       cx="381.20"
+       cy="200.12"
+       r="1.8"
+       id="circle1137" />
+    <circle
+       class="dot"
+       cx="381.20"
+       cy="194.20"
+       r="1.8"
+       id="circle1138" />
+    <circle
+       class="dot"
+       cx="387.12"
+       cy="283.02"
+       r="1.8"
+       id="circle1139" />
+    <circle
+       class="dot"
+       cx="387.12"
+       cy="277.09"
+       r="1.8"
+       id="circle1140" />
+    <circle
+       class="dot"
+       cx="387.12"
+       cy="271.17"
+       r="1.8"
+       id="circle1141" />
+    <circle
+       class="dot"
+       cx="387.12"
+       cy="265.25"
+       r="1.8"
+       id="circle1142" />
+    <circle
+       class="dot"
+       cx="387.12"
+       cy="259.33"
+       r="1.8"
+       id="circle1143" />
+    <circle
+       class="dot"
+       cx="387.12"
+       cy="253.41"
+       r="1.8"
+       id="circle1144" />
+    <circle
+       class="dot"
+       cx="387.12"
+       cy="247.49"
+       r="1.8"
+       id="circle1145" />
+    <circle
+       class="dot"
+       cx="387.12"
+       cy="241.57"
+       r="1.8"
+       id="circle1146" />
+    <circle
+       class="dot"
+       cx="387.12"
+       cy="235.65"
+       r="1.8"
+       id="circle1147" />
+    <circle
+       class="dot"
+       cx="387.12"
+       cy="229.72"
+       r="1.8"
+       id="circle1148" />
+    <circle
+       class="dot"
+       cx="387.12"
+       cy="223.80"
+       r="1.8"
+       id="circle1149" />
+    <circle
+       class="dot"
+       cx="387.12"
+       cy="217.88"
+       r="1.8"
+       id="circle1150" />
+    <circle
+       class="dot"
+       cx="387.12"
+       cy="211.96"
+       r="1.8"
+       id="circle1151" />
+    <circle
+       class="dot"
+       cx="387.12"
+       cy="206.04"
+       r="1.8"
+       id="circle1152" />
+    <circle
+       class="dot"
+       cx="387.12"
+       cy="200.12"
+       r="1.8"
+       id="circle1153" />
+    <circle
+       class="dot"
+       cx="387.12"
+       cy="194.20"
+       r="1.8"
+       id="circle1154" />
+    <circle
+       class="dot"
+       cx="393.04"
+       cy="277.09"
+       r="1.8"
+       id="circle1155" />
+    <circle
+       class="dot"
+       cx="393.04"
+       cy="271.17"
+       r="1.8"
+       id="circle1156" />
+    <circle
+       class="dot"
+       cx="393.04"
+       cy="265.25"
+       r="1.8"
+       id="circle1157" />
+    <circle
+       class="dot"
+       cx="393.04"
+       cy="259.33"
+       r="1.8"
+       id="circle1158" />
+    <circle
+       class="dot"
+       cx="393.04"
+       cy="253.41"
+       r="1.8"
+       id="circle1159" />
+    <circle
+       class="dot"
+       cx="393.04"
+       cy="247.49"
+       r="1.8"
+       id="circle1160" />
+    <circle
+       class="dot"
+       cx="393.04"
+       cy="241.57"
+       r="1.8"
+       id="circle1161" />
+    <circle
+       class="dot"
+       cx="393.04"
+       cy="235.65"
+       r="1.8"
+       id="circle1162" />
+    <circle
+       class="dot"
+       cx="393.04"
+       cy="229.72"
+       r="1.8"
+       id="circle1163" />
+    <circle
+       class="dot"
+       cx="393.04"
+       cy="223.80"
+       r="1.8"
+       id="circle1164" />
+    <circle
+       class="dot"
+       cx="393.04"
+       cy="217.88"
+       r="1.8"
+       id="circle1165" />
+    <circle
+       class="dot"
+       cx="393.04"
+       cy="211.96"
+       r="1.8"
+       id="circle1166" />
+    <circle
+       class="dot"
+       cx="393.04"
+       cy="206.04"
+       r="1.8"
+       id="circle1167" />
+    <circle
+       class="dot"
+       cx="393.04"
+       cy="200.12"
+       r="1.8"
+       id="circle1168" />
+    <circle
+       class="dot"
+       cx="393.04"
+       cy="194.20"
+       r="1.8"
+       id="circle1169" />
+    <circle
+       class="dot"
+       cx="398.96"
+       cy="259.33"
+       r="1.8"
+       id="circle1170" />
+    <circle
+       class="dot"
+       cx="398.96"
+       cy="253.41"
+       r="1.8"
+       id="circle1171" />
+    <circle
+       class="dot"
+       cx="398.96"
+       cy="247.49"
+       r="1.8"
+       id="circle1172" />
+    <circle
+       class="dot"
+       cx="398.96"
+       cy="241.57"
+       r="1.8"
+       id="circle1173" />
+    <circle
+       class="dot"
+       cx="398.96"
+       cy="235.65"
+       r="1.8"
+       id="circle1174" />
+    <circle
+       class="dot"
+       cx="398.96"
+       cy="229.72"
+       r="1.8"
+       id="circle1175" />
+    <circle
+       class="dot"
+       cx="398.96"
+       cy="223.80"
+       r="1.8"
+       id="circle1176" />
+    <circle
+       class="dot"
+       cx="398.96"
+       cy="217.88"
+       r="1.8"
+       id="circle1177" />
+    <circle
+       class="dot"
+       cx="398.96"
+       cy="211.96"
+       r="1.8"
+       id="circle1178" />
+    <circle
+       class="dot"
+       cx="398.96"
+       cy="206.04"
+       r="1.8"
+       id="circle1179" />
+    <circle
+       class="dot"
+       cx="398.96"
+       cy="200.12"
+       r="1.8"
+       id="circle1180" />
+    <circle
+       class="dot"
+       cx="404.88"
+       cy="235.65"
+       r="1.8"
+       id="circle1181" />
+    <circle
+       class="dot"
+       cx="404.88"
+       cy="229.72"
+       r="1.8"
+       id="circle1182" />
+    <circle
+       class="dot"
+       cx="404.88"
+       cy="223.80"
+       r="1.8"
+       id="circle1183" />
+    <circle
+       class="dot"
+       cx="404.88"
+       cy="217.88"
+       r="1.8"
+       id="circle1184" />
+    <circle
+       class="dot"
+       cx="404.88"
+       cy="211.96"
+       r="1.8"
+       id="circle1185" />
+    <circle
+       class="dot"
+       cx="404.88"
+       cy="206.04"
+       r="1.8"
+       id="circle1186" />
+    <circle
+       class="dot"
+       cx="404.88"
+       cy="200.12"
+       r="1.8"
+       id="circle1187" />
+    <circle
+       class="dot"
+       cx="410.80"
+       cy="229.72"
+       r="1.8"
+       id="circle1188" />
+    <circle
+       class="dot"
+       cx="410.80"
+       cy="223.80"
+       r="1.8"
+       id="circle1189" />
+    <circle
+       class="dot"
+       cx="410.80"
+       cy="217.88"
+       r="1.8"
+       id="circle1190" />
+    <circle
+       class="dot"
+       cx="410.80"
+       cy="211.96"
+       r="1.8"
+       id="circle1191" />
+    <circle
+       class="dot"
+       cx="410.80"
+       cy="206.04"
+       r="1.8"
+       id="circle1192" />
+    <circle
+       class="dot"
+       cx="416.72"
+       cy="223.80"
+       r="1.8"
+       id="circle1193" />
+    <circle
+       class="dot"
+       cx="416.72"
+       cy="217.88"
+       r="1.8"
+       id="circle1194" />
+    <circle
+       class="dot"
+       cx="416.72"
+       cy="211.96"
+       r="1.8"
+       id="circle1195" />
+    <circle
+       class="dot"
+       cx="416.72"
+       cy="206.04"
+       r="1.8"
+       id="circle1196" />
+  </g>
+  <metadata
+     id="metadata1196">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:title>Latin America Dot Map - Ultra Density</dc:title>
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+</svg>
