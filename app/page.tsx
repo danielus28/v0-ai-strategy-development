@@ -1,7 +1,7 @@
 import { Navigation } from "@/components/navigation"
 import { HeroSection } from "@/components/hero-section"
 import { IsoMembershipSection } from "@/components/iso-membership-section"
-import { LatamMapSection } from "@/components/latam-map-section"
+import { LatamMapSection } from "@/components/latam-map-section-new"
 import { CapacitySection } from "@/components/capacity-section"
 import { MethodologySection } from "@/components/methodology-section"
 import { Footer } from "@/components/footer"
