@@ -1,16 +1,12 @@
 "use client"
 
-import { isoMembershipData } from "@/lib/data"
-import { useState, useRef } from "react"
+import { isoMembershipData, COUNTRY_NAMES_ES } from "@/lib/data"
+import { useState } from "react"
 import { motion } from "framer-motion"
 
 type MembershipStatus = "P" | "O" | "None"
 
 export function IsoMembershipSection() {
-  const [hoveredIdx, setHoveredIdx] = useState<number | null>(null)
-  const containerRef = useRef<HTMLDivElement>(null)
-
-  // Sort by SC42 status and then by country name for consistent visualization
   const sc42Data = [...isoMembershipData]
     .map((d) => ({
       ...d,
@@ -33,12 +29,11 @@ export function IsoMembershipSection() {
   const sc27OMemberCount = isoMembershipData.filter((d) => d.sc27_status === "O").length
 
   return (
-    <section className="py-20 px-6 bg-[#0D0D0D] text-[#F8F6F1]" id="participacion-normativa">
+    <section className="py-20 px-6 bg-[#0D0D0D] text-[#F8F6F1] scroll-mt-24" id="participacion-normativa">
       <div className="max-w-7xl mx-auto">
-        {/* Section Header */}
         <div className="mb-12">
-          <div className="inline-flex items-center gap-2 px-3 py-1 bg-[#C9A227]/10 text-[#C9A227] rounded-full font-mono text-sm mb-4">
-            Diferenciador
+          <div className="inline-flex items-center gap-2 px-3 py-1 bg-[#C9A227]/10 text-[#C9A227] rounded-full font-mono text-xs uppercase tracking-wide mb-4">
+            Participación normativa
           </div>
           <h2 className="font-serif text-3xl md:text-4xl font-semibold mb-4 text-balance">
             ¿Dónde se escriben los estándares?
@@ -49,27 +44,25 @@ export function IsoMembershipSection() {
           </p>
         </div>
 
-        {/* Legend */}
-        <div className="flex items-center gap-8 mb-8 flex-wrap">
-          <div className="flex items-center gap-3">
-            <div className="w-3 h-3 rounded-full bg-[#C9A227]" />
+        <div className="flex items-center gap-6 md:gap-8 mb-8 flex-wrap" role="list" aria-label="Leyenda">
+          <div className="flex items-center gap-3" role="listitem">
+            <div className="w-3 h-3 rounded-full bg-[#C9A227]" aria-hidden="true" />
             <span className="text-sm font-medium">P-member (voto)</span>
           </div>
-          <div className="flex items-center gap-3">
-            <div className="w-3 h-3 rounded-full bg-[#F8F6F1]" />
+          <div className="flex items-center gap-3" role="listitem">
+            <div className="w-3 h-3 rounded-full bg-[#F8F6F1]" aria-hidden="true" />
             <span className="text-sm font-medium">O-member (observador)</span>
           </div>
-          <div className="flex items-center gap-3">
-            <div className="w-3 h-3 rounded-full bg-[#5C5C5A]" />
+          <div className="flex items-center gap-3" role="listitem">
+            <div className="w-3 h-3 rounded-full bg-[#5C5C5A]" aria-hidden="true" />
             <span className="text-sm font-medium">Sin membresía</span>
           </div>
         </div>
 
-        {/* SC 42 Lollipop Chart */}
         <div className="mb-16">
-          <div className="flex items-center gap-4 mb-6">
-            <h3 className="font-mono text-sm font-semibold tracking-wide uppercase text-[#F8F6F1]/50">
-              ISO/IEC JTC 1/SC 42 — Inteligencia Artificial
+          <div className="flex items-center gap-4 mb-6 flex-wrap">
+            <h3 className="font-mono text-sm font-semibold tracking-wide uppercase text-[#F8F6F1]/60">
+              ISO/IEC JTC 1/SC 42 — Inteligencia artificial
             </h3>
             <div className="flex items-center gap-2 text-xs font-mono">
               <span className="text-[#C9A227]">{sc42PMemberCount} P</span>
@@ -78,25 +71,28 @@ export function IsoMembershipSection() {
             </div>
           </div>
 
-          <div className="bg-[#181818] rounded-lg border border-[#2A2A2A] p-6">
+          <div className="bg-[#181818] rounded-lg border border-[#2A2A2A] p-4 md:p-6">
             <LollipopChart
               data={sc42Data.map((d) => ({
                 name: d.iso3,
-                fullName: d.country,
+                fullName: COUNTRY_NAMES_ES[d.iso3] || d.country,
                 value: d.value,
                 highlight: d.highlight,
                 status: d.sc42_status as MembershipStatus,
                 nationalBody: d.sc42_national_body,
               }))}
               chartId="sc42"
+              ariaLabel="Participación de países LATAM en el comité ISO/IEC SC 42 de Inteligencia Artificial"
             />
+            <p className="md:hidden text-xs text-[#F8F6F1]/50 mt-3 font-mono">
+              ← Desliza para ver más países →
+            </p>
           </div>
         </div>
 
-        {/* SC 27 Lollipop Chart */}
         <div>
-          <div className="flex items-center gap-4 mb-6">
-            <h3 className="font-mono text-sm font-semibold tracking-wide uppercase text-[#F8F6F1]/50">
+          <div className="flex items-center gap-4 mb-6 flex-wrap">
+            <h3 className="font-mono text-sm font-semibold tracking-wide uppercase text-[#F8F6F1]/60">
               ISO/IEC JTC 1/SC 27 — Seguridad de la información
             </h3>
             <div className="flex items-center gap-2 text-xs font-mono">
@@ -106,18 +102,22 @@ export function IsoMembershipSection() {
             </div>
           </div>
 
-          <div className="bg-[#181818] rounded-lg border border-[#2A2A2A] p-6">
+          <div className="bg-[#181818] rounded-lg border border-[#2A2A2A] p-4 md:p-6">
             <LollipopChart
               data={sc27Data.map((d) => ({
                 name: d.iso3,
-                fullName: d.country,
+                fullName: COUNTRY_NAMES_ES[d.iso3] || d.country,
                 value: d.value,
                 highlight: d.sc27_status === "P",
                 status: d.sc27_status as MembershipStatus,
                 nationalBody: d.sc27_national_body,
               }))}
               chartId="sc27"
+              ariaLabel="Participación de países LATAM en el comité ISO/IEC SC 27 de Seguridad de la información"
             />
+            <p className="md:hidden text-xs text-[#F8F6F1]/50 mt-3 font-mono">
+              ← Desliza para ver más países →
+            </p>
           </div>
         </div>
       </div>
@@ -135,25 +135,29 @@ interface LollipopChartProps {
     nationalBody?: string
   }[]
   chartId: string
+  ariaLabel: string
 }
 
-function LollipopChart({ data, chartId }: LollipopChartProps) {
+function LollipopChart({ data, chartId, ariaLabel }: LollipopChartProps) {
   const [hoveredIdx, setHoveredIdx] = useState<number | null>(null)
-  const chartHeight = 200
+  const chartHeight = 220
   const chartWidth = Math.max(900, data.length * 36)
 
   return (
-    <div className="overflow-x-auto">
+    <div className="overflow-x-auto" role="figure" aria-label={ariaLabel}>
       <div className="min-w-[900px]" style={{ width: chartWidth }}>
-        {/* SVG Chart */}
-        <svg viewBox={`0 0 ${chartWidth} ${chartHeight + 40}`} className="w-full" style={{ height: chartHeight + 40 }}>
-          {/* Horizontal grid lines */}
-          {[0, 25, 50, 75, 100].map((val) => {
+        <svg viewBox={`0 0 ${chartWidth} ${chartHeight + 50}`} className="w-full" style={{ height: chartHeight + 50 }}>
+          {[
+            { val: 100, label: "P · voto" },
+            { val: 60, label: "O · observador" },
+            { val: 20, label: "Sin membresía" },
+            { val: 0, label: "" },
+          ].map(({ val, label }) => {
             const y = chartHeight - (val / 100) * (chartHeight - 40)
             return (
               <g key={val}>
                 <line
-                  x1={40}
+                  x1={90}
                   y1={y}
                   x2={chartWidth - 20}
                   y2={y}
@@ -161,16 +165,17 @@ function LollipopChart({ data, chartId }: LollipopChartProps) {
                   strokeWidth={1}
                   strokeDasharray={val === 0 ? "0" : "4,4"}
                 />
-                <text x={32} y={y + 4} fontSize={10} fill="#5C5C5A" textAnchor="end" fontFamily="monospace">
-                  {val === 100 ? "P" : val === 60 ? "O" : val === 0 ? "—" : ""}
-                </text>
+                {label && (
+                  <text x={84} y={y + 4} fontSize={10} fill="#8A8A88" textAnchor="end" fontFamily="monospace">
+                    {label}
+                  </text>
+                )}
               </g>
             )
           })}
 
-          {/* Lollipops */}
           {data.map((item, idx) => {
-            const x = 60 + idx * ((chartWidth - 80) / data.length)
+            const x = 110 + idx * ((chartWidth - 130) / data.length)
             const normalizedValue = item.value / 100
             const peakY = chartHeight - normalizedValue * (chartHeight - 40)
             const baseY = chartHeight
@@ -183,8 +188,14 @@ function LollipopChart({ data, chartId }: LollipopChartProps) {
                 className="cursor-pointer"
                 onMouseEnter={() => setHoveredIdx(idx)}
                 onMouseLeave={() => setHoveredIdx(null)}
+                tabIndex={0}
+                role="img"
+                aria-label={`${item.fullName}: ${
+                  item.status === "P" ? "P-member" : item.status === "O" ? "O-member" : "Sin membresía"
+                }${item.nationalBody ? `, organismo ${item.nationalBody}` : ""}`}
+                onFocus={() => setHoveredIdx(idx)}
+                onBlur={() => setHoveredIdx(null)}
               >
-                {/* Stem line */}
                 <motion.line
                   x1={x}
                   y1={baseY}
@@ -193,22 +204,22 @@ function LollipopChart({ data, chartId }: LollipopChartProps) {
                   stroke={color}
                   strokeWidth={isHovered ? 2 : 1}
                   initial={{ y2: baseY }}
-                  animate={{ y2: peakY }}
+                  whileInView={{ y2: peakY }}
+                  viewport={{ once: true }}
                   transition={{ duration: 0.5, delay: idx * 0.02 }}
                 />
 
-                {/* Peak circle */}
                 <motion.circle
                   cx={x}
                   cy={peakY}
                   r={isHovered ? 6 : 4}
                   fill={color}
                   initial={{ cy: baseY, opacity: 0 }}
-                  animate={{ cy: peakY, opacity: 1 }}
+                  whileInView={{ cy: peakY, opacity: 1 }}
+                  viewport={{ once: true }}
                   transition={{ duration: 0.5, delay: idx * 0.02 }}
                 />
 
-                {/* Glow effect for P-members */}
                 {item.highlight && (
                   <motion.circle
                     cx={x}
@@ -219,17 +230,17 @@ function LollipopChart({ data, chartId }: LollipopChartProps) {
                     strokeWidth={1}
                     opacity={0.3}
                     initial={{ cy: baseY }}
-                    animate={{ cy: peakY }}
+                    whileInView={{ cy: peakY }}
+                    viewport={{ once: true }}
                     transition={{ duration: 0.5, delay: idx * 0.02 }}
                   />
                 )}
 
-                {/* Country label (rotated) */}
                 <text
                   x={x}
                   y={chartHeight + 16}
                   fontSize={9}
-                  fill={isHovered ? "#F8F6F1" : "#5C5C5A"}
+                  fill={isHovered ? "#F8F6F1" : "#8A8A88"}
                   textAnchor="end"
                   fontFamily="monospace"
                   fontWeight={item.highlight ? 600 : 400}
@@ -238,23 +249,22 @@ function LollipopChart({ data, chartId }: LollipopChartProps) {
                   {item.name}
                 </text>
 
-                {/* Hover tooltip */}
                 {isHovered && (
                   <g>
                     <rect
-                      x={x - 60}
-                      y={peakY - 50}
-                      width={120}
-                      height={40}
+                      x={x - 70}
+                      y={peakY - 56}
+                      width={140}
+                      height={44}
                       fill="#0D0D0D"
                       stroke="#C9A227"
                       strokeWidth={1}
                       rx={4}
                     />
-                    <text x={x} y={peakY - 34} fontSize={11} fill="#F8F6F1" textAnchor="middle" fontWeight={600}>
+                    <text x={x} y={peakY - 40} fontSize={11} fill="#F8F6F1" textAnchor="middle" fontWeight={600}>
                       {item.fullName}
                     </text>
-                    <text x={x} y={peakY - 20} fontSize={10} fill="#F8F6F1" textAnchor="middle" opacity={0.7}>
+                    <text x={x} y={peakY - 24} fontSize={10} fill="#F8F6F1" textAnchor="middle" opacity={0.75}>
                       {item.status === "P" ? "P-member" : item.status === "O" ? "O-member" : "Sin membresía"}
                       {item.nationalBody && ` · ${item.nationalBody}`}
                     </text>
@@ -263,18 +273,6 @@ function LollipopChart({ data, chartId }: LollipopChartProps) {
               </g>
             )
           })}
-
-          {/* Base dot-wave decoration */}
-          {Array.from({ length: Math.floor((chartWidth - 80) / 8) }).map((_, i) => (
-            <circle
-              key={i}
-              cx={60 + i * 8}
-              cy={chartHeight + 2}
-              r={1.5}
-              fill="#2A2A2A"
-              opacity={0.5 + Math.sin(i * 0.3) * 0.3}
-            />
-          ))}
         </svg>
       </div>
     </div>

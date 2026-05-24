@@ -1,23 +1,18 @@
 "use client"
 
 import { Button } from "@/components/ui/button"
-import { ArrowRight, Map, Users } from "lucide-react"
+import { ArrowRight, Map, Calendar } from "lucide-react"
 import { motion } from "framer-motion"
 import { TypewriterEffect } from "@/components/ui/typewriter-effect"
 
 export function HeroSection() {
-  const scrollToMap = () => {
-    document.getElementById("mapa-regional")?.scrollIntoView({ behavior: "smooth" })
-  }
-
-  const scrollToContact = () => {
-    document.getElementById("agenda")?.scrollIntoView({ behavior: "smooth" })
+  const scrollTo = (id: string) => {
+    document.getElementById(id)?.scrollIntoView({ behavior: "smooth" })
   }
 
   return (
-    <section className="relative min-h-[90vh] flex items-center justify-center overflow-hidden">
-      {/* Dot pattern background */}
-      <div className="absolute inset-0 opacity-30">
+    <section className="relative min-h-[90vh] flex items-center justify-center overflow-hidden pt-24" aria-labelledby="hero-title">
+      <div className="absolute inset-0 opacity-30" aria-hidden="true">
         <svg width="100%" height="100%" xmlns="http://www.w3.org/2000/svg">
           <defs>
             <pattern id="dotPattern" x="0" y="0" width="20" height="20" patternUnits="userSpaceOnUse">
@@ -29,8 +24,7 @@ export function HeroSection() {
       </div>
 
       <div className="relative z-10 max-w-5xl mx-auto px-6 text-center">
-        {/* Headline */}
-        <div className="mb-8 min-h-[4rem] flex items-center justify-center">
+        <h1 id="hero-title" className="mb-8 min-h-[5rem] md:min-h-[6rem] flex items-center justify-center">
           <TypewriterEffect
             words={[
               { text: "Observatorio", className: "font-serif text-4xl md:text-5xl lg:text-6xl font-semibold leading-tight" },
@@ -39,32 +33,29 @@ export function HeroSection() {
               { text: "de", className: "font-serif text-4xl md:text-5xl lg:text-6xl font-semibold leading-tight" },
               { text: "IA", className: "font-serif text-4xl md:text-5xl lg:text-6xl font-semibold leading-tight text-accent" },
             ]}
-            className="text-center"
             cursorClassName="bg-accent"
           />
-        </div>
+        </h1>
 
-        {/* Subhead */}
         <motion.p
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ delay: 1, duration: 0.5 }}
           className="text-lg md:text-xl text-muted-foreground max-w-3xl mx-auto leading-relaxed mb-6 text-pretty"
         >
-          Mostramos dónde está América Latina para decidir, entre todos, hacia dónde vamos.
+          Datos públicos y comparables sobre cómo los países de América Latina y el Caribe se preparan para gobernar la
+          inteligencia artificial. Para reguladores, organismos técnicos, investigación e industria.
         </motion.p>
 
-        {/* Dato ancla */}
         <motion.div
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
           transition={{ delay: 1.5, duration: 0.5 }}
           className="font-mono text-sm text-foreground/70 mb-12"
         >
-          33 países · 6 indicadores · Datos abiertos
+          33 países · 6 capas de datos · 6 fuentes públicas
         </motion.div>
 
-        {/* CTAs */}
         <motion.div
           initial={{ opacity: 0, y: 10 }}
           animate={{ opacity: 1, y: 0 }}
@@ -74,30 +65,31 @@ export function HeroSection() {
           <Button
             size="lg"
             className="bg-accent hover:bg-accent/90 text-accent-foreground font-medium gap-2"
-            onClick={scrollToMap}
+            onClick={() => scrollTo("mapa-regional")}
           >
-            <Map className="w-5 h-5" />
+            <Map className="w-5 h-5" aria-hidden="true" />
             Explorar el mapa
-            <ArrowRight className="w-4 h-4" />
+            <ArrowRight className="w-4 h-4" aria-hidden="true" />
           </Button>
           <Button
+            asChild
             size="lg"
             variant="outline"
             className="border-primary text-primary hover:bg-primary hover:text-primary-foreground font-medium gap-2 bg-transparent"
-            onClick={scrollToContact}
           >
-            <Users className="w-5 h-5" />
-            Descargar datos
+            <a href="#agenda">
+              <Calendar className="w-5 h-5" aria-hidden="true" />
+              Ver agenda 2026
+            </a>
           </Button>
         </motion.div>
 
-        {/* Stats preview */}
         <div className="mt-16 grid grid-cols-2 md:grid-cols-4 gap-6 md:gap-8">
           {[
             { value: "33", label: "Países monitoreados" },
             { value: "6", label: "Capas de datos" },
-            { value: "8", label: "Fuentes públicas" },
-            { value: "2024", label: "Datos actualizados" },
+            { value: "6", label: "Fuentes públicas" },
+            { value: "2026", label: "Actualización en curso" },
           ].map((stat) => (
             <div key={stat.label} className="text-center">
               <div className="font-mono text-3xl md:text-4xl font-medium text-accent mb-1">{stat.value}</div>
@@ -107,8 +99,7 @@ export function HeroSection() {
         </div>
       </div>
 
-      {/* Bottom fade */}
-      <div className="absolute bottom-0 left-0 right-0 h-32 bg-gradient-to-t from-background to-transparent" />
+      <div className="absolute bottom-0 left-0 right-0 h-32 bg-gradient-to-t from-background to-transparent" aria-hidden="true" />
     </section>
   )
 }
