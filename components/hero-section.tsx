@@ -2,7 +2,7 @@
 
 import { Button } from "@/components/ui/button"
 import { ArrowRight, Map, Calendar } from "lucide-react"
-import { motion } from "framer-motion"
+import { motion } from "motion/react"
 import { TypewriterEffect } from "@/components/ui/typewriter-effect"
 
 export function HeroSection() {

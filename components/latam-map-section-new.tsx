@@ -1,7 +1,7 @@
 "use client"
 
 import { useState, useRef, useEffect, useMemo } from "react"
-import { motion, AnimatePresence } from "framer-motion"
+import { motion, AnimatePresence } from "motion/react"
 import { cn } from "@/lib/utils"
 import { getCountryData, COUNTRY_NAMES_ES, type LayerType } from "@/lib/data"
 import { Button } from "@/components/ui/button"

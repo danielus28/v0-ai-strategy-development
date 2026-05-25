@@ -2,7 +2,7 @@
 
 import { egdiData, gciData, gariData, COUNTRY_NAMES_ES } from "@/lib/data"
 import { cn } from "@/lib/utils"
-import { motion } from "framer-motion"
+import { motion } from "motion/react"
 
 type Dimension = "egdi" | "gci" | "gari"
 

@@ -1,7 +1,7 @@
 "use client"
 
 import { cn } from "@/lib/utils"
-import { motion, stagger, useAnimate, useInView } from "framer-motion"
+import { motion, stagger, useAnimate, useInView } from "motion/react"
 import { useEffect } from "react"
 
 export const TypewriterEffect = ({
@@ -36,7 +36,7 @@ export const TypewriterEffect = ({
                 },
             )
         }
-    }, [isInView])
+    }, [isInView, animate])
 
     return (
         <div className={cn("inline-flex items-baseline flex-wrap justify-center gap-x-2 md:gap-x-3 lg:gap-x-4", className)}>

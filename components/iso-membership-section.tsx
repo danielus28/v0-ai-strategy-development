@@ -2,7 +2,7 @@
 
 import { isoMembershipData, COUNTRY_NAMES_ES } from "@/lib/data"
 import { useState } from "react"
-import { motion } from "framer-motion"
+import { motion } from "motion/react"
 
 type MembershipStatus = "P" | "O" | "None"
 
