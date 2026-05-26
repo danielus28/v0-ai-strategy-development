@@ -35,7 +35,7 @@ export function IsoMembershipSection() {
           <div className="inline-flex items-center gap-2 px-3 py-1 bg-[#C9A227]/10 text-[#C9A227] rounded-full font-mono text-xs uppercase tracking-wide mb-4">
             Participación normativa
           </div>
-          <h2 className="font-serif text-3xl md:text-4xl font-semibold mb-4 text-balance">
+          <h2 className="font-heading text-3xl md:text-4xl font-semibold mb-4 text-balance">
             ¿Dónde se escriben los estándares?
           </h2>
           <p className="text-lg text-[#F8F6F1]/60 max-w-3xl leading-relaxed">

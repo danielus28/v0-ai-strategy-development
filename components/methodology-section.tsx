@@ -53,7 +53,7 @@ export function MethodologySection() {
           <div className="inline-flex items-center gap-2 px-3 py-1 bg-accent/10 text-accent rounded-full font-mono text-xs uppercase tracking-wide mb-4">
             Transparencia
           </div>
-          <h2 className="font-serif text-3xl md:text-4xl font-semibold mb-4">Metodología y fuentes</h2>
+          <h2 className="font-heading text-3xl md:text-4xl font-semibold mb-4">Metodología y fuentes</h2>
           <p className="text-lg text-muted-foreground max-w-3xl leading-relaxed">
             Cada indicador tiene fuente pública, fecha y alcance documentado. Sin datos propietarios ni cajas negras.
             Limitaciones declaradas explícitamente.
@@ -76,7 +76,7 @@ export function MethodologySection() {
             },
           ].map((principle) => (
             <div key={principle.title} className="p-6 bg-background rounded-lg border border-border">
-              <h3 className="font-serif text-lg font-semibold mb-2">{principle.title}</h3>
+              <h3 className="font-heading text-lg font-semibold mb-2">{principle.title}</h3>
               <p className="text-sm text-muted-foreground leading-relaxed">{principle.description}</p>
             </div>
           ))}

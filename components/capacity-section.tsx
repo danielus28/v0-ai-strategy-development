@@ -32,7 +32,7 @@ export function CapacitySection() {
           <div className="inline-flex items-center gap-2 px-3 py-1 bg-accent/10 text-accent rounded-full font-mono text-xs uppercase tracking-wide mb-4">
             Capacidad institucional
           </div>
-          <h2 className="font-serif text-3xl md:text-4xl font-semibold mb-4">Capacidad para gobernar IA</h2>
+          <h2 className="font-heading text-3xl md:text-4xl font-semibold mb-4">Capacidad para gobernar IA</h2>
           <p className="text-lg text-muted-foreground max-w-3xl leading-relaxed">
             Tres dimensiones clave para evaluar la preparación de los países de LATAM. Mostramos el top 10 regional;
             puedes ver el detalle país por país en el{" "}
@@ -85,7 +85,7 @@ function DimensionCard({ dimension }: { dimension: (typeof dimensions)[0] }) {
           <span className="font-mono text-2xl font-semibold text-accent">{dimension.label}</span>
           <span className="text-sm text-muted-foreground">{dimension.year}</span>
         </div>
-        <h3 className="font-serif text-lg font-medium">{dimension.fullLabel}</h3>
+        <h3 className="font-heading text-lg font-medium">{dimension.fullLabel}</h3>
         <p className="text-xs text-muted-foreground mt-1">{dimension.source}</p>
       </div>
 

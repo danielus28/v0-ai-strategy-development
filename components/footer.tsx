@@ -8,9 +8,11 @@ export function Footer() {
       <div className="max-w-5xl mx-auto">
         <div className="grid md:grid-cols-4 gap-8 mb-8">
           <div className="md:col-span-2">
-            <div className="flex items-center gap-2 mb-4">
-              <AethosLogo className="w-8 h-8 text-foreground" />
-              <span className="font-serif text-xl font-semibold">Aethos AI</span>
+            <div className="flex items-center gap-2.5 mb-4">
+              <AethosLogo className="w-10 h-10 text-foreground" />
+              <div className="font-heading tracking-[0.18em] uppercase font-semibold text-[15px] leading-none">
+                AETHOS <span className="text-muted-foreground font-medium">AI</span>
+              </div>
             </div>
             <p className="text-sm text-muted-foreground max-w-md leading-relaxed">
               Puente técnico-estratégico para articular participación normativa, evidencia regional e implementación

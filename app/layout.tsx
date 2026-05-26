@@ -1,6 +1,6 @@
 import type React from "react"
 import type { Metadata, Viewport } from "next"
-import { Inter, IBM_Plex_Serif, IBM_Plex_Mono } from "next/font/google"
+import { Inter, IBM_Plex_Sans, IBM_Plex_Mono } from "next/font/google"
 import { Analytics } from "@vercel/analytics/next"
 import "./globals.css"
 
@@ -10,10 +10,10 @@ const inter = Inter({
   display: "swap",
 })
 
-const ibmPlexSerif = IBM_Plex_Serif({
+const ibmPlexSans = IBM_Plex_Sans({
   subsets: ["latin"],
   weight: ["400", "500", "600", "700"],
-  variable: "--font-ibm-plex-serif",
+  variable: "--font-ibm-plex-sans",
   display: "swap",
 })
 
@@ -71,7 +71,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="es" className="scroll-smooth">
-      <body className={`${inter.variable} ${ibmPlexSerif.variable} ${ibmPlexMono.variable} font-sans antialiased`}>
+      <body className={`${inter.variable} ${ibmPlexSans.variable} ${ibmPlexMono.variable} font-sans antialiased`}>
         {children}
         <Analytics />
       </body>

@@ -228,7 +228,7 @@ export function LatamMapSection() {
           <div className="inline-flex items-center gap-2 px-3 py-1 bg-[#C9A227]/10 text-[#C9A227] rounded-full font-mono text-xs uppercase tracking-wide mb-4">
             Visualización regional
           </div>
-          <h2 className="font-serif text-3xl md:text-4xl font-semibold mb-4 text-balance">Mapa regional LATAM</h2>
+          <h2 className="font-heading text-3xl md:text-4xl font-semibold mb-4 text-balance">Mapa regional LATAM</h2>
           <p className="text-lg text-[#F8F6F1]/60 max-w-3xl leading-relaxed">
             Explora seis capas comparables de datos sobre gobernanza de IA en la región. Cambia entre capas y selecciona
             un país para ver su perfil completo.
@@ -329,7 +329,7 @@ export function LatamMapSection() {
                 >
                   <div className="flex items-start justify-between mb-6">
                     <div>
-                      <h3 className="font-serif text-2xl font-semibold">
+                      <h3 className="font-heading text-2xl font-semibold">
                         {COUNTRY_NAMES_ES[selectedCountryData.iso3] || selectedCountryData.country}
                       </h3>
                       <span className="font-mono text-sm text-[#C9A227]">{selectedCountryData.iso3}</span>
@@ -428,7 +428,7 @@ export function LatamMapSection() {
                   <div className="w-16 h-16 rounded-full bg-[#2A2A2A] flex items-center justify-center mb-4">
                     <Info className="w-8 h-8 text-[#F8F6F1]/30" aria-hidden="true" />
                   </div>
-                  <h3 className="font-serif text-xl font-semibold mb-2">Selecciona un país</h3>
+                  <h3 className="font-heading text-xl font-semibold mb-2">Selecciona un país</h3>
                   <p className="text-sm text-[#F8F6F1]/50 max-w-[250px]">
                     Haz clic o pulsa Enter sobre cualquier país del mapa para ver su perfil completo.
                   </p>

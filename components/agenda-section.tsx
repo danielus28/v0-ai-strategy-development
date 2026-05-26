@@ -53,7 +53,7 @@ export function AgendaSection() {
           <div className="inline-flex items-center gap-2 px-3 py-1 bg-accent/10 text-accent rounded-full font-mono text-xs uppercase tracking-wide mb-4">
             Roadmap 2026
           </div>
-          <h2 className="font-serif text-3xl md:text-4xl font-semibold mb-4">Agenda Aethos 2026</h2>
+          <h2 className="font-heading text-3xl md:text-4xl font-semibold mb-4">Agenda Aethos 2026</h2>
           <p className="text-lg text-muted-foreground max-w-3xl leading-relaxed">
             Compromisos medibles para posicionar la voz de LATAM en los estándares globales de gobernanza de IA durante
             los próximos doce meses.
@@ -95,7 +95,7 @@ export function AgendaSection() {
                       </span>
                     )}
                   </div>
-                  <h3 className="font-serif text-lg font-semibold mb-1">{milestone.title}</h3>
+                  <h3 className="font-heading text-lg font-semibold mb-1">{milestone.title}</h3>
                   <p className="text-muted-foreground leading-relaxed">{milestone.description}</p>
                 </div>
               </li>
@@ -105,7 +105,7 @@ export function AgendaSection() {
 
         <div className="mt-16 p-8 bg-primary text-primary-foreground rounded-lg">
           <div className="max-w-2xl">
-            <h3 className="font-serif text-2xl font-semibold mb-3">¿Quieres sumarte a la agenda?</h3>
+            <h3 className="font-heading text-2xl font-semibold mb-3">¿Quieres sumarte a la agenda?</h3>
             <p className="text-primary-foreground/80 mb-6 leading-relaxed">
               Buscamos profesionales, investigadores e instituciones comprometidos con la gobernanza responsable de IA
               en LATAM. Cuéntanos tu perfil y te integramos al grupo de trabajo técnico.

@@ -34,9 +34,11 @@ export function Navigation() {
       )}
     >
       <nav className="max-w-7xl mx-auto px-6 flex items-center justify-between" aria-label="Navegación principal">
-        <a href="#" className="flex items-center gap-2" aria-label="Aethos AI — Inicio">
-          <AethosLogo className="w-8 h-8 text-foreground" />
-          <span className="font-serif text-xl font-semibold">Aethos AI</span>
+        <a href="#" className="flex items-center gap-2.5 md:gap-3" aria-label="Aethos AI — Inicio">
+          <AethosLogo className="w-10 h-10 md:w-11 md:h-11 text-foreground" />
+          <div className="font-heading tracking-[0.18em] uppercase font-semibold text-[14px] md:text-[15px] leading-none">
+            AETHOS <span className="text-muted-foreground font-medium">AI</span>
+          </div>
         </a>
 
         <div className="hidden md:flex items-center gap-8">
