@@ -39,7 +39,7 @@ export function Footer() {
                 </a>
               </li>
               <li>
-                <a href="#metodologia" className="hover:text-foreground transition-colors">
+                <a href="/metodologia" className="hover:text-foreground transition-colors">
                   Metodología
                 </a>
               </li>
@@ -50,8 +50,13 @@ export function Footer() {
             <h4 className="font-medium mb-4">Contacto</h4>
             <ul className="space-y-2 text-sm text-muted-foreground">
               <li>
-                <a href="#agenda" className="hover:text-foreground transition-colors">
-                  Agenda 2026
+                <a
+                  href="https://apoyo.aethosai.org"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="hover:text-foreground transition-colors"
+                >
+                  Apoyar el observatorio
                 </a>
               </li>
               <li>

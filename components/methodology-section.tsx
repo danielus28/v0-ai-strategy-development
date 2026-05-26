@@ -110,7 +110,7 @@ export function MethodologySection() {
             },
             {
               title: "Accionable",
-              description: "Cada visualización termina en 'qué hacer': agenda técnica, comités, pilotos.",
+              description: "Cada visualización termina en 'qué hacer': comités técnicos, pilotos, recomendaciones.",
             },
           ].map((principle) => (
             <div key={principle.title} className="p-6 bg-background rounded-lg border border-border">

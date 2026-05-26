@@ -10,9 +10,10 @@ const navLinks = [
   { href: "#participacion-normativa", label: "Participación normativa" },
   { href: "#mapa-regional", label: "Mapa regional" },
   { href: "#capacidad", label: "Capacidad" },
-  { href: "#agenda", label: "Agenda 2026" },
-  { href: "#metodologia", label: "Metodología" },
+  { href: "/metodologia", label: "Metodología" },
 ]
+
+const SUMARSE_URL = "https://apoyo.aethosai.org"
 
 export function Navigation() {
   const [isScrolled, setIsScrolled] = useState(false)
@@ -59,7 +60,9 @@ export function Navigation() {
             size="sm"
             className="bg-accent hover:bg-accent/90 text-accent-foreground"
           >
-            <a href="#agenda">Sumarse</a>
+            <a href={SUMARSE_URL} target="_blank" rel="noopener noreferrer">
+              Apoyar
+            </a>
           </Button>
         </div>
 
@@ -89,8 +92,13 @@ export function Navigation() {
               </a>
             ))}
             <Button asChild size="sm" className="w-full bg-accent hover:bg-accent/90 text-accent-foreground">
-              <a href="#agenda" onClick={() => setIsMobileMenuOpen(false)}>
-                Sumarse
+              <a
+                href={SUMARSE_URL}
+                target="_blank"
+                rel="noopener noreferrer"
+                onClick={() => setIsMobileMenuOpen(false)}
+              >
+                Apoyar
               </a>
             </Button>
           </div>

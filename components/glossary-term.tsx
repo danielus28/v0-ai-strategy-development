@@ -2,7 +2,7 @@
 
 import type { ReactNode } from "react"
 import { cn } from "@/lib/utils"
-import { Tooltip, TooltipContent, TooltipProvider, TooltipTrigger } from "@/components/ui/tooltip"
+import { Tooltip, TooltipContent, TooltipTrigger } from "@/components/ui/tooltip"
 
 interface GlossaryEntry {
   label: string
@@ -75,30 +75,28 @@ export function GlossaryTerm({ term, children, className }: GlossaryTermProps) {
     return <>{children ?? term}</>
   }
   return (
-    <TooltipProvider delayDuration={150}>
-      <Tooltip>
-        <TooltipTrigger asChild>
-          <span
-            role="button"
-            tabIndex={0}
-            className={cn(
-              "cursor-help underline decoration-dotted decoration-current/50 underline-offset-2 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#C9A227] rounded-sm",
-              className,
-            )}
-          >
-            {children ?? term}
-          </span>
-        </TooltipTrigger>
-        <TooltipContent>
-          <div className="font-medium mb-1">{entry.label}</div>
-          <div className="text-xs text-[#F8F6F1]/80 leading-relaxed">{entry.definition}</div>
-          {entry.source && (
-            <div className="text-[10px] uppercase tracking-wide text-[#C9A227] font-mono mt-1.5">
-              Fuente: {entry.source}
-            </div>
+    <Tooltip>
+      <TooltipTrigger asChild>
+        <span
+          role="button"
+          tabIndex={0}
+          className={cn(
+            "cursor-help underline decoration-dotted decoration-current/50 underline-offset-2 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#C9A227] rounded-sm",
+            className,
           )}
-        </TooltipContent>
-      </Tooltip>
-    </TooltipProvider>
+        >
+          {children ?? term}
+        </span>
+      </TooltipTrigger>
+      <TooltipContent>
+        <div className="font-medium mb-1">{entry.label}</div>
+        <div className="text-xs text-[#F8F6F1]/80 leading-relaxed">{entry.definition}</div>
+        {entry.source && (
+          <div className="text-[10px] uppercase tracking-wide text-[#C9A227] font-mono mt-1.5">
+            Fuente: {entry.source}
+          </div>
+        )}
+      </TooltipContent>
+    </Tooltip>
   )
 }

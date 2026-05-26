@@ -1,7 +1,7 @@
 "use client"
 
 import { Button } from "@/components/ui/button"
-import { ArrowRight, Map, Calendar } from "lucide-react"
+import { ArrowRight, Map, BookOpen } from "lucide-react"
 import { motion } from "motion/react"
 
 const HEADLINE_WORDS = ["¿Tu", "país", "está", "listo", "para", "el", "cambio?"]
@@ -107,9 +107,9 @@ export function HeroSection() {
             variant="outline"
             className="border-primary text-primary hover:bg-primary hover:text-primary-foreground font-medium gap-2 bg-transparent"
           >
-            <a href="#agenda">
-              <Calendar className="w-5 h-5" aria-hidden="true" />
-              Ver agenda 2026
+            <a href="/metodologia">
+              <BookOpen className="w-5 h-5" aria-hidden="true" />
+              Conocer la metodología
             </a>
           </Button>
         </motion.div>

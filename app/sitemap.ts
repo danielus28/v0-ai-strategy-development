@@ -30,16 +30,10 @@ export default function sitemap(): MetadataRoute.Sitemap {
       priority: 0.8,
     },
     {
-      url: `${BASE_URL}/#agenda`,
+      url: `${BASE_URL}/metodologia`,
       lastModified: now,
       changeFrequency: "monthly",
       priority: 0.7,
-    },
-    {
-      url: `${BASE_URL}/#metodologia`,
-      lastModified: now,
-      changeFrequency: "yearly",
-      priority: 0.6,
     },
   ]
 }

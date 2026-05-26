@@ -266,7 +266,9 @@ Todos los acrónimos (EGDI, GCI, GARI, ILIA, OECD.AI, ISO/IEC, SC 42, SC 27) aho
 
 ## 10. Pendientes / preguntas abiertas
 
-- [ ] **Revisar metodología completa del proyecto** (mencionado por el usuario). El SVG cubre 25 países; `COUNTRY_NAMES_ES` lista 34; falta decidir el alcance final (incluir/excluir microestados del Caribe, agregar PRI/JAM al SVG).
-- [ ] Decidir naming futuro: "Aethos AI" → "Aethos IA" / "Aethos Inteligencia Artificial" (señalar como producto LATAM).
-- [ ] Definir si el TooltipProvider debe vivir en `app/layout.tsx` (uno global) vs uno por GlossaryTerm (actual — overhead mínimo).
-- [ ] Revisar copy del componente "Cumplimiento" del mapa cuando se incorporen JAM y PRI al SVG.
+- [ ] **Revisar metodología completa del proyecto** (mencionado por el usuario). El SVG cubre 25 países; `COUNTRY_NAMES_ES` lista 34; falta decidir el alcance final (incluir/excluir microestados del Caribe, agregar PRI/JAM al SVG). %%creo que para esto hay qye hacer una página exclusiva de la metodología
+- [ ] Decidir naming futuro: "Aethos AI" → "Aethos IA" / "Aethos Inteligencia Artificial" (señalar como producto LATAM). %%Esto no es nuestro problema ahora %%
+- [ ] Definir si el TooltipProvider debe vivir en `app/layout.tsx` (uno global) vs uno por GlossaryTerm (actual — overhead mínimo). %%lo que genere una mejor UX%%
+- [ ] Revisar copy del componente "Cumplimiento" del mapa cuando se incorporen JAM y PRI al SVG. %% ¿cómo lo hacemos?%%
+
+%%En general vamos muy bien, quedan cosas muy finas que hilar, por ejemplo, eliminemos la agenda del observatorio, y lo que te decía poner la metodología en otra página, con la liga de github, necesito que generes una solicitud de ayuda para un analista de datos, lo otro es que en lo de sumarse vamos a generar un funnel para recivir donaciones, el funnel va a estar en otro proyecto, asociado al subdominio apoyo.aethosai.org%%
