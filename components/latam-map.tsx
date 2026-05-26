@@ -13,6 +13,13 @@ interface LatamMapProps {
   noDataColor?: string
 }
 
+interface CountryGeom {
+  dots: Array<readonly [number, number]>
+  bbox: { x: number; y: number; w: number; h: number }
+}
+
+const HIT_PADDING = 2.5
+
 export function LatamMap({
   fillByCountry,
   hoveredCountry,
@@ -22,17 +29,26 @@ export function LatamMap({
   countryLabels,
   noDataColor = "#262626",
 }: LatamMapProps) {
-  const dotsByCountry = useMemo(() => {
-    const map = new Map<string, Array<readonly [number, number]>>()
+  const countries = useMemo(() => {
+    const map = new Map<string, CountryGeom>()
     for (const [cx, cy, country] of MAP_DOTS) {
-      let arr = map.get(country)
-      if (!arr) {
-        arr = []
-        map.set(country, arr)
+      let entry = map.get(country)
+      if (!entry) {
+        entry = { dots: [], bbox: { x: cx, y: cy, w: 0, h: 0 } }
+        map.set(country, entry)
       }
-      arr.push([cx, cy])
+      entry.dots.push([cx, cy])
+      const x0 = Math.min(entry.bbox.x, cx)
+      const y0 = Math.min(entry.bbox.y, cy)
+      const x1 = Math.max(entry.bbox.x + entry.bbox.w, cx)
+      const y1 = Math.max(entry.bbox.y + entry.bbox.h, cy)
+      entry.bbox = { x: x0, y: y0, w: x1 - x0, h: y1 - y0 }
     }
-    return Array.from(map.entries())
+    // Render largest countries first so smaller ones land on top in z-order
+    // and win the click when bounding boxes overlap (e.g. MEX vs GTM/BLZ).
+    return Array.from(map.entries()).sort(
+      (a, b) => b[1].bbox.w * b[1].bbox.h - a[1].bbox.w * a[1].bbox.h,
+    )
   }, [])
 
   return (
@@ -43,7 +59,7 @@ export function LatamMap({
       style={{ width: "100%", height: "auto", display: "block" }}
       preserveAspectRatio="xMidYMid meet"
     >
-      {dotsByCountry.map(([country, dots]) => {
+      {countries.map(([country, geom]) => {
         const active = country === hoveredCountry || country === selectedCountry
         const fill = fillByCountry[country] ?? noDataColor
         const label = countryLabels?.[country] ?? country
@@ -72,7 +88,18 @@ export function LatamMap({
               transition: "filter 200ms ease",
             }}
           >
-            {dots.map(([cx, cy], i) => (
+            {/* Invisible hit area: covers the whole cluster bounding box so clicks
+                between dots still register on the country. */}
+            <rect
+              x={geom.bbox.x - HIT_PADDING}
+              y={geom.bbox.y - HIT_PADDING}
+              width={geom.bbox.w + HIT_PADDING * 2}
+              height={geom.bbox.h + HIT_PADDING * 2}
+              fill="black"
+              fillOpacity={0}
+              style={{ pointerEvents: "all" }}
+            />
+            {geom.dots.map(([cx, cy], i) => (
               <circle
                 key={i}
                 cx={cx}
@@ -81,7 +108,7 @@ export function LatamMap({
                 fill={fill}
                 stroke={active ? "#C9A227" : "none"}
                 strokeWidth={active ? 1.5 : 0}
-                style={{ transition: "fill 250ms ease, r 200ms ease" }}
+                style={{ pointerEvents: "none", transition: "fill 250ms ease, r 200ms ease" }}
               />
             ))}
           </g>

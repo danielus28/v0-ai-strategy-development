@@ -9,34 +9,90 @@ import { LatamMap } from "@/components/latam-map"
 import { Button } from "@/components/ui/button"
 import { X, Info } from "lucide-react"
 
-const layers: { id: LayerType; label: string; source: string; year: string; note?: string }[] = [
-  { id: "iso", label: "Voz en estándares ISO/IEC", source: "ISO SC 42 / SC 27", year: "2024" },
-  { id: "egdi", label: "Madurez de gobierno digital", source: "UN EGDI", year: "2024" },
-  { id: "gci", label: "Ciberseguridad", source: "ITU GCI", year: "2024" },
-  { id: "gari", label: "Preparación gubernamental IA", source: "Oxford Insights GARI", year: "2023" },
-  { id: "ilia", label: "Gobernanza IA LATAM", source: "CEPAL ILIA", year: "2025", note: "Preliminar" },
-  { id: "oecd", label: "Políticas de IA", source: "OECD.AI", year: "2024", note: "Cobertura parcial" },
+interface LayerInfo {
+  id: LayerType
+  label: string
+  source: string
+  year: string
+  description: string
+  note?: string
+}
+
+const layers: LayerInfo[] = [
+  {
+    id: "iso",
+    label: "Voz en estándares internacionales",
+    source: "ISO/IEC SC 42 y SC 27",
+    year: "2024",
+    description:
+      "Si un país tiene voto en los comités técnicos donde se escriben los estándares internacionales de inteligencia artificial y ciberseguridad.",
+  },
+  {
+    id: "egdi",
+    label: "Gobierno digital",
+    source: "Naciones Unidas (EGDI)",
+    year: "2024",
+    description:
+      "Qué tan desarrollados están los servicios digitales del Estado, según el índice EGDI de la ONU.",
+  },
+  {
+    id: "gci",
+    label: "Ciberseguridad",
+    source: "Unión Internacional de Telecomunicaciones (GCI)",
+    year: "2024",
+    description:
+      "Capacidad nacional para enfrentar amenazas de ciberseguridad, según el índice GCI de la UIT.",
+  },
+  {
+    id: "gari",
+    label: "Preparación del gobierno para la IA",
+    source: "Oxford Insights (GARI)",
+    year: "2023",
+    description:
+      "Qué tan preparado está el gobierno para adoptar inteligencia artificial, según el índice GARI de Oxford Insights.",
+  },
+  {
+    id: "ilia",
+    label: "Madurez en gobernanza de IA",
+    source: "CEPAL (ILIA)",
+    year: "2025",
+    note: "Preliminar",
+    description:
+      "Avance en políticas y gobernanza de IA en América Latina, según el índice ILIA de CEPAL.",
+  },
+  {
+    id: "oecd",
+    label: "Políticas de IA registradas",
+    source: "OCDE (OECD.AI)",
+    year: "2024",
+    note: "Cobertura parcial",
+    description:
+      "Cantidad de políticas de inteligencia artificial registradas oficialmente ante la OCDE.",
+  },
 ]
 
 const NO_DATA = "no-data"
-type Bucket = "high" | "medium-high" | "medium" | "medium-low" | "low" | typeof NO_DATA
+type Bucket = "high" | "medium" | "low" | typeof NO_DATA
 
 const BUCKET_COLORS: Record<Bucket, string> = {
-  high: "#C9A227",
-  "medium-high": "#D4B84A",
-  medium: "#A89358",
-  "medium-low": "#7A6E48",
-  low: "#4F4838",
-  [NO_DATA]: "#262626",
+  high: "#E5B838",
+  medium: "#8E7522",
+  low: "#4A3F26",
+  [NO_DATA]: "#3A3A3A",
 }
 
 const BUCKET_LABELS: Record<Bucket, string> = {
   high: "Alto",
-  "medium-high": "Medio-alto",
   medium: "Medio",
-  "medium-low": "Medio-bajo",
   low: "Bajo",
   [NO_DATA]: "Sin datos",
+}
+
+const BUCKET_HINTS: Record<Bucket, string> = {
+  high: "Avance regional destacado",
+  medium: "Avance intermedio",
+  low: "Avance limitado",
+  [NO_DATA]: "Indicador no disponible",
 }
 
 const MAP_VIEW_W = 440
@@ -48,7 +104,7 @@ function getBucket(iso3: string, layer: LayerType): Bucket {
 
   if (layer === "iso") {
     if (data.sc42_status === "P") return "high"
-    if (data.sc42_status === "O") return "medium-high"
+    if (data.sc42_status === "O") return "medium"
     if (data.sc42_status === "None") return "low"
     return NO_DATA
   }
@@ -76,10 +132,8 @@ function getBucket(iso3: string, layer: LayerType): Bucket {
   }
   if (value === undefined || value === null) return NO_DATA
   const ratio = Math.min(value / max, 1)
-  if (ratio >= 0.8) return "high"
-  if (ratio >= 0.6) return "medium-high"
-  if (ratio >= 0.4) return "medium"
-  if (ratio >= 0.2) return "medium-low"
+  if (ratio >= 0.66) return "high"
+  if (ratio >= 0.33) return "medium"
   return "low"
 }
 
@@ -167,19 +221,21 @@ export function LatamMapSection() {
               ))}
             </div>
 
-            <div className="mb-6 p-3 bg-[#0D0D0D] rounded-lg border border-[#2A2A2A] flex items-start gap-3">
-              <Info className="w-4 h-4 text-[#C9A227] flex-shrink-0 mt-0.5" aria-hidden="true" />
-              <div className="font-mono text-sm text-[#F8F6F1]/70 flex items-center flex-wrap gap-x-2">
-                <span className="font-medium text-[#F8F6F1]">{activeLayerInfo?.label}</span>
-                <span aria-hidden="true">·</span>
-                <span>
-                  {activeLayerInfo?.source} ({activeLayerInfo?.year})
-                </span>
-                {activeLayerInfo?.note && (
-                  <span className="ml-1 px-2 py-0.5 rounded text-xs bg-[#C9A227]/15 text-[#C9A227]">
-                    {activeLayerInfo.note}
-                  </span>
-                )}
+            <div className="mb-6 p-4 bg-[#0D0D0D] rounded-lg border border-[#2A2A2A] flex items-start gap-3">
+              <Info className="w-4 h-4 text-[#C9A227] flex-shrink-0 mt-1" aria-hidden="true" />
+              <div className="flex-1 min-w-0">
+                <div className="flex items-center flex-wrap gap-x-2 mb-1.5">
+                  <span className="font-medium text-[#F8F6F1]">{activeLayerInfo?.label}</span>
+                  {activeLayerInfo?.note && (
+                    <span className="px-2 py-0.5 rounded text-[10px] uppercase tracking-wide bg-[#C9A227]/15 text-[#C9A227]">
+                      {activeLayerInfo.note}
+                    </span>
+                  )}
+                </div>
+                <p className="text-sm text-[#F8F6F1]/70 leading-relaxed">{activeLayerInfo?.description}</p>
+                <div className="font-mono text-xs text-[#F8F6F1]/50 mt-2">
+                  Fuente: {activeLayerInfo?.source} · {activeLayerInfo?.year}
+                </div>
               </div>
             </div>
 
@@ -226,17 +282,18 @@ export function LatamMapSection() {
 
             <div className="mt-2 pt-4 border-t border-[#2A2A2A]">
               <div className="text-xs font-mono text-[#F8F6F1]/50 uppercase tracking-wide mb-3">
-                Escala — {activeLayerInfo?.label}
+                Escala — del más al menos avanzado
               </div>
-              <div className="flex flex-wrap items-center gap-3 md:gap-4">
-                {(["high", "medium-high", "medium", "medium-low", "low", NO_DATA] as Bucket[]).map((b) => (
-                  <div key={b} className="flex items-center gap-2">
+              <div className="flex flex-wrap items-center gap-x-4 gap-y-2">
+                {(["high", "medium", "low", NO_DATA] as Bucket[]).map((b) => (
+                  <div key={b} className="flex items-center gap-2" title={BUCKET_HINTS[b]}>
                     <div
                       className="w-3.5 h-3.5 rounded-full ring-1 ring-[#F8F6F1]/10"
                       style={{ backgroundColor: BUCKET_COLORS[b] }}
                       aria-hidden="true"
                     />
                     <span className="text-xs text-[#F8F6F1]/70">{BUCKET_LABELS[b]}</span>
+                    <span className="text-xs text-[#F8F6F1]/40 hidden md:inline">— {BUCKET_HINTS[b]}</span>
                   </div>
                 ))}
               </div>
