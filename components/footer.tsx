@@ -43,6 +43,11 @@ export function Footer() {
                   Metodología
                 </a>
               </li>
+              <li>
+                <a href="#apoyar" className="hover:text-foreground transition-colors">
+                  Cómo apoyar
+                </a>
+              </li>
             </ul>
           </div>
 
@@ -51,7 +56,7 @@ export function Footer() {
             <ul className="space-y-2 text-sm text-muted-foreground">
               <li>
                 <a
-                  href="https://apoyo.aethosai.org"
+                  href="https://apoyo.aethosai.org/donaciones"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="hover:text-foreground transition-colors"
