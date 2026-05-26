@@ -1,9 +1,11 @@
 "use client"
 
-import { useState, useRef, useEffect, useMemo } from "react"
+import { useMemo, useState } from "react"
 import { motion, AnimatePresence } from "motion/react"
 import { cn } from "@/lib/utils"
 import { getCountryData, COUNTRY_NAMES_ES, type LayerType } from "@/lib/data"
+import { MAP_DOTS, MAP_COUNTRIES } from "@/lib/latam-map-data"
+import { LatamMap } from "@/components/latam-map"
 import { Button } from "@/components/ui/button"
 import { X, Info } from "lucide-react"
 
@@ -36,6 +38,9 @@ const BUCKET_LABELS: Record<Bucket, string> = {
   low: "Bajo",
   [NO_DATA]: "Sin datos",
 }
+
+const MAP_VIEW_W = 440
+const MAP_VIEW_H = 468.81
 
 function getBucket(iso3: string, layer: LayerType): Bucket {
   const data = getCountryData(iso3)
@@ -78,148 +83,54 @@ function getBucket(iso3: string, layer: LayerType): Bucket {
   return "low"
 }
 
-const COUNTRIES = [
-  "ARG", "BRA", "CHL", "COL", "MEX", "PER", "URY", "PRY", "BOL", "ECU",
-  "VEN", "GUY", "SUR", "GTM", "HND", "SLV", "NIC", "CRI", "PAN", "BLZ",
-  "CUB", "DOM", "HTI", "JAM", "TTO", "PRI",
-]
-
 export function LatamMapSection() {
   const [activeLayer, setActiveLayer] = useState<LayerType>("gari")
   const [selectedCountry, setSelectedCountry] = useState<string | null>(null)
   const [hoveredCountry, setHoveredCountry] = useState<string | null>(null)
-  const [mousePos, setMousePos] = useState({ x: 0, y: 0 })
-  const [svgLoaded, setSvgLoaded] = useState(false)
-  const mapContainerRef = useRef<HTMLDivElement>(null)
-  const svgContainerRef = useRef<HTMLDivElement>(null)
 
   const selectedCountryData = selectedCountry ? getCountryData(selectedCountry) : null
   const activeLayerInfo = layers.find((l) => l.id === activeLayer)
 
-  const bucketMap = useMemo(() => {
-    const map: Record<LayerType, Record<string, Bucket>> = {} as any
-    layers.forEach((l) => {
-      map[l.id] = {}
-      COUNTRIES.forEach((iso) => {
-        map[l.id][iso] = getBucket(iso, l.id)
-      })
-    })
+  const bucketByLayer = useMemo(() => {
+    const map: Record<LayerType, Record<string, Bucket>> = {} as Record<LayerType, Record<string, Bucket>>
+    for (const l of layers) {
+      const inner: Record<string, Bucket> = {}
+      for (const iso of MAP_COUNTRIES) {
+        inner[iso] = getBucket(iso, l.id)
+      }
+      map[l.id] = inner
+    }
     return map
   }, [])
 
-  useEffect(() => {
-    let cancelled = false
-    const handlers: Array<{ el: SVGCircleElement; type: string; fn: EventListenerOrEventListenerObject }> = []
-
-    const loadSVG = async () => {
-      if (!svgContainerRef.current) return
-      try {
-        const response = await fetch("/latam-map.svg")
-        const svgText = await response.text()
-        if (cancelled || !svgContainerRef.current) return
-        svgContainerRef.current.innerHTML = svgText
-
-        const svg = svgContainerRef.current.querySelector("svg")
-        if (!svg) return
-        svg.style.width = "100%"
-        svg.style.height = "auto"
-        svg.style.maxWidth = "700px"
-        svg.setAttribute("role", "img")
-        svg.setAttribute("aria-label", "Mapa de América Latina y el Caribe con países coloreados según la capa de datos seleccionada")
-
-        const circles = svg.querySelectorAll<SVGCircleElement>("[data-country]")
-        circles.forEach((circle: SVGCircleElement) => {
-          const country = circle.getAttribute("data-country")
-          if (!country) return
-          const el = circle
-          el.style.cursor = "pointer"
-          el.style.transition = "fill 0.3s ease, r 0.2s ease, stroke 0.2s ease"
-          el.setAttribute("tabindex", "0")
-          el.setAttribute("role", "button")
-          el.setAttribute("aria-label", `${COUNTRY_NAMES_ES[country] || country}. Pulsa para ver detalles.`)
-
-          const enter = () => setHoveredCountry(country)
-          const leave = () => setHoveredCountry(null)
-          const click = () => setSelectedCountry(country)
-          const key = (e: Event) => {
-            const ke = e as KeyboardEvent
-            if (ke.key === "Enter" || ke.key === " ") {
-              ke.preventDefault()
-              setSelectedCountry(country)
-            }
-          }
-          el.addEventListener("mouseenter", enter)
-          el.addEventListener("mouseleave", leave)
-          el.addEventListener("focus", enter)
-          el.addEventListener("blur", leave)
-          el.addEventListener("click", click)
-          el.addEventListener("keydown", key)
-          handlers.push(
-            { el, type: "mouseenter", fn: enter },
-            { el, type: "mouseleave", fn: leave },
-            { el, type: "focus", fn: enter },
-            { el, type: "blur", fn: leave },
-            { el, type: "click", fn: click },
-            { el, type: "keydown", fn: key },
-          )
-        })
-
-        setSvgLoaded(true)
-      } catch (error) {
-        console.error("Failed to load SVG:", error)
-      }
+  const fillByCountry = useMemo(() => {
+    const buckets = bucketByLayer[activeLayer] ?? {}
+    const result: Record<string, string> = {}
+    for (const country of MAP_COUNTRIES) {
+      const bucket = buckets[country] ?? NO_DATA
+      result[country] = BUCKET_COLORS[bucket]
     }
+    return result
+  }, [bucketByLayer, activeLayer])
 
-    loadSVG()
-
-    return () => {
-      cancelled = true
-      handlers.forEach(({ el, type, fn }) => el.removeEventListener(type, fn))
+  const countryCenters = useMemo(() => {
+    const sums = new Map<string, { x: number; y: number; n: number }>()
+    for (const [cx, cy, country] of MAP_DOTS) {
+      const s = sums.get(country) ?? { x: 0, y: 0, n: 0 }
+      s.x += cx
+      s.y += cy
+      s.n += 1
+      sums.set(country, s)
     }
+    const result: Record<string, [number, number]> = {}
+    sums.forEach((s, c) => {
+      result[c] = [s.x / s.n, s.y / s.n]
+    })
+    return result
   }, [])
 
-  useEffect(() => {
-    if (!svgLoaded || !svgContainerRef.current) return
-    const svg = svgContainerRef.current.querySelector("svg")
-    if (!svg) return
-    const circles = svg.querySelectorAll<SVGCircleElement>("[data-country]")
-    circles.forEach((circle: SVGCircleElement) => {
-      const country = circle.getAttribute("data-country")
-      if (!country) return
-      const bucket = (bucketMap[activeLayer]?.[country] ?? NO_DATA) as Bucket
-      circle.style.fill = BUCKET_COLORS[bucket]
-    })
-  }, [activeLayer, svgLoaded, bucketMap])
-
-  useEffect(() => {
-    if (!svgLoaded || !svgContainerRef.current) return
-    const svg = svgContainerRef.current.querySelector("svg")
-    if (!svg) return
-    const circles = svg.querySelectorAll<SVGCircleElement>("[data-country]")
-    circles.forEach((circle: SVGCircleElement) => {
-      const country = circle.getAttribute("data-country")
-      const el = circle
-      const active = country === hoveredCountry || country === selectedCountry
-      if (active) {
-        el.style.stroke = "#C9A227"
-        el.style.strokeWidth = "1.5"
-        el.style.filter = "drop-shadow(0 0 4px rgba(201, 162, 39, 0.9))"
-        el.setAttribute("r", "2.8")
-      } else {
-        el.style.stroke = "none"
-        el.style.strokeWidth = "0"
-        el.style.filter = "none"
-        el.setAttribute("r", "1.8")
-      }
-    })
-  }, [hoveredCountry, selectedCountry, svgLoaded])
-
-  const handleMouseMove = (e: React.MouseEvent) => {
-    if (mapContainerRef.current) {
-      const rect = mapContainerRef.current.getBoundingClientRect()
-      setMousePos({ x: e.clientX - rect.left, y: e.clientY - rect.top })
-    }
-  }
+  const tooltipCenter = hoveredCountry ? countryCenters[hoveredCountry] : null
+  const hoveredBucket = hoveredCountry ? bucketByLayer[activeLayer]?.[hoveredCountry] ?? NO_DATA : null
 
   return (
     <section className="py-20 px-6 bg-[#0D0D0D] text-[#F8F6F1] scroll-mt-24" id="mapa-regional">
@@ -272,31 +183,45 @@ export function LatamMapSection() {
               </div>
             </div>
 
-            <div ref={mapContainerRef} className="relative flex justify-center py-8" onMouseMove={handleMouseMove}>
-              <div ref={svgContainerRef} className="relative w-full flex justify-center" style={{ maxWidth: "700px" }} />
+            <div className="relative mx-auto py-8" style={{ width: "100%", maxWidth: 700 }}>
+              <div
+                className="relative w-full"
+                style={{ aspectRatio: `${MAP_VIEW_W} / ${MAP_VIEW_H}` }}
+              >
+                <LatamMap
+                  fillByCountry={fillByCountry}
+                  hoveredCountry={hoveredCountry}
+                  selectedCountry={selectedCountry}
+                  onHover={setHoveredCountry}
+                  onSelect={setSelectedCountry}
+                  countryLabels={COUNTRY_NAMES_ES}
+                />
 
-              <AnimatePresence>
-                {hoveredCountry && (
-                  <motion.div
-                    initial={{ opacity: 0, y: 10 }}
-                    animate={{ opacity: 1, y: 0 }}
-                    exit={{ opacity: 0, y: 10 }}
-                    className="absolute pointer-events-none z-20 px-3 py-2 bg-[#0D0D0D] border border-[#C9A227] rounded-lg shadow-lg"
-                    style={{
-                      left: Math.min(mousePos.x + 15, (mapContainerRef.current?.clientWidth || 0) - 160),
-                      top: Math.max(mousePos.y - 50, 10),
-                    }}
-                  >
-                    <div className="font-mono text-xs text-[#C9A227]">{hoveredCountry}</div>
-                    <div className="text-sm font-medium text-[#F8F6F1]">
-                      {COUNTRY_NAMES_ES[hoveredCountry] || getCountryData(hoveredCountry)?.country || hoveredCountry}
-                    </div>
-                    <div className="text-xs text-[#F8F6F1]/60 mt-1">
-                      {BUCKET_LABELS[(bucketMap[activeLayer]?.[hoveredCountry] ?? NO_DATA) as Bucket]}
-                    </div>
-                  </motion.div>
-                )}
-              </AnimatePresence>
+                <AnimatePresence>
+                  {hoveredCountry && tooltipCenter && (
+                    <motion.div
+                      initial={{ opacity: 0, y: 4 }}
+                      animate={{ opacity: 1, y: 0 }}
+                      exit={{ opacity: 0, y: 4 }}
+                      transition={{ duration: 0.15 }}
+                      className="absolute pointer-events-none z-20 px-3 py-2 bg-[#0D0D0D] border border-[#C9A227] rounded-lg shadow-lg min-w-[140px]"
+                      style={{
+                        left: `${(tooltipCenter[0] / MAP_VIEW_W) * 100}%`,
+                        top: `${(tooltipCenter[1] / MAP_VIEW_H) * 100}%`,
+                        transform: "translate(-50%, calc(-100% - 10px))",
+                      }}
+                    >
+                      <div className="font-mono text-xs text-[#C9A227]">{hoveredCountry}</div>
+                      <div className="text-sm font-medium text-[#F8F6F1]">
+                        {COUNTRY_NAMES_ES[hoveredCountry] || getCountryData(hoveredCountry)?.country || hoveredCountry}
+                      </div>
+                      <div className="text-xs text-[#F8F6F1]/60 mt-1">
+                        {BUCKET_LABELS[hoveredBucket as Bucket]}
+                      </div>
+                    </motion.div>
+                  )}
+                </AnimatePresence>
+              </div>
             </div>
 
             <div className="mt-2 pt-4 border-t border-[#2A2A2A]">

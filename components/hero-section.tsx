@@ -4,17 +4,7 @@ import { Button } from "@/components/ui/button"
 import { ArrowRight, Map, Calendar } from "lucide-react"
 import { motion } from "motion/react"
 
-const HEADLINE_WORDS = [
-  "La",
-  "gobernanza",
-  "de",
-  "IA",
-  "en",
-  "América",
-  "Latina,",
-  "con",
-  "evidencia.",
-]
+const HEADLINE_WORDS = ["¿Tu", "país", "está", "listo", "para", "el", "cambio?"]
 
 export function HeroSection() {
   const scrollTo = (id: string) => {
@@ -48,7 +38,7 @@ export function HeroSection() {
             className="w-2 h-2 rounded-full bg-accent shadow-[0_0_0_3px_rgba(201,162,39,0.18)]"
             aria-hidden="true"
           />
-          Observatorio LATAM · Edición 2026
+          América Latina ante la IA
         </motion.div>
 
         <h1
@@ -56,7 +46,7 @@ export function HeroSection() {
           className="font-heading font-semibold text-4xl md:text-5xl lg:text-6xl leading-[1.08] tracking-[-0.02em] mb-6 text-balance"
         >
           {HEADLINE_WORDS.map((word, i) => {
-            const isAccent = word === "evidencia."
+            const isAccent = word === "cambio?"
             return (
               <motion.span
                 key={`${word}-${i}`}
@@ -83,8 +73,8 @@ export function HeroSection() {
           transition={{ delay: 1, duration: 0.5 }}
           className="text-lg md:text-xl text-muted-foreground max-w-3xl mx-auto leading-relaxed mb-6 text-pretty"
         >
-          Datos públicos y comparables sobre cómo 33 países de América Latina y el Caribe se preparan para gobernar la
-          inteligencia artificial. Para reguladores, organismos técnicos, investigación e industria.
+          La inteligencia artificial reordena gobiernos, instituciones, empresas y vida cotidiana. El observatorio mide
+          el punto de partida de los 33 países de la región y propone una ruta común para que ninguno se quede atrás.
         </motion.p>
 
         <motion.div

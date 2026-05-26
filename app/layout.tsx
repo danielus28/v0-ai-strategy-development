@@ -24,37 +24,67 @@ const ibmPlexMono = IBM_Plex_Mono({
   display: "swap",
 })
 
+const SITE_URL = "https://aethos.ai"
+const SITE_NAME = "Observatorio Aethos AI"
+const SITE_TITLE = "Observatorio de Gobernanza de IA en América Latina | Aethos AI"
+const SITE_DESCRIPTION =
+  "¿Tu país está listo para el cambio? El observatorio mide el punto de partida de los 33 países de América Latina ante la inteligencia artificial y propone una ruta común para nivelar la cancha en gobernanza, capacidad e integración."
+
 export const metadata: Metadata = {
-  metadataBase: new URL("https://aethos.ai"),
-  title: "Observatorio de Gobernanza de IA | Aethos AI",
-  description:
-    "Datos públicos y comparables sobre cómo los países de América Latina y el Caribe se preparan para gobernar la inteligencia artificial.",
+  metadataBase: new URL(SITE_URL),
+  title: {
+    default: SITE_TITLE,
+    template: "%s | Observatorio Aethos AI",
+  },
+  description: SITE_DESCRIPTION,
   generator: "Next.js",
-  applicationName: "Observatorio Aethos AI",
+  applicationName: SITE_NAME,
+  category: "Política pública e inteligencia artificial",
   keywords: [
-    "IA",
-    "inteligencia artificial",
-    "gobernanza",
-    "LATAM",
-    "América Latina",
-    "estándares",
-    "ISO",
-    "regulación",
-    "política pública",
+    "observatorio IA",
+    "gobernanza de IA",
+    "inteligencia artificial América Latina",
+    "regulación IA LATAM",
+    "política pública IA",
+    "estándares ISO IEC",
+    "ISO SC 42",
+    "EGDI",
+    "GARI",
+    "ITU GCI",
+    "CEPAL ILIA",
+    "OECD.AI",
+    "Aethos AI",
   ],
-  authors: [{ name: "Aethos AI", url: "https://aethos.ai" }],
-  robots: { index: true, follow: true },
+  authors: [{ name: "Aethos AI", url: SITE_URL }],
+  creator: "Aethos AI",
+  publisher: "Aethos AI",
+  robots: {
+    index: true,
+    follow: true,
+    googleBot: {
+      index: true,
+      follow: true,
+      "max-image-preview": "large",
+      "max-snippet": -1,
+      "max-video-preview": -1,
+    },
+  },
+  alternates: {
+    canonical: "/",
+  },
   openGraph: {
-    title: "Observatorio de Gobernanza de IA | Aethos AI",
-    description: "Gobernanza con evidencia. Voz regional en estándares de IA.",
+    title: SITE_TITLE,
+    description: SITE_DESCRIPTION,
+    url: SITE_URL,
     type: "website",
     locale: "es_LA",
-    siteName: "Observatorio Aethos AI",
+    siteName: SITE_NAME,
   },
   twitter: {
     card: "summary_large_image",
-    title: "Observatorio de Gobernanza de IA | Aethos AI",
-    description: "Gobernanza con evidencia. Voz regional en estándares de IA.",
+    title: SITE_TITLE,
+    description: SITE_DESCRIPTION,
+    creator: "@aethos_ai",
   },
 }
 
@@ -63,6 +93,54 @@ export const viewport: Viewport = {
   width: "device-width",
   initialScale: 1,
 }
+
+const jsonLd = [
+  {
+    "@context": "https://schema.org",
+    "@type": "Organization",
+    name: "Aethos AI",
+    url: SITE_URL,
+    logo: `${SITE_URL}/icon.svg`,
+    description:
+      "Aethos AI articula evidencia regional, participación normativa e implementación demostrable de gobernanza de inteligencia artificial en América Latina y el Caribe.",
+    areaServed: {
+      "@type": "Place",
+      name: "América Latina y el Caribe",
+    },
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "WebSite",
+    name: SITE_NAME,
+    url: SITE_URL,
+    description: SITE_DESCRIPTION,
+    inLanguage: "es",
+    publisher: {
+      "@type": "Organization",
+      name: "Aethos AI",
+    },
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "Dataset",
+    name: "Observatorio de Gobernanza de IA LATAM",
+    description:
+      "Indicadores comparables de gobernanza de IA para 33 países de América Latina y el Caribe en seis capas: participación ISO/IEC, EGDI, GCI, GARI, ILIA y OECD.AI.",
+    keywords: [
+      "gobernanza IA",
+      "América Latina",
+      "ISO SC 42",
+      "EGDI",
+      "GARI",
+      "OECD.AI",
+      "CEPAL ILIA",
+    ],
+    license: "https://creativecommons.org/licenses/by/4.0/",
+    creator: { "@type": "Organization", name: "Aethos AI" },
+    spatialCoverage: { "@type": "Place", name: "América Latina y el Caribe" },
+    temporalCoverage: "2023/2026",
+  },
+]
 
 export default function RootLayout({
   children,
@@ -74,6 +152,10 @@ export default function RootLayout({
       <body className={`${inter.variable} ${ibmPlexSans.variable} ${ibmPlexMono.variable} font-sans antialiased`}>
         {children}
         <Analytics />
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
+        />
       </body>
     </html>
   )
