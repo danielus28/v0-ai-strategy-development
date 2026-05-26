@@ -25,3 +25,11 @@ yarn-error.log*
 # typescript
 *.tsbuildinfo
 next-env.d.ts
+
+# macOS
+.DS_Store
+**/.DS_Store
+
+# Obsidian vault config (mantener COPY.md y otros .md, ignorar config local)
+Obsidian-1/.obsidian/
+Obsidian-1/.trash/

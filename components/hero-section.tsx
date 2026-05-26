@@ -73,8 +73,8 @@ export function HeroSection() {
           transition={{ delay: 1, duration: 0.5 }}
           className="text-lg md:text-xl text-muted-foreground max-w-3xl mx-auto leading-relaxed mb-6 text-pretty"
         >
-          La inteligencia artificial reordena gobiernos, instituciones, empresas y vida cotidiana. El observatorio mide
-          el punto de partida de los 33 países de la región y propone una ruta común para que ninguno se quede atrás.
+          La inteligencia artificial reordena gobiernos, instituciones, empresas y la vida cotidiana. El observatorio
+          mide el estado de los 25 países de la región y propone una ruta común para que ninguno se quede atrás.
         </motion.p>
 
         <motion.div
@@ -83,7 +83,7 @@ export function HeroSection() {
           transition={{ delay: 1.3, duration: 0.5 }}
           className="font-mono text-sm text-foreground/70 mb-12"
         >
-          33 países · 6 capas de datos · 6 fuentes públicas
+          25 países · 6 capas de datos · 6 fuentes públicas
         </motion.div>
 
         <motion.div
@@ -116,7 +116,7 @@ export function HeroSection() {
 
         <div className="mt-16 grid grid-cols-2 md:grid-cols-4 gap-6 md:gap-8">
           {[
-            { value: "33", label: "Países monitoreados" },
+            { value: "25", label: "Países monitoreados" },
             { value: "6", label: "Capas de datos" },
             { value: "6", label: "Fuentes públicas" },
             { value: "2026", label: "Actualización en curso" },

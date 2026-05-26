@@ -3,6 +3,7 @@
 import { isoMembershipData, COUNTRY_NAMES_ES } from "@/lib/data"
 import { useState } from "react"
 import { motion } from "motion/react"
+import { GlossaryTerm } from "@/components/glossary-term"
 
 type MembershipStatus = "P" | "O" | "None"
 
@@ -36,22 +37,23 @@ export function IsoMembershipSection() {
             Participación normativa
           </div>
           <h2 className="font-heading text-3xl md:text-4xl font-semibold mb-4 text-balance">
-            ¿Dónde se escriben los estándares?
+            ¿Cómo participa cada país en la regulación global?
           </h2>
           <p className="text-lg text-[#F8F6F1]/60 max-w-3xl leading-relaxed">
-            Sin P-membership, no hay voto técnico ni tracción en propuestas. LATAM tiene voz en los estándares que
-            definirán la gobernanza de IA de la próxima década, pero solo si ocupa su lugar en la mesa.
+            Los comités ISO/IEC SC 42 (inteligencia artificial) y SC 27 (seguridad de la información) son los espacios
+            donde se definen los estándares técnicos del mundo. Mapeamos qué países de la región participan y con qué
+            tipo de membresía.
           </p>
         </div>
 
         <div className="flex items-center gap-6 md:gap-8 mb-8 flex-wrap" role="list" aria-label="Leyenda">
           <div className="flex items-center gap-3" role="listitem">
             <div className="w-3 h-3 rounded-full bg-[#C9A227]" aria-hidden="true" />
-            <span className="text-sm font-medium">P-member (voto)</span>
+            <span className="text-sm font-medium">Miembro pleno (con voto)</span>
           </div>
           <div className="flex items-center gap-3" role="listitem">
             <div className="w-3 h-3 rounded-full bg-[#F8F6F1]" aria-hidden="true" />
-            <span className="text-sm font-medium">O-member (observador)</span>
+            <span className="text-sm font-medium">Miembro observador</span>
           </div>
           <div className="flex items-center gap-3" role="listitem">
             <div className="w-3 h-3 rounded-full bg-[#5C5C5A]" aria-hidden="true" />
@@ -62,7 +64,8 @@ export function IsoMembershipSection() {
         <div className="mb-16">
           <div className="flex items-center gap-4 mb-6 flex-wrap">
             <h3 className="font-mono text-sm font-semibold tracking-wide uppercase text-[#F8F6F1]/60">
-              ISO/IEC JTC 1/SC 42 — Inteligencia artificial
+              <GlossaryTerm term="ISO/IEC">ISO/IEC</GlossaryTerm> JTC 1/
+              <GlossaryTerm term="SC 42">SC 42</GlossaryTerm> — Inteligencia artificial
             </h3>
             <div className="flex items-center gap-2 text-xs font-mono">
               <span className="text-[#C9A227]">{sc42PMemberCount} P</span>
@@ -93,7 +96,8 @@ export function IsoMembershipSection() {
         <div>
           <div className="flex items-center gap-4 mb-6 flex-wrap">
             <h3 className="font-mono text-sm font-semibold tracking-wide uppercase text-[#F8F6F1]/60">
-              ISO/IEC JTC 1/SC 27 — Seguridad de la información
+              <GlossaryTerm term="ISO/IEC">ISO/IEC</GlossaryTerm> JTC 1/
+              <GlossaryTerm term="SC 27">SC 27</GlossaryTerm> — Seguridad de la información
             </h3>
             <div className="flex items-center gap-2 text-xs font-mono">
               <span className="text-[#C9A227]">{sc27PMemberCount} P</span>
@@ -148,8 +152,8 @@ function LollipopChart({ data, chartId, ariaLabel }: LollipopChartProps) {
       <div className="min-w-[900px]" style={{ width: chartWidth }}>
         <svg viewBox={`0 0 ${chartWidth} ${chartHeight + 50}`} className="w-full" style={{ height: chartHeight + 50 }}>
           {[
-            { val: 100, label: "P · voto" },
-            { val: 60, label: "O · observador" },
+            { val: 100, label: "Pleno · con voto" },
+            { val: 60, label: "Observador" },
             { val: 20, label: "Sin membresía" },
             { val: 0, label: "" },
           ].map(({ val, label }) => {
@@ -191,7 +195,7 @@ function LollipopChart({ data, chartId, ariaLabel }: LollipopChartProps) {
                 tabIndex={0}
                 role="img"
                 aria-label={`${item.fullName}: ${
-                  item.status === "P" ? "P-member" : item.status === "O" ? "O-member" : "Sin membresía"
+                  item.status === "P" ? "Miembro pleno" : item.status === "O" ? "Miembro observador" : "Sin membresía"
                 }${item.nationalBody ? `, organismo ${item.nationalBody}` : ""}`}
                 onFocus={() => setHoveredIdx(idx)}
                 onBlur={() => setHoveredIdx(null)}
@@ -265,7 +269,7 @@ function LollipopChart({ data, chartId, ariaLabel }: LollipopChartProps) {
                       {item.fullName}
                     </text>
                     <text x={x} y={peakY - 24} fontSize={10} fill="#F8F6F1" textAnchor="middle" opacity={0.75}>
-                      {item.status === "P" ? "P-member" : item.status === "O" ? "O-member" : "Sin membresía"}
+                      {item.status === "P" ? "Miembro pleno" : item.status === "O" ? "Miembro observador" : "Sin membresía"}
                       {item.nationalBody && ` · ${item.nationalBody}`}
                     </text>
                   </g>

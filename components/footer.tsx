@@ -56,10 +56,10 @@ export function Footer() {
               </li>
               <li>
                 <a
-                  href="mailto:contacto@aethos.ai?subject=Observatorio%20Aethos%20%E2%80%94%20Consulta"
+                  href="mailto:contacto@aethosai.org?subject=Observatorio%20Aethos%20%E2%80%94%20Consulta"
                   className="hover:text-foreground transition-colors"
                 >
-                  contacto@aethos.ai
+                  contacto@aethosai.org
                 </a>
               </li>
             </ul>

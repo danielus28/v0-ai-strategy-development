@@ -3,6 +3,7 @@
 import { egdiData, gciData, gariData, COUNTRY_NAMES_ES } from "@/lib/data"
 import { cn } from "@/lib/utils"
 import { motion } from "motion/react"
+import { GlossaryTerm } from "@/components/glossary-term"
 
 type Dimension = "egdi" | "gci" | "gari"
 
@@ -82,7 +83,9 @@ function DimensionCard({ dimension }: { dimension: (typeof dimensions)[0] }) {
     <div className="bg-background rounded-lg border border-border p-6">
       <div className="mb-6">
         <div className="flex items-center gap-3 mb-2">
-          <span className="font-mono text-2xl font-semibold text-accent">{dimension.label}</span>
+          <GlossaryTerm term={dimension.label} className="font-mono text-2xl font-semibold text-accent decoration-accent/40">
+            {dimension.label}
+          </GlossaryTerm>
           <span className="text-sm text-muted-foreground">{dimension.year}</span>
         </div>
         <h3 className="font-heading text-lg font-medium">{dimension.fullLabel}</h3>

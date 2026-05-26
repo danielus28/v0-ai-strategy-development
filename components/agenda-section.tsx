@@ -107,12 +107,12 @@ export function AgendaSection() {
           <div className="max-w-2xl">
             <h3 className="font-heading text-2xl font-semibold mb-3">¿Quieres sumarte a la agenda?</h3>
             <p className="text-primary-foreground/80 mb-6 leading-relaxed">
-              Buscamos profesionales, investigadores e instituciones comprometidos con la gobernanza responsable de IA
-              en LATAM. Cuéntanos tu perfil y te integramos al grupo de trabajo técnico.
+              Buscamos profesionales voluntarios, investigadores e instituciones comprometidos con la gobernanza
+              responsable de IA en LATAM. Cuéntanos tu perfil y te integramos al grupo de trabajo técnico.
             </p>
             <div className="flex flex-wrap gap-4">
               <a
-                href={`mailto:contacto@aethos.ai?subject=${contactSubject}&body=${contactBody}`}
+                href={`mailto:contacto@aethosai.org?subject=${contactSubject}&body=${contactBody}`}
                 className="inline-flex items-center gap-2 px-6 py-3 bg-accent text-accent-foreground rounded-lg font-medium hover:bg-accent/90 transition-colors"
               >
                 Contactar al equipo

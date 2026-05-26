@@ -1,43 +1,81 @@
+import type { ReactNode } from "react"
 import { ExternalLink } from "lucide-react"
+import { GlossaryTerm } from "@/components/glossary-term"
 
-const sources = [
+interface SourceRow {
+  source: ReactNode
+  sourceKey: string
+  year: string
+  coverage: "Completa" | "Parcial"
+  limitation: string
+  url: string
+}
+
+const sources: SourceRow[] = [
   {
-    source: "ISO/IEC (SC 42, SC 27)",
+    source: (
+      <>
+        <GlossaryTerm term="ISO/IEC">ISO/IEC</GlossaryTerm> (<GlossaryTerm term="SC 42">SC 42</GlossaryTerm>,{" "}
+        <GlossaryTerm term="SC 27">SC 27</GlossaryTerm>)
+      </>
+    ),
+    sourceKey: "iso",
     year: "2024",
     coverage: "Completa",
     limitation: "Solo membresía formal, no participación real en propuestas técnicas.",
     url: "https://www.iso.org",
   },
   {
-    source: "UN EGDI",
+    source: (
+      <>
+        ONU · <GlossaryTerm term="EGDI">EGDI</GlossaryTerm>
+      </>
+    ),
+    sourceKey: "egdi",
     year: "2024",
     coverage: "Completa",
     limitation: "Índice compuesto, no desagregado por IA.",
     url: "https://publicadministration.un.org/egovkb",
   },
   {
-    source: "ITU GCI",
+    source: (
+      <>
+        UIT · <GlossaryTerm term="GCI">GCI</GlossaryTerm>
+      </>
+    ),
+    sourceKey: "gci",
     year: "2024",
     coverage: "Completa",
     limitation: "Enfocado en ciberseguridad, no gobernanza de IA.",
     url: "https://www.itu.int/en/ITU-D/Cybersecurity/Pages/global-cybersecurity-index.aspx",
   },
   {
-    source: "Oxford Insights GARI",
+    source: (
+      <>
+        Oxford Insights · <GlossaryTerm term="GARI">GARI</GlossaryTerm>
+      </>
+    ),
+    sourceKey: "gari",
     year: "2023",
     coverage: "Completa",
     limitation: "Dataset público más reciente es 2023.",
     url: "https://oxfordinsights.com/ai-readiness/ai-readiness-index/",
   },
   {
-    source: "OECD.AI",
+    source: <GlossaryTerm term="OECD.AI">OECD.AI</GlossaryTerm>,
+    sourceKey: "oecd",
     year: "2024",
     coverage: "Parcial",
     limitation: "Cobertura desigual; usamos datos disponibles para 8 países LATAM.",
     url: "https://oecd.ai",
   },
   {
-    source: "CEPAL ILIA",
+    source: (
+      <>
+        CEPAL · <GlossaryTerm term="ILIA">ILIA</GlossaryTerm>
+      </>
+    ),
+    sourceKey: "ilia",
     year: "2025",
     coverage: "Parcial",
     limitation: "Datos preliminares; sujetos a validación.",
@@ -95,7 +133,7 @@ export function MethodologySection() {
             </thead>
             <tbody>
               {sources.map((source) => (
-                <tr key={source.source} className="border-b border-border last:border-b-0 hover:bg-secondary/30 transition-colors">
+                <tr key={source.sourceKey} className="border-b border-border last:border-b-0 hover:bg-secondary/30 transition-colors">
                   <td className="p-4 font-medium">{source.source}</td>
                   <td className="p-4 font-mono text-sm">{source.year}</td>
                   <td className="p-4">
@@ -128,7 +166,7 @@ export function MethodologySection() {
         <div className="md:hidden space-y-4">
           {sources.map((source) => (
             <a
-              key={source.source}
+              key={source.sourceKey}
               href={source.url}
               target="_blank"
               rel="noopener noreferrer"

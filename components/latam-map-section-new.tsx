@@ -1,11 +1,12 @@
 "use client"
 
-import { useMemo, useState } from "react"
+import { useMemo, useState, type ReactNode } from "react"
 import { motion, AnimatePresence } from "motion/react"
 import { cn } from "@/lib/utils"
 import { getCountryData, COUNTRY_NAMES_ES, type LayerType } from "@/lib/data"
 import { MAP_DOTS, MAP_COUNTRIES } from "@/lib/latam-map-data"
 import { LatamMap } from "@/components/latam-map"
+import { GlossaryTerm } from "@/components/glossary-term"
 import { Button } from "@/components/ui/button"
 import { X, Info } from "lucide-react"
 
@@ -346,9 +347,9 @@ export function LatamMapSection() {
                             )}
                           >
                             {selectedCountryData.sc42_status === "P"
-                              ? "P-member"
+                              ? "Miembro pleno"
                               : selectedCountryData.sc42_status === "O"
-                                ? "O-member"
+                                ? "Miembro observador"
                                 : "Sin membresía"}
                           </div>
                         </div>
@@ -365,9 +366,9 @@ export function LatamMapSection() {
                             )}
                           >
                             {selectedCountryData.sc27_status === "P"
-                              ? "P-member"
+                              ? "Miembro pleno"
                               : selectedCountryData.sc27_status === "O"
-                                ? "O-member"
+                                ? "Miembro observador"
                                 : "Sin membresía"}
                           </div>
                         </div>
@@ -376,23 +377,59 @@ export function LatamMapSection() {
 
                     <div className="space-y-3">
                       {selectedCountryData.egdi_2024 !== undefined && (
-                        <ScoreBar label="EGDI 2024" value={selectedCountryData.egdi_2024} max={1} />
+                        <ScoreBar
+                          label="EGDI 2024"
+                          labelNode={
+                            <>
+                              <GlossaryTerm term="EGDI">EGDI</GlossaryTerm> 2024
+                            </>
+                          }
+                          value={selectedCountryData.egdi_2024}
+                          max={1}
+                        />
                       )}
                       {selectedCountryData.gci_2024 !== undefined && (
-                        <ScoreBar label="GCI 2024" value={selectedCountryData.gci_2024} max={100} />
+                        <ScoreBar
+                          label="GCI 2024"
+                          labelNode={
+                            <>
+                              <GlossaryTerm term="GCI">GCI</GlossaryTerm> 2024
+                            </>
+                          }
+                          value={selectedCountryData.gci_2024}
+                          max={100}
+                        />
                       )}
                       {selectedCountryData.gari_score !== undefined && selectedCountryData.gari_score !== null && (
-                        <ScoreBar label="GARI 2023" value={selectedCountryData.gari_score} max={100} />
+                        <ScoreBar
+                          label="GARI 2023"
+                          labelNode={
+                            <>
+                              <GlossaryTerm term="GARI">GARI</GlossaryTerm> 2023
+                            </>
+                          }
+                          value={selectedCountryData.gari_score}
+                          max={100}
+                        />
                       )}
                       {selectedCountryData.ilia_governance_score !== undefined && (
-                        <ScoreBar label="ILIA 2025" value={selectedCountryData.ilia_governance_score} max={100} />
+                        <ScoreBar
+                          label="ILIA 2025"
+                          labelNode={
+                            <>
+                              <GlossaryTerm term="ILIA">ILIA</GlossaryTerm> 2025
+                            </>
+                          }
+                          value={selectedCountryData.ilia_governance_score}
+                          max={100}
+                        />
                       )}
                     </div>
 
                     {selectedCountryData.total_policies !== undefined && selectedCountryData.total_policies > 0 && (
                       <div className="p-4 bg-[#0D0D0D] rounded-lg border border-[#2A2A2A]">
                         <div className="text-xs font-mono text-[#F8F6F1]/50 mb-2 uppercase tracking-wide">
-                          Políticas OECD.AI
+                          Políticas <GlossaryTerm term="OECD.AI">OECD.AI</GlossaryTerm>
                         </div>
                         <div className="text-2xl font-bold text-[#C9A227]">{selectedCountryData.total_policies}</div>
                         <div className="text-sm text-[#F8F6F1]/50">políticas registradas</div>
@@ -424,14 +461,24 @@ export function LatamMapSection() {
   )
 }
 
-function ScoreBar({ label, value, max }: { label: string; value: number; max: number }) {
+function ScoreBar({
+  label,
+  labelNode,
+  value,
+  max,
+}: {
+  label: string
+  labelNode?: ReactNode
+  value: number
+  max: number
+}) {
   const percentage = (value / max) * 100
   const displayValue = max === 1 ? value.toFixed(3) : value.toFixed(1)
 
   return (
     <div className="p-3 bg-[#0D0D0D] rounded-lg border border-[#2A2A2A]">
       <div className="flex justify-between items-center mb-2">
-        <span className="text-xs font-mono text-[#F8F6F1]/60 uppercase tracking-wide">{label}</span>
+        <span className="text-xs font-mono text-[#F8F6F1]/60 uppercase tracking-wide">{labelNode ?? label}</span>
         <span className="font-mono text-sm font-medium text-[#C9A227]">{displayValue}</span>
       </div>
       <div
