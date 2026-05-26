@@ -886,6 +886,15 @@
     <circle class="dot" cx="245.01" cy="87.61" r="1.8" data-country="DOM"/>
     <circle class="dot" cx="250.93" cy="87.61" r="1.8" data-country="DOM"/>
   </g>
+  <g id="JAM">
+    <circle class="dot" cx="209.48" cy="93.54" r="1.8" data-country="JAM"/>
+    <circle class="dot" cx="215.40" cy="93.54" r="1.8" data-country="JAM"/>
+    <circle class="dot" cx="221.32" cy="93.54" r="1.8" data-country="JAM"/>
+  </g>
+  <g id="PRI">
+    <circle class="dot" cx="262.77" cy="87.61" r="1.8" data-country="PRI"/>
+    <circle class="dot" cx="268.69" cy="87.61" r="1.8" data-country="PRI"/>
+  </g>
   <g id="ECU">
     <circle class="dot" cx="197.64" cy="188.28" r="1.8" data-country="ECU"/>
     <circle class="dot" cx="203.56" cy="200.12" r="1.8" data-country="ECU"/>

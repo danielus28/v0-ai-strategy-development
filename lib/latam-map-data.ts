@@ -868,6 +868,11 @@ export const MAP_DOTS: ReadonlyArray<MapDot> = [
   [221.32, 81.69, "CUB"],
   [245.01, 87.61, "DOM"],
   [250.93, 87.61, "DOM"],
+  [209.48, 93.54, "JAM"],
+  [215.40, 93.54, "JAM"],
+  [221.32, 93.54, "JAM"],
+  [262.77, 87.61, "PRI"],
+  [268.69, 87.61, "PRI"],
   [197.64, 188.28, "ECU"],
   [203.56, 200.12, "ECU"],
   [203.56, 194.20, "ECU"],
@@ -1202,7 +1207,6 @@ export const MAP_DOTS: ReadonlyArray<MapDot> = [
   [292.38, 134.98, "VEN"],
 ] as const
 
-// Set of unique country codes present in the map
 export const MAP_COUNTRIES: ReadonlyArray<string> = [
   "ARG",
   "BHS",
@@ -1219,10 +1223,12 @@ export const MAP_COUNTRIES: ReadonlyArray<string> = [
   "GUY",
   "HND",
   "HTI",
+  "JAM",
   "MEX",
   "NIC",
   "PAN",
   "PER",
+  "PRI",
   "PRY",
   "SLV",
   "SUR",

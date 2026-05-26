@@ -29,7 +29,7 @@ const SITE_URL = "https://aethosai.org"
 const SITE_NAME = "Observatorio Aethos AI"
 const SITE_TITLE = "Observatorio de gobernanza de la inteligencia artificial en América Latina | Aethos AI"
 const SITE_DESCRIPTION =
-  "¿Tu país está listo para el cambio? El observatorio mide el estado legal, político y técnico de los 25 países de América Latina ante la inteligencia artificial y propone una ruta común para nivelar la cancha en gobernanza, capacidad e integración."
+  "¿Tu país está listo para el cambio? El observatorio mide el estado legal, político y técnico de los 27 países de América Latina ante la inteligencia artificial y propone una ruta común para nivelar la cancha en gobernanza, capacidad e integración."
 
 export const metadata: Metadata = {
   metadataBase: new URL(SITE_URL),
@@ -126,7 +126,7 @@ const jsonLd = [
     "@type": "Dataset",
     name: "Observatorio de Gobernanza de IA LATAM",
     description:
-      "Indicadores comparables de gobernanza de IA para 25 países de América Latina y el Caribe en seis capas: participación ISO/IEC, EGDI, GCI, GARI, ILIA y OECD.AI.",
+      "Indicadores comparables de gobernanza de IA para 27 países de América Latina y el Caribe en seis capas: participación ISO/IEC, EGDI, GCI, GARI, ILIA y OECD.AI.",
     keywords: [
       "gobernanza IA",
       "América Latina",

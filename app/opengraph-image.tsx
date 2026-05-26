@@ -93,7 +93,7 @@ export default async function Image() {
             color: "rgba(248, 246, 241, 0.6)",
           }}
         >
-          <div>25 países · 6 capas · 6 fuentes públicas</div>
+          <div>27 países · 6 capas · 6 fuentes públicas</div>
           <div style={{ color: "#C9A227" }}>aethosai.org</div>
         </div>
       </div>
