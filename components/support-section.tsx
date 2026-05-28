@@ -4,7 +4,19 @@ import { Button } from "@/components/ui/button"
 import { Heart, Users, Share2, ArrowUpRight } from "lucide-react"
 import { motion } from "motion/react"
 
-const SUPPORT_CHANNELS = [
+type SupportChannel = {
+  id: string
+  icon: typeof Heart
+  title: string
+  description: string
+  ctaText: string
+  ctaHref: string
+  isPrimary: boolean
+  secondaryText?: string
+  secondaryHref?: string
+}
+
+const SUPPORT_CHANNELS: SupportChannel[] = [
   {
     id: "donaciones",
     icon: Heart,
@@ -13,6 +25,8 @@ const SUPPORT_CHANNELS = [
     ctaText: "Donar ahora",
     ctaHref: "https://mpago.la/2V9zGis",
     isPrimary: true,
+    secondaryText: "¿Quieres aportar más o de otra forma? Escríbenos",
+    secondaryHref: "https://forms.gle/VfSG6J9aG6BPrZ2e6",
   },
   {
     id: "voluntariado",
@@ -125,6 +139,18 @@ export function SupportSection() {
                     <ArrowUpRight className="w-4 h-4" aria-hidden="true" />
                   </a>
                 </Button>
+
+                {channel.secondaryHref && (
+                  <a
+                    href={channel.secondaryHref}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="mt-3 inline-flex items-center justify-center gap-1 text-xs text-muted-foreground hover:text-accent transition-colors"
+                  >
+                    {channel.secondaryText}
+                    <ArrowUpRight className="w-3 h-3" aria-hidden="true" />
+                  </a>
+                )}
               </motion.div>
             )
           })}

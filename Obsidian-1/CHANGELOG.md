@@ -41,6 +41,7 @@ Todos los cambios notables del observatorio se documentan aquí. Formato basado 
 - `Obsidian-1/COPY.md`: agregado frontmatter de tags y sección "Documentos relacionados" (sin cambios de copy del sitio).
 
 ### Added
+- Enlace secundario "¿Quieres aportar más o de otra forma? Escríbenos" en la tarjeta de donaciones, hacia un Google Form de contacto (`https://forms.gle/VfSG6J9aG6BPrZ2e6`) para aportes mayores, recurrentes, institucionales o en especie. En `components/support-section.tsx`. Se tipó el arreglo `SUPPORT_CHANNELS` (`SupportChannel`) para que `secondaryText`/`secondaryHref` sean opcionales y no rompa el build.
 - Plan v2 del subsitio de apoyo (`planes/apoyar-subsitio.md`): Fase 0 (landing estática, pasarela externa, formulario Google Form) → Fase 1 (medir) → Fase 2 (sofisticación condicional por triggers de datos).
 
 ### Removed
