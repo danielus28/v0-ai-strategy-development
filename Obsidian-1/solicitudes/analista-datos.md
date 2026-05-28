@@ -1,3 +1,15 @@
+---
+tags:
+  - solicitud
+  - reclutamiento
+  - talento
+  - voluntariado
+estado: borrador
+relacionado:
+  - apoyar-subsitio
+  - apoyar-landing
+---
+
 # Solicitud — Analista de datos para el Observatorio Aethos AI
 
 > Borrador editable. Adapta el tono según el canal (LinkedIn, Twitter/X, listserv, GitHub Issue, web del observatorio).
@@ -73,3 +85,13 @@ No necesitamos CV formal — preferimos ver una muestra de tu trabajo.
 - En Twitter/X, usar la versión corta o partirla en hilo de 3 tweets.
 - Cuando el funnel de `apoyo.aethosai.org` esté listo, agregar también un CTA "apoyar económicamente al observatorio" para quien no pueda contribuir con tiempo.
 - Considerar también publicarla como [GitHub Discussion](https://github.com/danielus28/v0-ai-strategy-development/discussions) o issue etiquetado `help-wanted`.
+
+---
+
+## Documentos relacionados
+
+- [[apoyar-subsitio]] — funnel del subsitio donde aterrizan los postulantes
+- [[apoyar-landing]] — sección del homepage que invita a postular
+- [[CHANGELOG]] — registro del lanzamiento del rol
+- [[2026-05-26|devlog donde se creó esta solicitud]]
+- [[README]] — índice de la bóveda

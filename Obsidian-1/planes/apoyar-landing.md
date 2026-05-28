@@ -1,3 +1,15 @@
+---
+tags:
+  - plan
+  - landing
+  - apoyo
+  - funnel
+estado: ejecutado
+relacionado:
+  - apoyar-subsitio
+  - analista-datos
+---
+
 # Plan — Integración de la sección "¿Cómo nos puedes apoyar?" en la landing page
 
 Este plan detalla los aspectos estratégicos, de diseño, de copy y de código técnico para incorporar la nueva sección **"¿Cómo nos puedes apoyar?"** en la landing page del **Observatorio Aethos AI**. 
@@ -5,7 +17,7 @@ Este plan detalla los aspectos estratégicos, de diseño, de copy y de código t
 El objetivo principal es generar un "hook" de alto impacto en la landing page que dirija a los usuarios hacia el subdominio unificado **`apoyo.aethosai.org`**, donde experimentarán un flujo gamificado y guiado por un asistente de Inteligencia Artificial (similar a la experiencia en `https://risk.aethosai.org/`), el cual les orientará de forma dinámica sobre cómo sumarse.
 
 El plan canaliza el interés de la comunidad hacia dos pilares de apoyo fundamentales:
-1. **Aporte de tiempo y talento (Voluntariado técnico):** Articulado con la búsqueda de investigadores y el perfil de *Analista de datos* (`SOLICITUD_ANALISTA.md`), canalizado a través del embudo interactivo en `/donaciones/voluntarios`.
+1. **Aporte de tiempo y talento (Voluntariado técnico):** Articulado con la búsqueda de investigadores y el perfil de *Analista de datos* (`../solicitudes/analista-datos.md`), canalizado a través del embudo interactivo en `/voluntarios`. %%hice un cambio aquí%%
 2. **Aporte financiero (Donaciones):** Enfocado en la sostenibilidad e independencia del observatorio, canalizado a través de `/donaciones`.
 
 ---
@@ -248,3 +260,13 @@ Una vez implementada esta sección, se ejecutarán las siguientes verificaciones
 1.  **Validación de Responsive Design:** Comprobación visual de que la grilla colapse correctamente de 3 columnas a 1 columna en pantallas móviles (Safari/Chrome en iOS/Android) sin desbordamientos de texto.
 2.  **Verificación de Enlaces del Embudo (Funnel):** Probar que todos los enlaces apunten exactamente a sus destinos correspondientes (`/donaciones` y `/donaciones/voluntarios`) abriendo en pestañas nuevas (`target="_blank"`) y de forma segura.
 3.  **Accesibilidad (a11y):** Asegurar que las tarjetas e iconos tengan las etiquetas `aria-hidden` y contrastes de color correctos según estándares WCAG AA.
+
+---
+
+## Documentos relacionados
+
+- [[apoyar-subsitio]] — plan completo del subsitio donde aterrizan los CTAs de esta sección
+- [[analista-datos]] — perfil al que esta sección dirige el funnel de voluntariado
+- [[COPY|copy del sitio]] — donde se mantiene el texto definitivo
+- [[CHANGELOG]] — registro de la implementación
+- [[2026-05-26|devlog de la sesión inicial]]

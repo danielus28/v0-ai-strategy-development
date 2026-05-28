@@ -1,3 +1,11 @@
+---
+tags:
+  - copy
+  - editorial
+  - sitio
+  - observatorio
+---
+
 # Copy del sitio — Observatorio Aethos AI
 
 > Documento editable. Comenta o reescribe libremente cada bloque.
@@ -272,3 +280,14 @@ Todos los acrónimos (EGDI, GCI, GARI, ILIA, OECD.AI, ISO/IEC, SC 42, SC 27) aho
 - [ ] Revisar copy del componente "Cumplimiento" del mapa cuando se incorporen JAM y PRI al SVG. %% ¿cómo lo hacemos?%%
 
 %%En general vamos muy bien, quedan cosas muy finas que hilar, por ejemplo, eliminemos la agenda del observatorio, y lo que te decía poner la metodología en otra página, con la liga de github, necesito que generes una solicitud de ayuda para un analista de datos, lo otro es que en lo de sumarse vamos a generar un funnel para recivir donaciones, el funnel va a estar en otro proyecto, asociado al subdominio apoyo.aethosai.org%%
+
+---
+
+## Documentos relacionados
+
+- [[README]] — índice de la bóveda
+- [[CHANGELOG]] — registro de cuándo se aplicaron estos cambios al código
+- [[planes/apoyar-landing]] — copy de la sección "¿Cómo nos puedes apoyar?"
+- [[planes/apoyar-subsitio]] — copy del futuro subsitio apoyo.aethosai.org
+- [[solicitudes/analista-datos]] — referencia del rol de analista
+- [[devlog/2026-05-26]] — bitácora de los cambios editoriales aplicados

@@ -1,3 +1,37 @@
+---
+tags:
+  - plan
+  - subsitio
+  - apoyo
+  - archivado
+  - referencia
+estado: archivado
+versión: 1
+reemplazado-por: apoyar-subsitio
+relacionado:
+  - apoyar-subsitio
+  - apoyar-landing
+  - analista-datos
+---
+
+> **⚠️ Versión archivada — no ejecutar.**
+>
+> Esta es la **v1 aspiracional** del plan del subsitio de apoyo, conservada como referencia histórica. La versión vigente es [[apoyar-subsitio]] (v2 sobria, enfoque incremental y de validación).
+>
+> **Por qué se archivó esta versión** (resumen de la crítica registrada en [[2026-05-26|el devlog]]):
+> 1. El asistente conversacional IA añade fricción para audiencia que ya decidió donar; cada paso extra cae conversión ~10%.
+> 2. La gamificación con badges (`Socio Fundador`, `Guardián de Datos`) choca tonalmente con audiencias institucionales serias.
+> 3. El stack propuesto (Supabase + Gemini + Zapier + 3 pasarelas) es overkill antes de validar mercado.
+> 4. La inspiración en `risk.aethosai.org` (assessment B2B con valor en el output) no transfiere a donaciones públicas.
+> 5. 5 semanas de ejecución antes de tener una sola donación validada invierte capital y tiempo sin retorno conocido.
+>
+> **Piezas que sí pueden recuperarse en Fase 2** del plan v2 (cuando la data lo justifique):
+> - Calculadora de impacto visual con slider de montos.
+> - Wall of supporters / página `/apoyaron` con consentimiento de donantes.
+> - Matchmaking automático perfil↔rol con LLM (solo si ≥100 aplicaciones/mes y triage manual se vuelve bottleneck).
+
+---
+
 # Plan Completo — Desarrollo del Subsitio de Apoyo (`apoyo.aethosai.org`)
 
 Este documento presenta la arquitectura, estrategia de gamificación, flujo conversacional por Inteligencia Artificial y la hoja de ruta técnica para el desarrollo del subsitio **`apoyo.aethosai.org`**. 
@@ -45,10 +79,9 @@ graph TD
     E --> G[Página de Éxito /exito]
     F --> G
 ```
-
 ### Funciones del Asistente Conversacional:
 *   **Perfilamiento Dinámico:** En lugar de formularios tradicionales, el asistente pregunta de forma natural sobre la experiencia, disponibilidad y motivaciones del usuario.
-*   **Análisis de Perfil (Matchmaking):** Si un voluntario menciona habilidades en Python o APIs, el asistente responde con entusiasmo y le propone la postulación al rol de **Analista de Datos** (`SOLICITUD_ANALISTA.md`).
+*   **Análisis de Perfil (Matchmaking):** Si un voluntario menciona habilidades en Python o APIs, el asistente responde con entusiasmo y le propone la postulación al rol de **Analista de Datos** (`../solicitudes/analista-datos.md`).
 *   **Estimación de Impacto Financiero:** Si el donante indica un monto, el asistente le explica de forma tangible qué costo operativo cubre ese monto (ej: *"Con $25 USD aseguras la infraestructura del mapa LATAM por 3 meses"*).
 
 ---
@@ -121,5 +154,12 @@ Proponemos dividir el desarrollo en 3 fases incrementales:
 
 ---
 
-### ¿Cómo deseas proceder?
-Puedo dejar este plan listo para ti en tu carpeta de Obsidian. Si quieres que comencemos con los preparativos de la estructura del subsitio o con cualquier otro paso, solo confírmamelo.
+---
+
+## Documentos relacionados
+
+- [[apoyar-landing]] — sección del homepage que alimenta este subsitio
+- [[analista-datos]] — solicitud que el funnel de voluntariado debe presentar al usuario
+- [[CHANGELOG]] — cambios shippeados relacionados al subdominio
+- [[COPY|copy del sitio]] — coherencia editorial con el resto del observatorio
+- [[2026-05-26|devlog con la crítica al plan]]

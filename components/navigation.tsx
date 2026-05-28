@@ -13,7 +13,7 @@ const navLinks = [
   { href: "/metodologia", label: "Metodología" },
 ]
 
-const SUMARSE_URL = "https://apoyo.aethosai.org/donaciones"
+const SUMARSE_URL = "https://mpago.la/2V9zGis"
 
 export function Navigation() {
   const [isScrolled, setIsScrolled] = useState(false)

@@ -1,3 +1,15 @@
+---
+tags:
+  - plan
+  - mapa
+  - datos
+  - latam
+estado: parcialmente-ejecutado
+relacionado:
+  - CHANGELOG
+  - COPY
+---
+
 # Plan — Sumar Jamaica (JAM) y Puerto Rico (PRI) al mapa LATAM
 
 > Por qué importan: el subtítulo del observatorio habla de "los países de la región"; ambas islas son parte de la región y hoy faltan del SVG. El componente original los listaba pero el SVG nunca se generó con ellos.
@@ -97,3 +109,12 @@ Cuando decidas, te puedo:
 3. Actualizar el conteo de países a 27 en hero, metadata, opengraph-image.
 
 ¿Procedemos con la Opción B mientras esperamos el/la analista, o prefieres esperar a tener Opción A bien hecha?
+
+---
+
+## Documentos relacionados
+
+- [[CHANGELOG]] — registro de cuándo se sumaron JAM y PRI al SVG
+- [[COPY]] — donde aparece el conteo final de 27 países
+- [[2026-05-26|devlog de la sesión inicial]] — contexto y decisión
+- [[README]] — índice de la bóveda
